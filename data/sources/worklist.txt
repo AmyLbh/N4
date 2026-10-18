@@ -1,0 +1,1386 @@
+1|十|(〜を) とお|N5||ten (~)
+2|～円|～えん|N5||Yen
+3|～回|～かい|N5||counter for occurrences (~ times)
+4|～階|～かい|N5||counter for stories (floors) of a building
+5|～か月|～かげつ|N5||(number of) months
+6|～月|～がつ|N5||month of year
+7|～がる|～がる|N5||feel
+8|～側|～がわ|N5||~ side
+9|～くらい; ぐらい|～くらい; ぐらい|N5||approximate (quantity)
+10|～個|～こ|N5||counter for small items (e.g., fruits, cups)
+11|～語|～ご|N5||word, language
+12|～ころ; ～ごろ|～ころ; ～ごろ|N5||about, toward, approximately (time)
+13|～歳|～さい|N5||~ years old
+14|～冊|～さつ|N5||counter for books
+15|～さん|～さん|N5||Mr. ~, Ms. ~
+16|～時|～じ|N5||~ o'clock (time)
+17|～時間|～じかん|N5||~ hours
+18|～中|～じゅう|N5||during, while
+19|～週間|～しゅうかん|N5||~ weeks
+20|～人|～じん|N5||counter for people
+21|～すぎ|～すぎ|N5|v?|past; to exceed, ~ too much
+22|～ずつ|～ずつ|N5||at a time
+23|～台|～だい|N5||counter for vehicles; machines
+24|～だけ|～だけ|N5||only ~, just ~, as ~
+25|～たち|～たち|N5||plural suffix
+26|～中|～ちゅう|N5||during, while ~ing
+27|～度|～ど|N5||counter for occurrences; ~ degree; ~ point
+28|～時|～とき|N5||at the time of ~
+29|～など|～など|N5||et cetera
+30|～日|～にち|N5||~ day of the month, for ~ days
+31|～人|～にん|N5||counter for people
+32|～年|～ねん|N5||~ years
+33|～杯|～はい|N5||counter for cupfuls
+34|～番|～ばん|N5||~st; ~th best
+35|～匹|～ひき|N5||counter for small animals
+36|～分|～ふん|N5||~ minutes
+37|～本|～ほん|N5||counter for long cylindrical things
+38|～枚|～まい|N5||counter for flat things
+39|～前|～まえ|N5||in front of ~
+40|～屋|～や|N5||~ shop
+41|ああ|ああ|N5||Ah!, Oh!
+42|会う|あう|N5|v1|to meet, to see
+43|青|あお|N5||blue
+44|青い|あおい|N5||blue
+45|赤|あか|N5||red
+46|赤い|あかい|N5||red
+47|明るい|あかるい|N5||bright (in reference to personality or weather); cheerful
+48|秋|あき|N5||fall (season)
+49|開く|あく|N5|v1|to open, to become open
+50|開ける|あける|N5|v2|to open (v.t.)
+51|上げる|あげる|N5|v2|to raise, to lift
+52|朝|あさ|N5||morning
+53|朝御飯|あさごはん|N5||breakfast
+54|明後日|あさって|N5||day after tomorrow
+55|足; 脚|あし|N5||foot; leg
+56|明日|あした|N5||tomorrow
+57|あそこ|あそこ|N5||there, over there, that place
+58|遊ぶ|あそぶ|N5|v1|to play; to spend time pleasantly; to hang out
+59|暖かい|あたたかい|N5||warm
+60|頭|あたま|N5||head
+61|新しい|あたらしい|N5||new
+62|あちら|あちら|N5||this way (polite)
+63|暑い|あつい|N5||hot (in reference to weather), warm
+64|熱い|あつい|N5||hot (objects)
+65|厚い|あつい|N5||kind, warm(hearted), thick, deep
+66|あっち|あっち|N5||over there
+67|後|あと|N5||afterwards (later); in the future; the rest; since then
+68|あなた|あなた|N5||you
+69|兄|あに|N5||(my) older brother (humble)
+70|姉|あね|N5||(my) older sister (humble)
+71|あの|あの|N5||that over there; like that, that way; um...
+72|アパート|アパート|N5||apartment (abbr.)
+73|浴びる|あびる|N5|v2|to bathe, to shower
+74|危ない|あぶない|N5||dangerous, critical
+75|甘い|あまい|N5||generous, sweet
+76|余り|あまり|N5||not very; surplus
+77|雨|あめ|N5||rain
+78|飴|あめ|N5||(hard) candy
+79|洗う|あらう|N5|v1|to wash
+80|在る|ある|N5|v1|to be, to have
+81|有る|ある|N5|v1|to be, to have
+82|歩く|あるく|N5|v1|to walk
+83|あれ|あれ|N5||that one (over there)
+84|いい; よい|いい; よい|N5||good
+85|いいえ|いいえ|N5||no, not at all
+86|言う|いう|N5|v1|to say
+87|家|いえ|N5||house, home
+88|いかが|いかが|N5||how, in what way
+89|行く|いく; ゆく|N5|v1|to go
+90|いくつ|いくつ|N5||how many, how old
+91|いくら|いくら|N5||how much, how many
+92|池|いけ|N5||pond
+93|医者|いしゃ|N5||doctor; physician
+94|椅子|いす|N5||chair
+95|忙しい|いそがしい|N5||busy (people, days)
+96|痛い|いたい|N5||hurt; painful; sore
+97|一|いち|N5||one
+98|一日|いちにち|N5||one day (duration)
+99|一番|いちばん|N5||best (most), first, number one
+100|いつ|いつ|N5||when
+101|五日|いつか|N5||five days; fifth day of the month
+102|一緒|いっしょ|N5||together
+103|五つ|いつつ|N5||five things
+104|いつも|いつも|N5||always, usually, every time, never (with neg. verb)
+105|犬|いぬ|N5||dog
+106|今|いま|N5||now
+107|意味|いみ|N5||meaning, significance
+108|妹|いもうと|N5||younger sister (humble)
+109|嫌|いや|N5||disagreeable, detestable, unpleasant
+110|入口|いりぐち|N5||entrance
+111|居る|いる|N5|v1|(humble) to be (animate), to exist
+112|要る|いる|N5|v1|to need
+113|入れる|いれる|N5|v2|to put in
+114|色|いろ|N5||color
+115|色々|いろいろ|N5||various
+116|上|うえ|N5||above (up, top, etc.), over, on top of
+117|後ろ|うしろ|N5||back, behind, rear
+118|薄い|うすい|N5||thin, weak
+119|歌|うた|N5||a song
+120|歌う|うたう|N5|v1|to sing
+121|うち|うち|N5||home; house; my place
+122|生まれる|うまれる|N5|v2|to be born
+123|海|うみ|N5||sea, beach
+124|売る|うる|N5|v1|to sell (v.t.)
+125|うるさい|うるさい|N5||noisy; annoying
+126|上着|うわぎ|N5||coat, jacket
+127|絵|え|N5||a painting; a picture; a drawing
+128|映画|えいが|N5||movie, film
+129|映画館|えいがかん|N5||movie theater, cinema
+130|英語|えいご|N5||English (language)
+131|ええ|ええ|N5||yes
+132|駅|えき|N5||station
+133|エレベーター|エレベーター|N5||elevator
+134|鉛筆|えんぴつ|N5||pencil
+135|お～|お～|N5||honorable ~ (honorific)
+136|美味しい|おいしい|N5||delicious, tasty
+137|多い|おおい|N5||many; there are a lot
+138|大きい|おおきい|N5||big, large
+139|大きな|おおきな|N5||big
+140|大勢|おおぜい|N5||great number of people
+141|お母さん|おかあさん|N5||mother (formal)
+142|お菓子|おかし|N5||confections, sweets, snack
+143|お金|おかね|N5||money
+144|起きる|おきる|N5|v2|to get up (e.g., from sleeping); to happen
+145|置く|おく|N5|v1|to put; to lay; to place
+146|奥さん|おくさん|N5||(someone else's) wife (hon.)
+147|お酒|おさけ|N5||sake; alcohol
+148|お皿|おさら|N5||plate, dish
+149|おじいさん|おじいさん|N5||grandfather, male senior citizen
+150|教える|おしえる|N5|v2|to teach, to inform, to instruct
+151|伯父; 叔父さん|おじさん|N5||uncle, middle-aged man
+152|押す|おす|N5|v1|to push, to press, to stamp (e.g., a passport)
+153|遅い|おそい|N5||slow; (to be) late
+154|お茶|おちゃ|N5||(green) tea
+155|お手洗い|おてあらい|N5||toilet, restroom, bathroom (lit., a place to wash one's hands)
+156|お父さん|おとうさん|N5||father (formal)
+157|弟|おとうと|N5||younger brother
+158|男|おとこ|N5||man, male
+159|男の子|おとこのこ|N5||boy
+160|一昨日|おととい|N5||the day before yesterday
+161|おととし|おととし|N5||year before last
+162|大人|おとな|N5||adult
+163|お腹|おなか|N5||stomach
+164|同じ|おなじ|N5||same, identical
+165|お兄さん|おにいさん|N5||(someone else's) older brother (formal)
+166|お姉さん|おねえさん|N5||older sister (formal)
+167|おばあさん|おばあさん|N5||grandmother, female senior-citizen
+168|伯母さん; 叔母さん|おばさん|N5||aunt
+169|お風呂|おふろ|N5||a bath
+170|お弁当|おべんとう|N5||a boxed lunch
+171|覚える|おぼえる|N5|v2|to learn, to commit to memory, to remember, to memorize
+172|おまわりさん|おまわりさん|N5||policeman (friendly term)
+173|重い|おもい|N5||heavy; serious
+174|面白い|おもしろい|N5||interesting, amusing
+175|泳ぐ|およぐ|N5|v1|to swim
+176|降りる|おりる|N5|v2|to get off
+177|終る|おわる|N5|v1|to finish, to close
+178|音楽|おんがく|N5||Music
+179|女|おんな|N5||woman, female
+180|女の子|おんなのこ|N5||girl
+181|外国|がいこく|N5||foreign country; abroad
+182|外国人|がいこくじん|N5||foreigner
+183|会社|かいしゃ|N5||company, corporation
+184|階段|かいだん|N5||stairs
+185|買い物|かいもの|N5||shopping
+186|買う|かう|N5|v1|to buy
+187|返す|かえす|N5|v1|to return something
+188|帰る|かえる|N5|v1|to go back, to go home, to return
+189|顔|かお|N5||face (body part)
+190|かかる|かかる|N5||it takes (amount of time, money) (v.i.)
+191|鍵|かぎ|N5||a lock; a key
+192|書く|かく|N5|v1|to write
+193|学生|がくせい|N5||student
+194|掛ける|かける|N5|v2|to put on (e.g., glasses); to hang (e.g., on a wall)
+195|かける|かける|N5|v2|to dial/call (e.g., phone); to sit down
+196|傘|かさ|N5||umbrella, parasol
+197|貸す|かす|N5|v1|to lend
+198|風|かぜ|N5||wind, breeze
+199|風邪|かぜ|N5||cold, flu
+200|家族|かぞく|N5||family, members of a family
+201|方|かた|N5||-- honorific form for 人 (ひと) --; way of doing
+202|片仮名|かたかな|N5||katakana
+203|学校|がっこう|N5||a school
+204|カップ|カップ|N5||cup
+205|家庭|かてい|N5||home; family
+206|角|かど|N5||corner (e.g., desk, pavement)
+207|かばん|かばん|N5||bag, basket
+208|花瓶|かびん|N5||(flower) vase
+209|かぶる|かぶる|N5|v1|to wear, to put on (e.g., a hat on the head)
+210|紙|かみ|N5||paper
+211|カメラ|カメラ|N5||camera
+212|火曜日|かようび|N5||Tuesday
+213|辛い|からい|N5||hot and spicy; salty
+214|体|からだ|N5||body; health
+215|借りる|かりる|N5|v2|to borrow, to owe
+216|軽い|かるい|N5||light, non-serious, minor
+217|カレー|カレー|N5||curry (abbr. for curry and rice)
+218|カレンダー|カレンダー|N5||calendar
+219|川; 河|かわ|N5||river
+220|可愛い|かわいい|N5||cute, adorable
+221|漢字|かんじ|N5||kanji; Chinese character
+222|木|き|N5||tree, wood, timber
+223|黄色|きいろ|N5||yellow
+224|黄色い|きいろい|N5||yellow
+225|消える|きえる|N5|v2|to vanish, to disappear
+226|聞く|きく|N5|v1|to hear, to listen, to ask
+227|北|きた|N5||north
+228|ギター|ギター|N5||guitar
+229|汚い|きたない|N5||dirty, unclean, filthy
+230|喫茶店|きっさてん|N5||café
+231|切手|きって|N5||postal (postage) stamps
+232|切符|きっぷ|N5||a ticket
+233|昨日|きのう|N5||yesterday
+234|九|きゅう|N5||nine
+235|牛肉|ぎゅうにく|N5||beef
+236|牛乳|ぎゅうにゅう|N5||milk
+237|今日|きょう|N5||today, this day
+238|教室|きょうしつ|N5||classroom
+239|兄弟|きょうだい|N5||siblings (humble), brothers and sisters
+240|去年|きょねん|N5||last year
+241|嫌い|きらい|N5||dislike
+242|切る|きる|N5|v1|to cut; to hang up (a phone)
+243|着る|きる|N5|v2|to put on (clothes above your waist); to wear
+244|綺麗|きれい|N5||pretty, clean, tidy
+245|キロ; キログラム|キロ; キログラム|N5||(abbr.) kilo (kilogram)
+246|キロ; キロメートル|キロ; キロメートル|N5||(abbr.) kilo (kilometer)
+247|銀行|ぎんこう|N5||bank
+248|金曜日|きんようび|N5||Friday
+249|九|く|N5||nine
+250|薬|くすり|N5||medicine
+251|下さい|ください|N5||(with te-form verb) please do for me
+252|果物|くだもの|N5||fruit
+253|口|くち|N5||job opening; mouth
+254|靴|くつ|N5||shoes, footwear
+255|靴下|くつした|N5||socks
+256|国|くに|N5||country; place of origin
+257|曇り|くもり|N5||cloudiness, cloudy weather
+258|曇る|くもる|N5|v1|to become cloudy, to become dim
+259|暗い|くらい|N5||dark, gloomy
+260|クラス|クラス|N5||a class
+261|グラム|グラム|N5||gram
+262|来る|くる|N5|v3k|to come
+263|車|くるま|N5||car, vehicle
+264|黒|くろ|N5||black
+265|黒い|くろい|N5||black; dark
+266|警官|けいかん|N5||police officer
+267|今朝|けさ|N5||this morning
+268|消す|けす|N5|v1|to erase, to delete, to turn off power
+269|結構|けっこう|N5||splendid; enough, tolerably
+270|結婚|けっこん (する)|N5||marriage (get married)
+271|月曜日|げつようび|N5||Monday
+272|玄関|げんかん|N5||entrance (to a house or a building)
+273|元気|げんき|N5||health(y), energetic
+274|五|ご|N5||five
+275|公園|こうえん|N5||a park
+276|交差点|こうさてん|N5||intersection
+277|紅茶|こうちゃ|N5||black tea
+278|交番|こうばん|N5||police box
+279|声|こえ|N5||voice
+280|コート|コート|N5||coat; court (e.g., tennis)
+281|コーヒー|コーヒー|N5||coffee
+282|ここ|ここ|N5||here, this place
+283|午後|ごご|N5||afternoon, P.M.
+284|九日|ここのか|N5||nine days; ninth day of the month
+285|九つ|ここのつ|N5||nine things
+286|午前|ごぜん|N5||morning, A.M.
+287|答える|こたえる|N5|v2|to answer, to reply
+288|こちら|こちら|N5||this person (polite); this way (polite)
+289|こっち|こっち|N5||this person; this direction; this side
+290|コップ|コップ|N5||a tumbler; a glass
+291|今年|ことし|N5||this year
+292|言葉|ことば|N5||language; word(s); expression(s)
+293|子供|こども|N5||child(ren)
+294|この|この|N5||this
+295|御飯|ごはん|N5||rice (cooked); meal
+296|コピーする|コピーする|N5|v3|to copy
+297|困る|こまる|N5|v1|to be bothered, to have difficulty
+298|これ|これ|N5||this one
+299|今月|こんげつ|N5||this month
+300|今週|こんしゅう|N5||this week
+301|こんな|こんな|N5||such, like this
+302|今晩|こんばん|N5||tonight, this evening
+303|さあ|さあ|N5||come now, well
+304|財布|さいふ|N5||wallet
+305|魚|さかな|N5||fish
+306|先|さき|N5||future; recent, previous
+307|咲く|さく|N5|v1|to bloom
+308|作文|さくぶん|N5||essay; composition
+309|差す|さす|N5|v1|to raise (stretch out) hands, to raise (e.g., umbrella)
+310|雑誌|ざっし|N5||magazine, journal
+311|砂糖|さとう|N5||sugar
+312|寒い|さむい|N5||cold (in reference to weather)
+313|さ来年|さらいねん|N5||year after next
+314|三|さん|N5||three
+315|散歩|さんぽ (する)|N5||walk, stroll
+316|四|し|N5||four
+317|塩|しお|N5||salt
+318|しかし|しかし|N5||however; but
+319|時間|じかん|N5||time
+320|仕事|しごと|N5||work, job, occupation, employment
+321|辞書|じしょ|N5||dictionary
+322|静か|しずか|N5||quiet, calm
+323|下|した|N5||under, below, beneath
+324|七|しち|N5||seven
+325|質問|しつもん|N5||question, inquiry
+326|自転車|じてんしゃ|N5||bicycle
+327|自動車|じどうしゃ|N5||automobile
+328|死ぬ|しぬ|N5|v1|to die
+329|字引|じびき|N5||dictionary
+330|自分|じぶん|N5||myself, oneself
+331|閉まる|しまる|N5|v1|to close, to be closed
+332|閉める|しめる|N5|v2|to close, to shut
+333|締める|しめる|N5|v2|to tie, to fasten, to tighten
+334|じゃ; じゃあ|じゃ; じゃあ|N5||well, well then
+335|写真|しゃしん|N5||a picture; a photograph
+336|シャツ|シャツ|N5||shirt
+337|シャワー|シャワー|N5||shower
+338|十|じゅう|N5||ten
+339|授業|じゅぎょう|N5||a class (of school)
+340|宿題|しゅくだい|N5||homework
+341|上手|じょうず|N5||be good at, skillful
+342|丈夫|じょうぶ|N5||strong, solid, durable
+343|醤油|しょうゆ|N5||soy sauce
+344|食堂|しょくどう|N5||cafeteria, dining hall
+345|知る|しる|N5|v1|to know, to understand
+346|白|しろ|N5||white
+347|白い|しろい|N5||white
+348|新聞|しんぶん|N5||newspaper
+349|水曜日|すいようび|N5||Wednesday
+350|吸う|すう|N5|v1|to breathe in, to suck
+351|スカート|スカート|N5||skirt
+352|好き|すき|N5||liking, fondness, love
+353|少ない|すくない|N5||a little; a few
+354|すぐに|すぐに|N5||immediately, soon
+355|少し|すこし|N5||little, few
+356|涼しい|すずしい|N5||cool, refreshing (in reference to weather)
+357|ストーブ|ストーブ|N5||heater (lit: stove)
+358|スプーン|スプーン|N5||spoon
+359|スポーツ|スポーツ|N5||sport(s)
+360|ズボン|ズボン|N5||trousers
+361|住む|すむ|N5|v1|to reside, to live in
+362|する|する|N5|v3|to do, to try; to wear small items (e.g., necktie, watch, etc.)
+363|座る|すわる|N5|v1|to sit
+364|背|せい|N5||(one's) height, stature
+365|生徒|せいと|N5||student; pupil
+366|セーター|セーター|N5||sweater
+367|石鹸|せっけん|N5||soap
+368|背広|せびろ|N5||men's suit
+369|狭い|せまい|N5||narrow; not spacious
+370|ゼロ|ゼロ|N5||zero
+371|千|せん|N5||thousand
+372|先月|せんげつ|N5||last month
+373|先週|せんしゅう|N5||last week
+374|先生|せんせい|N5||teacher, professor; master; doctor
+375|洗濯|せんたく|N5||washing, laundry
+376|全部|ぜんぶ|N5||all, entire, whole
+377|そう; そうです|そう; そうです|N5|v?|yes; appears, to be the case
+378|掃除|そうじ (する)|N5||cleaning, sweeping
+379|そうして; そして|そうして; そして|N5||and, like that
+380|そこ|そこ|N5||that place, there; bottom, sole
+381|そちら|そちら|N5||over there
+382|そっち|そっち|N5||over there
+383|外|そと|N5||outside, exterior
+384|その|その|N5||that
+385|そば|そば|N5||near, close, beside; Japanese traditional buckwheat noodle
+386|空|そら|N5||sky
+387|それ|それ|N5||that one
+388|それから|それから|N5||and then, after that
+389|それでは|それでは|N5||in that situation, well then...
+390|大学|だいがく|N5||college; university
+391|大使館|たいしかん|N5||embassy
+392|大丈夫|だいじょうぶ|N5||It's ok (all right); No need to worry; Everything is under control
+393|大好き|だいすき|N5||very like-able, like very much
+394|大切|たいせつ|N5||important
+395|台所|だいどころ|N5||kitchen
+396|大変|たいへん|N5||very; difficult, hard
+397|高い|たかい|N5||tall, high; expensive
+398|沢山|たくさん|N5||many, much
+399|タクシー|タクシー|N5||taxi
+400|出す|だす|N5|v1|to take (something) out; to hand in (something)
+401|立つ|たつ|N5|v1|to stand up
+402|たて|たて|N5||length, height
+403|建物|たてもの|N5||building
+404|楽しい|たのしい|N5||enjoyable, fun
+405|頼む|たのむ|N5|v1|to request, to ask (a favor)
+406|たばこ|たばこ|N5||tobacco, cigarettes
+407|多分|たぶん|N5||perhaps, probably, maybe
+408|食べ物|たべもの|N5||food
+409|食べる|たべる|N5|v2|to eat
+410|卵|たまご|N5||egg
+411|誰|だれ|N5||who
+412|誰か|だれか|N5||someone
+413|誕生日|たんじょうび|N5||birthday
+414|段々|だんだん|N5||gradually, by degrees
+415|小さい|ちいさい|N5||small, little
+416|小さな|ちいさな|N5||small, little
+417|近い|ちかい|N5||near, close by, short
+418|違う|ちがう|N5|v1|to be different; to differ; wrong
+419|近く|ちかく|N5||nearby; in the neighborhood
+420|地下鉄|ちかてつ|N5||underground train, subway
+421|地図|ちず|N5||a map
+422|父|ちち|N5||(my) father
+423|茶色|ちゃいろ|N5||brown
+424|茶碗|ちゃわん|N5||rice bowl
+425|丁度|ちょうど|N5||just, right, exactly
+426|ちょっと|ちょっと|N5||a little, somewhat; just a little, somewhat
+427|一日|ついたち|N5||one day; first day of the month
+428|使う|つかう|N5|v1|to use
+429|疲れる|つかれる|N5|v2|to get (become) tired; to become fatigued
+430|次|つぎ|N5||next
+431|着く|つく|N5|v1|to arrive at, to reach
+432|机|つくえ|N5||desk
+433|作る|つくる|N5|v1|to make, to create
+434|つける|つける|N5|v2|to turn on (e.g., a light); to take
+435|勤める|つとめる|N5|v2|to work (for)
+436|つまらない|つまらない|N5||boring, dull; insignificant
+437|冷たい|つめたい|N5||cold (things, people)
+438|強い|つよい|N5||strong, powerful
+439|手|て|N5||hand
+440|テープ|テープ|N5||tape
+441|テーブル|テーブル|N5||table
+442|テープレコーダー|テープレコーダー|N5||tape recorder
+443|出かける|でかける|N5|v2|to go out; to depart
+444|手紙|てがみ|N5||letter
+445|できる|できる|N5|v2|to be able to (to accomplish)
+446|出口|でぐち|N5||an exit
+447|テスト|テスト|N5||test
+448|では|では|N5||then, well, so
+449|デパート|デパート|N5||(abbr.) department store
+450|でも|でも|N5||but, however
+451|出る|でる|N5|v2|to appear, to leave
+452|テレビ|テレビ|N5||television, TV
+453|天気|てんき|N5||weather
+454|電気|でんき|N5||electricity, (electric) light
+455|電車|でんしゃ|N5||electric train
+456|電話|でんわ|N5||a telephone
+457|戸|と|N5||door (Japanese style)
+458|ドア|ドア|N5||door (Western style)
+459|トイレ|トイレ|N5||bathroom; toilet
+460|どう|どう|N5||how, in what way
+461|どうして|どうして|N5||why, for what reason
+462|どうぞ|どうぞ|N5||please, kindly, by all means
+463|動物|どうぶつ|N5||animal
+464|どうも|どうも|N5||Thank you; somehow; no matter how hard one may try
+465|遠い|とおい|N5||far (away), distant
+466|十日|とおか|N5||ten days; tenth day of the month
+467|時々|ときどき|N5||sometimes
+468|時計|とけい|N5||a watch; a clock
+469|どこ|どこ|N5||where, what place
+470|所|ところ|N5||place
+471|年|とし|N5||year, age
+472|図書館|としょかん|N5||library
+473|どちら|どちら|N5||which (one) (way); where (polite)
+474|どっち|どっち|N5||which one, which way
+475|とても|とても|N5||very (much), greatly, exceedingly
+476|どなた|どなた|N5||who
+477|隣|となり|N5||next to, next door to
+478|どの|どの|N5||which
+479|飛ぶ|とぶ|N5|v1|to fly, to hop
+480|止まる|とまる|N5|v1|to come to a halt
+481|友達|ともだち|N5||friend
+482|土曜日|どようび|N5||Saturday
+483|鳥|とり|N5||chicken (lit., bird)
+484|鶏肉|とりにく|N5||chicken meat
+485|取る|とる|N5|v1|to take (a class); to get (a grade)
+486|撮る|とる|N5|v1|to take (a photo), to make (a film)
+487|どれ|どれ|N5||which one
+488|どんな|どんな|N5||what, what kind of
+489|ない|ない|N5||there isn't, doesn't have
+490|ナイフ|ナイフ|N5||knife
+491|中|なか|N5||inside, middle, among
+492|長い|ながい|N5||long, lengthy
+493|鳴く|なく|N5|v1|to make sound (animal)
+494|無くす|なくす|N5|v1|to lose something
+495|なぜ|なぜ|N5||why (same as どうして)
+496|夏|なつ|N5||summer
+497|夏休み|なつやすみ|N5||summer vacation
+498|七つ|ななつ|N5||seven things
+499|七日|なのか|N5||seven days; seventh day (of the month)
+500|名前|なまえ|N5||name
+501|習う|ならう|N5|v1|to learn
+502|並ぶ|ならぶ|N5|v1|to line up, to stand in a line (v.i.)
+503|並べる|ならべる|N5|v2|to put (things) side by side; to line up
+504|なる|なる|N5|v1|to become
+505|何|なん; なに|N5||what
+506|何～|なん～|N5||what sort of ~
+507|二|に|N5||two
+508|にぎやか|にぎやか|N5||bustling, busy
+509|肉|にく|N5||meat
+510|西|にし|N5||west
+511|日曜日|にちようび|N5||Sunday
+512|荷物|にもつ|N5||luggage; baggage
+513|ニュース|ニュース|N5||news
+514|庭|にわ|N5||garden
+515|脱ぐ|ぬぐ|N5|v1|to take off (clothes)
+516|温い|ぬるい|N5||lukewarm
+517|ネクタイ|ネクタイ|N5||tie, necktie
+518|猫|ねこ|N5||cat
+519|寝る|ねる|N5|v2|to sleep; to go to sleep; to go to bed
+520|ノート|ノート|N5||notebook
+521|登る|のぼる|N5|v1|to climb
+522|飲み物|のみもの|N5||drink, beverage
+523|飲む|のむ|N5|v1|to drink
+524|乗る|のる|N5|v1|to get on, to ride in, to board
+525|歯|は|N5||tooth
+526|パーティー|パーティー|N5||a party
+527|はい|はい|N5||yes
+528|灰皿|はいざら|N5||ashtray
+529|入る|はいる|N5|v1|to enter, to contain, to hold
+530|葉書|はがき|N5||postcard
+531|はく|はく|N5|v?|to put on (items below your waist)
+532|箱|はこ|N5||box
+533|橋|はし|N5||bridge
+534|箸|はし|N5||chopsticks
+535|始まる|はじまる|N5||(something) begins
+536|初め; 始め|はじめ|N5||beginning, start
+537|初めて|はじめて|N5||for the first time
+538|走る|はしる|N5|v1|to run
+539|バス|バス|N5||bus; bath; bass
+540|バター|バター|N5||butter
+541|二十歳|はたち|N5||20 years old
+542|働く|はたらく|N5|v1|to work
+543|八|はち|N5||eight
+544|二十日|はつか|N5||twenty days, twentieth (day of the month)
+545|花|はな|N5||flower
+546|鼻|はな|N5||nose
+547|話|はなし|N5||talk (chat), story
+548|話す|はなす|N5|v1|to speak
+549|母|はは|N5||(my) mother
+550|早い|はやい|N5||early
+551|速い|はやい|N5||fast, quick
+552|春|はる|N5||spring
+553|貼る|はる|N5|v1|to post; to paste; to attach
+554|晴れ|はれ|N5||clear (sunny) weather
+555|晴れる|はれる|N5|v2|to be sunny
+556|半|はん|N5||half (e.g., にじはん | half-past two)
+557|晩|ばん|N5||evening
+558|パン|パン|N5||bread
+559|ハンカチ|ハンカチ|N5||handkerchief
+560|番号|ばんごう|N5||number, series of digits
+561|晩御飯|ばんごはん|N5||dinner, evening meal
+562|半分|はんぶん|N5||half
+563|東|ひがし|N5||east
+564|引く|ひく|N5|v1|to pull, to draw; subtract
+565|弾く|ひく|N5|v1|to play (a string instrument or piano)
+566|低い|ひくい|N5||short, low
+567|飛行機|ひこうき|N5||airplane
+568|左|ひだり|N5||left hand side
+569|人|ひと|N5||man, person
+570|一つ|ひとつ|N5||one thing
+571|一月|ひとつき|N5||one month
+572|一人|ひとり|N5||one person
+573|暇|ひま|N5||free time, leisure
+574|百|ひゃく|N5||hundred
+575|病院|びょういん|N5||hospital
+576|病気|びょうき|N5||illness; sickness
+577|平仮名|ひらがな|N5||hiragana
+578|昼|ひる|N5||noon, daytime
+579|昼御飯|ひるごはん|N5||lunch, midday meal
+580|広い|ひろい|N5||spacious; wide; broad
+581|フィルム|フィルム|N5||film (roll of)
+582|封筒|ふうとう|N5||envelope
+583|プール|プール|N5||swimming pool
+584|フォーク|フォーク|N5||fork
+585|吹く|ふく|N5|v1|to blow (wind, etc.)
+586|服|ふく|N5||clothes
+587|二つ|ふたつ|N5||two things
+588|豚肉|ぶたにく|N5||pork
+589|二人|ふたり|N5||two people
+590|二日|ふつか|N5||two days; second day of the month
+591|太い|ふとい|N5||fat, thick
+592|冬|ふゆ|N5||winter
+593|降る|ふる|N5|v1|to precipitate, to fall (e.g., rain, snow, etc.)
+594|古い|ふるい|N5||old (in reference to objects, not people), aged, ancient
+595|文章|ぶんしょう|N5||sentence, text
+596|ページ|ページ|N5||a page
+597|下手|へた|N5||unskillful, poor
+598|ベッド|ベッド|N5||bed
+599|ペット|ペット|N5||pet
+600|部屋|へや|N5||a room
+601|辺|へん|N5||area, vicinity
+602|ペン|ペン|N5||pen
+603|勉強|べんきょう (する)|N5||study
+604|便利|べんり|N5||convenient, handy
+605|帽子|ぼうし|N5||hat; cap
+606|ボールペン|ボールペン|N5||ball-point pen
+607|外|ほか|N5||other, the rest
+608|ポケット|ポケット|N5||pocket
+609|欲しい|ほしい|N5|v?|to want, in need of
+610|ポスト|ポスト|N5||mailbox; post, position
+611|細い|ほそい|N5||thin, slender, fine
+612|ボタン|ボタン|N5||button
+613|ホテル|ホテル|N5||hotel
+614|本|ほん|N5||book
+615|本棚|ほんだな|N5||bookshelf
+616|本当|ほんとう|N5||real, true
+617|毎朝|まいあさ|N5||every morning
+618|毎月|まいげつ; まいつき|N5||every month, monthly
+619|毎週|まいしゅう|N5||every week
+620|毎日|まいにち|N5||every day
+621|毎年|まいねん; まいとし|N5||every year, yearly, annually
+622|毎晩|まいばん|N5||every night
+623|前|まえ|N5||before, in front
+624|曲る|まがる|N5|v1|to turn, to bend
+625|まずい|まずい|N5||terrible (in reference to food), unappetizing, unpleasant (taste)
+626|また|また|N5||and; furthermore
+627|まだ|まだ|N5||yet, still, besides
+628|町|まち|N5||town; city
+629|待つ|まつ|N5|v1|to wait
+630|まっすぐ|まっすぐ|N5||straight (ahead), direct
+631|マッチ|マッチ|N5||match
+632|窓|まど|N5||window
+633|丸い; 円い|まるい|N5||round, circular
+634|万|まん|N5||ten thousand
+635|万年筆|まんねんひつ|N5||fountain pen
+636|磨く|みがく|N5|v1|to brush (teeth); to polish
+637|右|みぎ|N5||right hand side
+638|短い|みじかい|N5||short (length)
+639|水|みず|N5||water
+640|店|みせ|N5||store, shop
+641|見せる|みせる|N5|v2|to show, to display
+642|道|みち|N5||road, street; way, directions
+643|三日|みっか|N5||three days, third day of the month
+644|三つ|みっつ|N5||three things
+645|緑|みどり|N5||green
+646|皆さん|みなさん|N5||all of you, everyone
+647|南|みなみ|N5||South
+648|耳|みみ|N5||ear
+649|見る|みる|N5|v2|to see, to look
+650|みんな|みんな|N5||all, everyone, everybody
+651|六日|むいか|N5||six days; sixth day of month
+652|向こう|むこう|N5||beyond, over there
+653|難しい|むずかしい|N5||difficult
+654|六つ|むっつ|N5||six things
+655|村|むら|N5||village
+656|目|め|N5||eye(s)
+657|メートル|メートル|N5||meter
+658|眼鏡|めがね|N5||eye glasses
+659|もう|もう|N5||already; again; more
+660|木曜日|もくようび|N5||Thursday
+661|もしもし|もしもし|N5||Hello? (used on the phone)
+662|持つ|もつ|N5|v1|to hold, to carry; to possess
+663|もっと|もっと|N5||more
+664|物|もの|N5||thing (concrete object)
+665|門|もん|N5||gate
+666|問題|もんだい|N5||a problem
+667|八百屋|やおや|N5||greengrocer
+668|野菜|やさい|N5||vegetable
+669|易しい|やさしい|N5||easy, plain, simple
+670|安い|やすい|N5||inexpensive; cheap (things)
+671|休み|やすみ|N5||holiday; day off; absence
+672|休む|やすむ|N5|v1|to rest, to have a break, to get time off
+673|八つ|やっつ|N5||eight things
+674|山|やま|N5||mountain
+675|やる|やる|N5|v1|to do; to give (to pets, parents, siblings, etc.)
+676|夕方|ゆうがた|N5||late afternoon (typically just before dinner time), evening
+677|夕飯|ゆうはん|N5||dinner, supper, evening meal
+678|郵便局|ゆうびんきょく|N5||post office
+679|昨夜|ゆうべ|N5||last night
+680|有名|ゆうめい|N5||famous
+681|雪|ゆき|N5||snow
+682|ゆっくりと|ゆっくりと|N5||slowly, at ease
+683|八日|ようか|N5||eight days; eighth day of the month
+684|洋服|ようふく|N5||Western-style clothes
+685|よく|よく|N5||frequently, often (much); well, skillfully
+686|横|よこ|N5||beside; side; width
+687|四日|よっか|N5||four days; fourth day of the month
+688|四つ|よっつ|N5||four things
+689|呼ぶ|よぶ|N5|v1|to call (one's name); to invite
+690|読む|よむ|N5|v1|to read
+691|夜|よる|N5||evening, night
+692|弱い|よわい|N5||weak
+693|来月|らいげつ|N5||next month
+694|来週|らいしゅう|N5||next week
+695|来年|らいねん|N5||next year
+696|ラジオ|ラジオ|N5||radio
+697|ラジオカセ|ラジオカセ|N5||radio cassette player
+698|りっぱ|りっぱ|N5||splendid, fine
+699|留学生|りゅうがくせい|N5||international student
+700|両親|りょうしん|N5||parents (lit., both parents)
+701|料理|りょうり|N5||cooking; cuisine
+702|旅行|りょこう|N5||travel, trip
+703|零|れい|N5||zero, nought
+704|冷蔵庫|れいぞうこ|N5||refrigerator
+705|レコード|レコード|N5||record
+706|レストラン|レストラン|N5||restaurant
+707|練習|れんしゅう (する)|N5||(to) practice
+708|廊下|ろうか|N5||corridor
+709|六|ろく|N5||six
+710|ワイシャツ|ワイシャツ|N5||shirt (lit: white shirt), business shirt
+711|若い|わかい|N5||young
+712|分かる|わかる|N5|v1|to understand
+713|忘れる|わすれる|N5|v2|to forget
+714|私|わたくし|N5||I (formal), myself, private affairs
+715|私|わたし|N5||I, myself
+716|渡す|わたす|N5|v1|to hand (something) over (v.t.); to get across
+717|渡る|わたる|N5|v1|to cross over, to go across
+718|悪い|わるい|N5||bad, sinful; inferior
+719|ごらんになる||N4||-- honorific expression for みる --
+720|かまう||N4|v1|to mind, to care about, to be concerned about
+721|～(て) しまう|～(て) しまう|N4|v1|to end up ~
+722|～(に) ついて|～(に) ついて|N4||about, concerning
+723|～(に) よると|～(に) よると|N4||according to ~
+724|～員|～いん|N4||member of ~
+725|～おき|～おき|N4||after every ~
+726|～おわる|～おわる|N4|v1|to finish doing ~
+727|～家|～か|N4||person who is specialized in ~
+728|～会|～かい|N4||~ meeting
+729|～学部|～がくぶ|N4||department of a university
+730|～区|～く|N4||~ district, ~ ward, ~ borough
+731|～君|～くん|N4||Mr. (junior) ~, master ~
+732|～軒|～けん|N4||counter for houses
+733|～ございます|～ございます|N4|v?|to be (polite), to exist
+734|～様|～さま|N4||Mr., Mrs., Ms.
+735|～式|～しき|N4||~ ceremony; ~ style
+736|～製|～せい|N4||made in ~
+737|～代|～だい|N4||~ age; period
+738|～だす|～だす|N4|v1|to start doing ~
+739|建て|～だて|N4||~ storied, separate housing
+740|～ちゃん|～ちゃん|N4||suffix for familiar (female) person
+741|～町|～ちょう|N4||the town of ~
+742|～月|～つき|N4||month
+743|～続ける|～つづける|N4|v2|to continue doing ~
+744|～にくい|～にくい|N4||difficult to do ~
+745|～ばかり|～ばかり|N4||just did ~, only
+746|～始める|～はじめる|N4|v2|to start doing ~
+747|～まま|～まま|N4||as it is
+748|～目|～め|N4||number ~ sequence, ~nd; ~th
+749|～やすい|～やすい|N4||easy to do ~
+750|あ|あ|N4||Ah
+751|挨拶|あいさつする|N4||greet(ing)
+752|間|あいだ|N4||space, interval
+753|合う|あう|N4|v1|to fit, to match
+754|赤ちゃん|あかちゃん|N4||baby, infant
+755|上がる|あがる|N4|v1|to rise, to go up
+756|赤ん坊|あかんぼう|N4||baby
+757|空く|あく|N4|v1|to open, to become empty (vacant)
+758|アクセサリー|アクセサリー|N4||accessory
+759|あげる|あげる|N4|v2|to give
+760|浅い|あさい|N4||shallow, superficial
+761|味|あじ|N4||flavor, taste
+762|アジア|アジア|N4||Asia
+763|明日|あす|N4||tomorrow
+764|遊び|あそび|N4||play
+765|集まる|あつまる|N4|v1|to gather (v.i.), to collect
+766|集める|あつめる|N4|v2|to collect, to gather (v.t.), to assemble
+767|アナウンサー|アナウンサー|N4||announcer
+768|アフリカ|アフリカ|N4||Africa
+769|アメリカ|アメリカ|N4||America, U.S.A.
+770|謝る|あやまる|N4|v1|to apologize
+771|アルコール|アルコール|N4||alcohol
+772|アルバイト|アルバイト|N4||part-time job
+773|安心|あんしん|N4||peace of mind, relief
+774|安全|あんぜん|N4||safety, security
+775|あんな|あんな|N4||such, like that
+776|案内|あんないする|N4||information, guidance
+777|以下|いか|N4||less than, below
+778|以外|いがい|N4||other than, with the exception of, excepting
+779|医学|いがく|N4||medical science
+780|生きる|いきる|N4|v2|to live
+781|いくら～ても|いくら～ても|N4||however much one may ~
+782|意見|いけん|N4||opinion, view, idea
+783|石|いし|N4||stone
+784|いじめる|いじめる|N4|v2|to bully, to torment
+785|以上|いじょう|N4||more than; this is all
+786|急ぐ|いそぐ|N4|v1|to hurry, to be in a hurry, to rush
+787|致す|いたす|N4||-- extra-modest expression for する --
+788|一度|いちど|N4||once, one time
+789|一生懸命|いっしょうけんめい|N4||very hard (as in "to work hard"), with utmost effort
+790|一杯|いっぱい|N4|v?|full, to the utmost
+791|糸|いと|N4||thread
+792|以内|いない|N4||within, less (no more) than
+793|田舎|いなか|N4||rural, countryside
+794|祈る|いのる|N4|v1|to pray; to wish
+795|いらっしゃる|いらっしゃる|N4||-- honorific expression for いく, くる, and いる --
+796|植える|うえる|N4|v2|to plant
+797|うかがう|うかがう|N4|v1|to ask
+798|伺う|うかがう|N4||humble form of 行く (いく), 聞く (きく) and 来る (くる)
+799|受付|うけつけ|N4||reception(ist) desk
+800|受ける|うける|N4|v2|to take (an examination, interview, etc.); to receive
+801|動く|うごく|N4|v1|to move
+802|嘘|うそ|N4||lie
+803|内|うち|N4||within, inside
+804|打つ|うつ|N4|v1|to hit, to strike
+805|美しい|うつくしい|N4||beautiful, lovely
+806|写す|うつす|N4|v1|to copy (v.t.); to photograph
+807|移る|うつる|N4|v1|to move (from a house); to transfer (from a department); to shift
+808|腕|うで|N4||arm (in reference to body)
+809|うまい|うまい|N4||delicious; skillful; fortunate
+810|裏|うら|N4||reverse side, back
+811|売り場|うりば|N4||place where things are sold
+812|嬉しい|うれしい|N4|v?|to be happy; to be glad
+813|うん|うん|N4||yes (informal), all right (ok)
+814|運転手|うんてんしゅ|N4||driver (by occupation)
+815|運転|うんてんする|N4||driving
+816|運動|うんどうする|N4||exercise
+817|エスカレーター|エスカレーター|N4||escalator
+818|枝|えだ|N4||branch, twig
+819|選ぶ|えらぶ|N4|v1|to choose; to select
+820|遠慮|えんりょする|N4||restraint, reserve, hesitate
+821|おいでになる|おいでになる|N4||(hon.) to be
+822|お祝い|おいわい|N4||congratulation, celebration
+823|オートバイ|オートバイ|N4||motorcycle (lit: auto-bi(ke))
+824|オーバー|オーバー|N4||overcoat; over, exceeding, exaggeration
+825|お陰|おかげ|N4||thanks or owing to
+826|おかしい|おかしい|N4||strange; odd; funny
+827|億|おく|N4||hundred million
+828|屋上|おくじょう|N4||rooftop
+829|贈り物|おくりもの|N4||a gift; a present
+830|送る|おくる|N4|v1|to send, to dispatch
+831|遅れる|おくれる|N4|v2|to (be) become late
+832|お子さん|おこさん|N4||(someone else's) child (polite)
+833|起こす|おこす|N4|v1|to wake (someone) up
+834|行う|おこなう|N4|v1|to carry out; to conduct (typically used in written language)
+835|怒る|おこる|N4|v1|to get angry; to scold angrily
+836|押し入れ|おしいれ|N4||closet
+837|お嬢さん|おじょうさん|N4||(someone's) daughter (polite)
+838|お宅|おたく|N4||(someone else's) house; home -- polite word for 家 (いえ) --
+839|落る|おちる|N4|v?|to fall, to drop
+840|おっしゃる|おっしゃる|N4||-- honorific expression for いう --
+841|夫|おっと|N4||husband
+842|おつり|おつり|N4||change; balance of money returned to the purchaser
+843|音|おと|N4||sound, note
+844|落す|おとす|N4|v1|to drop, to lose
+845|踊り|おどり|N4||dance
+846|踊る|おどる|N4|v1|to dance
+847|驚く|おどろく|N4|v1|to be surprised, to be astonished
+848|お祭り|おまつり|N4||festival
+849|お見舞い|おみまい|N4||calling on someone who is ill, visit
+850|お土産|おみやげ|N4||souvenir
+851|思い出す|おもいだす|N4|v1|to recall, to remember
+852|思う|おもう|N4|v1|to think, to feel
+853|おもちゃ|おもちゃ|N4||a toy
+854|表|おもて|N4||surface; front; outside
+855|親|おや|N4||a parent
+856|下りる|おりる|N4|v2|to get down, to go; come down
+857|折る|おる|N4|v1|to snap, to break; to bend
+858|おる|おる|N4||-- extra-modest expression for いる --
+859|お礼|おれい|N4||expression of gratitude; thanking; gift of appreciation; bow
+860|折れる|おれる|N4|v2|to break, to be folded, to give in; to turn (a corner)
+861|終わり|おわり|N4||end
+862|カーテン|カーテン|N4||curtain
+863|海岸|かいがん|N4||coast, seashore
+864|会議|かいぎ|N4||business meeting; conference
+865|会議室|かいぎしつ|N4||conference room
+866|会場|かいじょう|N4||venue, meeting place
+867|会話|かいわ|N4||conversation
+868|帰り|かえり|N4||return, coming back
+869|変える|かえる|N4|v2|to change, to alter, to vary
+870|科学|かがく|N4||science
+871|鏡|かがみ|N4||mirror
+872|飾る|かざる|N4|v1|to decorate, to adorn
+873|火事|かじ|N4||fire
+874|ガス|ガス|N4||gas
+875|ガソリン|ガソリン|N4||gasoline, petrol
+876|ガソリンスタンド|ガソリンスタンド|N4||gas station, service station
+877|堅; 硬; 固い|かたい|N4||solid, hard, firm
+878|形|かたち|N4||shape
+879|片付ける|かたづける|N4|v2|to (clean) tidy up (v.t.), to put away
+880|課長|かちょう|N4||section manager
+881|勝つ|かつ|N4|v1|to win
+882|格好|かっこう|N4||appearance, manner, shape, form, posture
+883|家内|かない|N4||(one's own) wife
+884|悲しい|かなしい|N4||sad, sorrowful
+885|必ず|かならず|N4||surely, certainly
+886|お金持ち|かねもち; おかねもち|N4||rich person
+887|彼女|かのじょ|N4||girlfriend; she
+888|壁|かべ|N4||wall
+889|髪|かみ|N4||hair
+890|噛む|かむ|N4|v1|to bite, to chew
+891|通う|かよう|N4|v1|to go back and forth; to commute
+892|ガラス|ガラス|N4||glass, pane
+893|彼|かれ|N4||he, boyfriend
+894|彼ら|かれら|N4||they (usually male)
+895|乾く|かわく|N4|v1|to get dry
+896|代わり|かわり|N4||substitute, replacement
+897|変わる|かわる|N4|v1|to change (v.i.), to be transformed, to vary
+898|考える|かんがえる|N4|v2|to think (about); to consider
+899|関係|かんけい|N4||relation(ship), connection
+900|看護婦|かんごふ|N4||(female) nurse
+901|簡単|かんたん|N4||simple
+902|頑張る|がんばる|N4|v1|to try one's best, to try hard, to persist
+903|気|き|N4||spirit, mood
+904|機会|きかい|N4||chance, opportunity
+905|危険|きけん|N4||danger, risk, hazard
+906|聞こえる|きこえる|N4|v2|to be heard, to be audible
+907|汽車|きしゃ|N4||train (steam)
+908|技術|ぎじゅつ|N4||technique, technology, skill
+909|季節|きせつ|N4||season (in reference to weather)
+910|規則|きそく|N4||rule, regulation
+911|きっと|きっと|N4||surely, definitely, undoubtedly, certainly
+912|絹|きぬ|N4||silk
+913|厳しい|きびしい|N4||hard; rigorous; strict
+914|気分|きぶん|N4||feeling, mood
+915|決まる|きまる|N4|v1|to be set; fixed (v.i.)
+916|君|きみ|N4||you (informal for men)
+917|決める|きめる|N4|v2|to decide (v.t.)
+918|気持ち|きもち|N4||feeling, sensation, mood
+919|着物|きもの|N4||kimono; Japanese traditional dress
+920|客|きゃく|N4||guest, customer
+921|急|きゅう|N4||urgent, sudden; steep
+922|急行|きゅうこう|N4||express train or bus
+923|教育|きょういく|N4||education
+924|教会|きょうかい|N4||church
+925|競争|きょうそう|N4||competition, contest
+926|興味|きょうみ|N4||interest (in something)
+927|近所|きんじょ|N4||neighborhood
+928|具合|ぐあい|N4||condition, state, health
+929|空気|くうき|N4||air, atmosphere
+930|空港|くうこう|N4||airport
+931|草|くさ|N4||grass
+932|くださる|くださる|N4|v1|(hon.) to give, to confer
+933|首|くび|N4||neck
+934|雲|くも|N4||cloud
+935|比べる|くらべる|N4|v2|to compare
+936|くれる|くれる|N4|v2|to give, to do for
+937|暮れる|くれる|N4|v2|to get dark, to come to an end
+938|毛|け|N4||hair, fur
+939|計画|けいかくする|N4||plan, project, schedule
+940|経験|けいけんする|N4||experience
+941|経済|けいざい|N4||economics, finance, economy
+942|警察|けいさつ|N4||police; police station
+943|ケーキ|ケーキ|N4||cake
+944|けがする|けがする|N4||injury (to animate object), hurt
+945|景色|けしき|N4||scenery, landscape
+946|消しゴム|けしゴム|N4||eraser
+947|下宿|げしゅく|N4||lodging, boarding house
+948|決して|けっして|N4||never
+949|けれど; けれども|けれど; けれども|N4||but, although
+950|原因|げんいん|N4||cause, origin, source
+951|けんかする|けんかする|N4||quarrel
+952|研究|けんきゅう|N4||study, research, investigation
+953|研究室|けんきゅうしつ|N4||the professor's office; laboratory
+954|見物|けんぶつ|N4||sightseeing
+955|子|こ|N4||child
+956|御～|ご～|N4||honorable ~
+957|こう|こう|N4||like this, this way
+958|郊外|こうがい|N4||suburb, outskirts
+959|講義|こうぎ|N4||a lecture
+960|工業|こうぎょう|N4||(manufacturing) industry
+961|高校; 高等学校|こうこう; こうとうがっこう|N4||high school; senior high school
+962|高校生|こうこうせい|N4||high school student
+963|工場|こうじょう|N4||factory
+964|校長|こうちょう|N4||principal, headmaster
+965|交通|こうつう|N4||traffic, transportation
+966|講堂|こうどう|N4||auditorium
+967|公務員|こうむいん|N4||government worker, public servant
+968|国際|こくさい|N4||international
+969|心|こころ|N4||heart, mind
+970|ご主人|ごしゅじん|N4||(your, her) husband
+971|故障|こしょうする|N4||breakdown
+972|ご存じ|ごぞんじ|N4||knowing, acquaintance
+973|答|こたえ|N4||answer, response
+974|ごちそう|ごちそう|N4||feast, treating (someone)
+975|事|こと|N4||thing(s), matter(s), fact
+976|小鳥|ことり|N4||small bird
+977|この間|このあいだ|N4||the other day, recently
+978|この頃|このごろ|N4||these days, nowadays
+979|細かい|こまかい|N4||small; fine, minute
+980|ごみ|ごみ|N4||trash, garbage
+981|込む|こむ|N4|v1|to be crowded
+982|米|こめ|N4||uncooked rice
+983|これから|これから|N4||from now on, after this
+984|怖い|こわい|N4||scary, frightening
+985|壊す|こわす|N4|v1|to break, to break down
+986|壊れる|こわれる|N4|v2|to be broken, to break
+987|コンサート|コンサート|N4||concert
+988|今度|こんど|N4||now, this time, near future, one of these days, next time
+989|コンピュータ; コンピューター|コンピュータ; コンピューター|N4||computer
+990|今夜|こんや|N4||this evening, tonight
+991|最近|さいきん|N4||recently, nowadays, in recent years, most recent, latest
+992|最後|さいご|N4||last, end
+993|最初|さいしょ|N4||beginning, first
+994|坂|さか|N4||slope, hill
+995|探す|さがす|N4|v1|to search, to seek, to look for
+996|下る|さがる|N4|v1|to descend, to drop, to fall
+997|盛ん|さかん|N4||prosperous, active, thriving
+998|下げる|さげる|N4|v2|to lower (v.t.); to hang
+999|差し上げる|さしあげる|N4||-- humble expression for あげる --
+1000|さっき|さっき|N4||a little while ago
+1001|寂しい|さびしい|N4||lonely, lonesome
+1002|再来月|さらいげつ|N4||the month after next
+1003|再来週|さらいしゅう|N4||the week after next
+1004|サラダ|サラダ|N4||salad
+1005|騒ぐ|さわぐ|N4|v1|to make noise, to clamor
+1006|触る|さわる|N4|v1|to touch, to feel
+1007|産業|さんぎょう|N4||industry
+1008|サンダル|サンダル|N4||sandal
+1009|サンドイッチ|サンドイッチ|N4||sandwich
+1010|残念|ざんねん|N4||regret; regrettable
+1011|市|し|N4||city
+1012|字|じ|N4||letter; character
+1013|試合|しあい|N4||match, game, competition
+1014|仕方|しかた|N4||way (of doing something)
+1015|叱る|しかる|N4|v1|to scold
+1016|試験|しけん|N4||an exam
+1017|事故|じこ|N4||accident
+1018|地震|じしん|N4||earthquake
+1019|時代|じだい|N4||age, period, epoch, era
+1020|下着|したぎ|N4||underwear
+1021|支度|したくする|N4||preparation
+1022|しっかり|しっかり|N4||firmly, steady
+1023|失敗|しっぱい|N4||failure, mistake
+1024|失礼|しつれい|N4||discourtesy, impoliteness; Excuse me
+1025|辞典|じてん|N4||encyclopedia, reference book
+1026|品物|しなもの|N4||goods
+1027|しばらく|しばらく|N4||little while
+1028|島|しま|N4||island
+1029|市民|しみん|N4||citizen
+1030|事務所|じむしょ|N4||office
+1031|社会|しゃかい|N4||society
+1032|社長|しゃちょう|N4||president of a company
+1033|邪魔|じゃま|N4||hindrance, intrusion
+1034|ジャム|ジャム|N4||jam
+1035|自由|じゆう|N4||freedom
+1036|習慣|しゅうかん|N4||custom (in reference to culture)
+1037|住所|じゅうしょ|N4||address; place of residence
+1038|柔道|じゅうどう|N4||judo
+1039|十分|じゅうぶん|N4||enough
+1040|出席|しゅっせきする|N4||attendance
+1041|出発|しゅっぱつする|N4||departure
+1042|趣味|しゅみ|N4||hobby; pastime
+1043|準備|じゅんびする|N4||prepare
+1044|紹介|しょうかい|N4||an introduction
+1045|正月|しょうがつ|N4||New Year, New Year's Day
+1046|小学校|しょうがっこう|N4||elementary school
+1047|小説|しょうせつ|N4||novel
+1048|招待|しょうたいする|N4||invitation
+1049|承知|しょうちする|N4||consent, acceptance
+1050|将来|しょうらい|N4||(in the) future; prospects
+1051|食事|しょくじする|N4||meal
+1052|食料品|しょくりょうひん|N4||foodstuff, groceries
+1053|女性|じょせい|N4||woman
+1054|知らせる|しらせる|N4|v2|to notify
+1055|調べる|しらべる|N4|v2|to check; to look up; to inquire; to search
+1056|人口|じんこう|N4||population
+1057|神社|じんじゃ|N4||Shinto shrine
+1058|親切|しんせつ|N4||kindness
+1059|心配|しんぱいする|N4||worry, concern
+1060|新聞社|しんぶんしゃ|N4||newspaper company
+1061|水泳|すいえい|N4||swimming
+1062|水道|すいどう|N4||water service, water line
+1063|随分|ずいぶん|N4||extremely
+1064|数学|すうがく|N4||mathematics
+1065|スーツ|スーツ|N4||suit
+1066|スーツケース|スーツケース|N4||suitcase
+1067|スーパー (マーケット)|スーパー (マーケット)|N4||supermarket
+1068|過ぎる|すぎる|N4|v1|to exceed, to go beyond
+1069|空く|すく|N4|v1|to be empty (in reference to people), to be less crowded
+1070|スクリーン|スクリーン|N4||screen
+1071|凄い|すごい|N4||terrific, great
+1072|進む|すすむ|N4|v1|to advance, to proceed
+1073|すっかり|すっかり|N4||all, completely
+1074|すっと|すっと|N4||straight, quickly
+1075|ステーキ|ステーキ|N4||steak
+1076|捨てる|すてる|N4||throw away (trash), dump, discard
+1077|ステレオ|ステレオ|N4||stereo
+1078|砂|すな|N4||sand
+1079|素晴らしい|すばらしい|N4||wonderful; terrific
+1080|滑る|すべる|N4|v1|to slide, to slip
+1081|隅|すみ|N4||corner
+1082|済む|すむ|N4|v1|to finish, to end
+1083|すり|すり|N4||pickpocket
+1084|すると|すると|N4||and, then
+1085|生活|せいかつする|N4|v?|living, life; to live
+1086|生産|せいさんする|N4|v?|production; to produce
+1087|政治|せいじ|N4||politics
+1088|西洋|せいよう|N4||the West, Western countries
+1089|世界|せかい|N4||world
+1090|席|せき|N4||a seat
+1091|説明|せつめい|N4||explanation
+1092|背中|せなか|N4||back (of body)
+1093|是非|ぜひ|N4||certainly, by all means; without fail
+1094|世話|せわする|N4|v?|looking after; to look after
+1095|線|せん|N4||line, wire
+1096|全然|ぜんぜん|N4||not at all; wholly, entirely
+1097|戦争|せんそう|N4||war
+1098|先輩|せんぱい|N4||senior members of a group
+1099|専門|せんもん|N4||major; speciality
+1100|そう|そう|N4||really, (is that) so; yes, right
+1101|相談|そうだんする|N4||consultation
+1102|育てる|そだてる|N4|v2|to raise (v.t.); to bring up
+1103|卒業|そつぎょう|N4||graduation
+1104|祖父|そふ|N4||grandfather
+1105|ソフト|ソフト|N4||soft; soft hat; software
+1106|祖母|そぼ|N4||grandmother
+1107|それで|それで|N4||and (conj.), thereupon, because of that
+1108|それに|それに|N4||moreover; besides
+1109|それほど|それほど|N4|v?|to that degree; extent
+1110|そろそろ|そろそろ|N4||gradually, soon
+1111|そんな|そんな|N4||such, like that, that sort of
+1112|そんなに|そんなに|N4||so much, like that
+1113|退院|たいいんする|N4||leaving hospital
+1114|大学生|だいがくせい|N4||college student, university student
+1115|大事|だいじ|N4||important, valuable, serious matter
+1116|大体|だいたい|N4|v?|approximately; in most cases; in general; to begin with (same as もともと)
+1117|大抵|たいてい|N4||generally, usually
+1118|タイプ|タイプ|N4||type, style
+1119|大分|だいぶ|N4|v?|fairly well, to a large extent, considerably, pretty much
+1120|台風|たいふう|N4||typhoon
+1121|倒れる|たおれる|N4|v2|to collapse, to break down
+1122|だから|だから|N4||so; therefore
+1123|確か|たしか|N4||if I remember correctly; certain, definite
+1124|足す|たす|N4|v1|to add (numbers)
+1125|尋ねる|たずねる|N4|v2|to inquire (same as 質問する)
+1126|訪ねる|たずねる|N4|v2|to visit
+1127|正しい|ただしい|N4||correct
+1128|畳|たたみ|N4||tatami mat (Japanese straw mat)
+1129|建てる|たてる|N4|v2|to build
+1130|立てる|たてる|N4|v2|to stand (something) up, to erect (something)
+1131|例えば|たとえば|N4||for example, e.g.
+1132|棚|たな|N4||shelves, rack
+1133|楽しみ|たのしみ|N4||pleasure, joy
+1134|楽む|たのしむ|N4|v?|to enjoy
+1135|たまに|たまに|N4||occasionally
+1136|為|ため|N4||good, advantage, in order to
+1137|だめ|だめ|N4||useless, no good, hopeless
+1138|足りる|たりる|N4|v2|to be sufficient; to be enough
+1139|男性|だんせい|N4||man; male
+1140|暖房|だんぼう|N4||heating
+1141|血|ち|N4||blood
+1142|チェックする|チェックする|N4||check
+1143|力|ちから|N4||strength, power
+1144|ちっとも|ちっとも|N4||not at all (neg. verb)
+1145|注意|ちゅうい|N4||caution, attention
+1146|中学校|ちゅうがっこう|N4||junior high school pupil
+1147|注射|ちゅうしゃ|N4||injection
+1148|駐車場|ちゅうしゃじょう|N4||parking lot
+1149|地理|ちり|N4||geography
+1150|捕まえる|つかまえる|N4|v2|to catch, to arrest
+1151|月|つき|N4||moon
+1152|点く|つく|N4|v1|to be started, to be switched on
+1153|漬ける|つける|N4|v2|to soak, to moisten, to pickle
+1154|都合|つごう|N4||circumstances, convenience
+1155|伝える|つたえる|N4|v2|to convey (a message); to tell, to report
+1156|続く|つづく|N4|v1|to be continued
+1157|続ける|つづける|N4|v2|to continue, to keep up
+1158|包む|つつむ|N4|v1|to wrap, to cover
+1159|妻|つま|N4||wife (humble)
+1160|つもり|つもり|N4||intention, plan
+1161|釣る|つる|N4|v1|to fish
+1162|連れる|つれる|N4|v2|to lead, to take (a person)
+1163|丁寧|ていねい|N4||polite, courteous, careful
+1164|テキスト|テキスト|N4||text; text book
+1165|適当|てきとう|N4||fitness, suitability
+1166|できるだけ|できるだけ|N4||if at all possible, as much as possible
+1167|手伝う|てつだう|N4|v1|to help
+1168|テニス|テニス|N4||tennis
+1169|手袋|てぶくろ|N4||glove(s)
+1170|寺|てら|N4||Buddhist temple
+1171|点|てん|N4||mark, score, grade; point, dot
+1172|店員|てんいん|N4||clerk; shop-employee
+1173|天気予報|てんきよほう|N4||weather forecast
+1174|電灯|でんとう|N4||electric light
+1175|電報|でんぽう|N4||telegram
+1176|展覧会|てんらんかい|N4||exhibition
+1177|都|と|N4||metropolitan
+1178|道具|どうぐ|N4||tool
+1179|とうとう|とうとう|N4||finally, at last
+1180|動物園|どうぶつえん|N4||zoo
+1181|遠く|とおく|N4||far away, distant
+1182|通り|とおり|N4||~ Street, ~ Avenue
+1183|通る|とおる|N4|v1|to pass (by), to go through
+1184|特に|とくに|N4||particularly
+1185|特別|とくべつ|N4||special
+1186|床屋|とこや|N4||barber's (shop)
+1187|途中|とちゅう|N4||on the way, midway
+1188|特急|とっきゅう|N4||limited express (train faster than an express)
+1189|届ける|とどける|N4|v2|to deliver (v.t.)
+1190|泊まる|とまる|N4|v1|to stay (over night) (v.i.)
+1191|止める|とめる|N4|v2|to stop (something)
+1192|取り替える|とりかえる|N4|v2|to exchange, to replace
+1193|泥棒|どろぼう|N4||thief; burglar
+1194|どんどん|どんどん|N4||quickly and steadily; at a rapid pace
+1195|直す|なおす|N4|v1|to correct (v.t.); to fix
+1196|治る|なおる|N4|v1|to get better; to recover from illness (v.i.)
+1197|直る|なおる|N4|v1|to be fixed
+1198|中々|なかなか|N4||very, considerably, quite
+1199|泣く|なく|N4|v1|to cry
+1200|無くなる|なくなる|N4|v1|to disappear, to get lost
+1201|亡くなる|なくなる|N4|v1|to pass away
+1202|投げる|なげる|N4|v2|to pitch, to cast away
+1203|なさる|なさる|N4||-- honorific expression for する --
+1204|鳴る|なる|N4|v1|to sound, to ring (v.i.)
+1205|なるべく|なるべく|N4||if possible, as much as possible
+1206|なるほど|なるほど|N4||I see; I now understand
+1207|慣れる|なれる|N4|v2|to grow accustomed to
+1208|匂い|におい|N4||odor, smell
+1209|苦い|にがい|N4||bitter
+1210|逃げる|にげる|N4|v2|to escape, to run away
+1211|日記|にっき|N4||diary, journal
+1212|入院|にゅういんする|N4||hospitalization
+1213|入学|にゅうがくする|N4||entry to school or university
+1214|似る|にる|N4|v2|to resemble, to be similar
+1215|人形|にんぎょう|N4||doll, figure
+1216|盗む|ぬすむ|N4|v1|to steal; to rob
+1217|塗る|ぬる|N4|v1|to paint, to plaster
+1218|濡れる|ぬれる|N4|v2|to get wet
+1219|値段|ねだん|N4||price
+1220|熱|ねつ|N4||fever, temperature
+1221|熱心|ねっしん|N4||enthusiasm
+1222|寝坊|ねぼう|N4||sleeping in late
+1223|眠い|ねむい|N4||sleepy, drowsy
+1224|眠る|ねむる|N4|v1|to sleep
+1225|残る|のこる|N4|v1|to remain (v.i.), to be left
+1226|喉|のど|N4||throat
+1227|乗り換える|のりかえる|N4|v2|to transfer (trains), to change (bus, train, etc.)
+1228|乗り物|のりもの|N4||vehicle
+1229|葉|は|N4||leaf
+1230|場合|ばあい|N4||case, situation
+1231|パート (タイム)|パート (タイム)|N4||part time (esp. female part time employees)
+1232|倍|ばい|N4||double
+1233|拝見|はいけんする|N4||(humble) (polite) seeing, look at
+1234|歯医者|はいしゃ|N4||dentist
+1235|運ぶ|はこぶ|N4|v1|to transport, to carry
+1236|始める|はじめる|N4|v2|to start, to begin
+1237|場所|ばしょ|N4||place, location
+1238|はず|はず|N4||it should be so
+1239|恥ずかしい|はずかしい|N4||ashamed, embarrassed
+1240|パソコン|パソコン|N4||(personal) computer
+1241|発音|はつおん|N4||pronunciation
+1242|はっきり|はっきり|N4||clearly, distinctly
+1243|花見|はなみ|N4||cherry-blossom viewing
+1244|パパ|パパ|N4||papa, daddy
+1245|林|はやし|N4||woods, forest
+1246|払う|はらう|N4|v1|to pay
+1247|番組|ばんぐみ|N4||broadcast program
+1248|反対|はんたい|N4||oppose, opposition, resistance
+1249|ハンバーグ|ハンバーグ|N4||hamburger steak
+1250|日|ひ|N4||sun, sunshine, day
+1251|火|ひ|N4||fire
+1252|ピアノ|ピアノ|N4||piano
+1253|冷える|ひえる|N4|v2|to grow cold, to cool down
+1254|光|ひかり|N4||light
+1255|光る|ひかる|N4|v1|to shine, to glitter
+1256|引き出し|ひきだし|N4||drawer
+1257|ひげ|ひげ|N4||beard
+1258|飛行場|ひこうじょう|N4||airport
+1259|久しぶり|ひさしぶり|N4||it has been a long time; for the first time in a long time
+1260|美術館|びじゅつかん|N4||art gallery, art museum
+1261|非常に|ひじょうに|N4||extremely; very
+1262|びっくりする|びっくりする|N4|v3|to be surprised
+1263|引っ越す|ひっこす|N4|v1|to move to a new place of residence
+1264|必要|ひつよう|N4||necessary
+1265|ひどい|ひどい|N4||terrible, awful, unfair, cruel
+1266|開く|ひらく|N4|v1|to open; to hold (an event)
+1267|ビル|ビル|N4||(abbr.) building
+1268|昼間|ひるま|N4||daytime, during the day
+1269|昼休み|ひるやすみ|N4||lunch break, noon recess
+1270|拾う|ひろう|N4|v1|to pick up (something), to find
+1271|ファックス|ファックス|N4||fax
+1272|増える|ふえる|N4|v2|to increase, to multiply
+1273|深い|ふかい|N4||deep, profound
+1274|複雑|ふくざつ|N4||complexity, complication
+1275|復習|ふくしゅう|N4||review (of lessons), revision
+1276|部長|ぶちょう|N4||department (division) manager
+1277|普通|ふつう|N4||common; usual
+1278|ぶどう|ぶどう|N4||grapes
+1279|太る|ふとる|N4|v1|to gain weight
+1280|布団|ふとん|N4||futon
+1281|舟|ふね|N4||ship, boat
+1282|不便|ふべん|N4||inconvenience
+1283|踏む|ふむ|N4|v1|to step on, to tread on
+1284|プレゼント|プレゼント|N4||present, gift
+1285|文化|ぶんか|N4||culture
+1286|文学|ぶんがく|N4||literature
+1287|文法|ぶんぽう|N4||grammar
+1288|別|べつ|N4||distinction, different
+1289|ベル|ベル|N4||bell
+1290|変|へん|N4||strange, odd
+1291|返事|へんじ|N4||reply, answer
+1292|貿易|ぼうえき|N4||trade
+1293|放送|ほうそうする|N4||broadcasting
+1294|法律|ほうりつ|N4||law
+1295|僕|ぼく|N4||I (used by men towards those of equal or lower status)
+1296|星|ほし|N4||star
+1297|程|ほど|N4||degree, extent
+1298|ほとんど|ほとんど|N4||mostly, almost
+1299|褒める|ほめる|N4|v2|to praise; to say nice things
+1300|翻訳|ほんやく|N4||translation
+1301|参る|まいる|N4||humble expression for 行く and 来る
+1302|負ける|まける|N4|v2|to lose (a game) (v.i.), to be defeated
+1303|真面目|まじめ|N4||diligent, serious
+1304|まず|まず|N4|v?|first (of all), to start with
+1305|または|または|N4||or, otherwise
+1306|間違える|まちがえる|N4|v2|to make a mistake
+1307|間に合う|まにあう|N4|v1|to be in time for
+1308|周り|まわり|N4||surroundings
+1309|回る、回す|まわる、まわす|N4|v1|to go around, to revolve
+1310|漫画|まんが|N4||comic (book), cartoon
+1311|真中|まんなか|N4||middle, center
+1312|見える|みえる|N4|v2|to be visible; -- polite verb meaning 来る (くる) --
+1313|湖|みずうみ|N4||lake
+1314|味噌|みそ|N4||miso, bean paste
+1315|見つかる|みつかる|N4|v1|to be found (v.i.), to be discovered
+1316|見つける|みつける|N4|v2|to discover, to find (v.t.)
+1317|皆|みな|N4||everyone
+1318|港|みなと|N4||harbor, port
+1319|向かう|むかう|N4|v1|to face, to go towards
+1320|迎える|むかえる|N4|v2|to welcome; to meet; to greet
+1321|昔|むかし|N4||old days; past
+1322|虫|むし|N4||insect
+1323|息子|むすこ|N4||(humble) son
+1324|娘|むすめ|N4||daughter (humble)
+1325|無理|むり|N4||unreasonable, impossible
+1326|召し上がる|めしあがる|N4||-- honorific form of 食べる (たべる) and 飲む (のむ) --
+1327|珍しい|めずらしい|N4||unusual, rare
+1328|申し上げる|もうしあげる|N4|v2|(humble)to say, to tell
+1329|申す|もうす|N4||-- extra-modest (humble) expression for 言う (いう) --
+1330|もうすぐ|もうすぐ|N4||very soon; in a few moments; days
+1331|もし|もし|N4||if
+1332|もちろん|もちろん|N4||certainly, of course
+1333|最も|もっとも|N4||most
+1334|戻る|もどる|N4|v1|to return (v.i.); to come back
+1335|木綿|もめん|N4||cotton
+1336|もらう|もらう|N4|v1|to receive
+1337|森|もり|N4||forest
+1338|焼く|やく|N4|v1|to bake, to grill
+1339|約束|やくそく|N4||arrangement, appointment, promise
+1340|役に立つ|やくにたつ|N4|v1|to be helpful, to be useful
+1341|焼ける|やける|N4|v2|to burn, to be roasted
+1342|優しい|やさしい|N4||kind (person), gentle (person), easy (problem)
+1343|痩せる|やせる|N4|v2|to lose weight
+1344|やっと|やっと|N4||at last, finally
+1345|やはり; やっぱり|やはり; やっぱり|N4||as I thought, absolutely
+1346|止む|やむ|N4|v1|to cease, to stop
+1347|止める|やめる|N4|v2|to end, to stop
+1348|柔らかい|やわらかい|N4||soft (in reference to texture), tender
+1349|湯|ゆ|N4||hot water
+1350|輸出|ゆしゅつする|N4||export
+1351|輸入|ゆにゅう|N4||import
+1352|指|ゆび|N4||finger
+1353|指輪|ゆびわ|N4||(finger) ring
+1354|夢|ゆめ|N4||a dream
+1355|揺れる|ゆれる|N4|v2|to shake, to sway
+1356|用|よう|N4||errand, task, business (to take care of)
+1357|様|よう|N4||way, manner, kind
+1358|用意|ようい|N4||preparation
+1359|用事|ようじ|N4||business to take care of; tasks; errands
+1360|汚れる|よごれる|N4|v2|to become dirty
+1361|予習|よしゅう|N4||preparation of lessons (for class)
+1362|予定|よてい|N4||plans, arrangement, schedule
+1363|予約|よやく|N4||reservation
+1364|寄る|よる|N4|v1|to stop by
+1365|喜ぶ|よろこぶ|N4|v1|to rejoice, to be delighted, to be glad
+1366|よろしい|よろしい|N4||(hon.) good, OK, all right
+1367|理由|りゆう|N4||reason
+1368|利用|りよう|N4||use, utilization
+1369|両方|りょうほう|N4||both sides, both parties
+1370|旅館|りょかん|N4||a Japanese inn
+1371|留守|るす|N4||absence; not at home
+1372|冷房|れいぼう|N4||cooling, air conditioning
+1373|歴史|れきし|N4||history
+1374|レジ|レジ|N4||register
+1375|レポート; リポート|レポート; リポート|N4||report
+1376|連絡|れんらく|N4||communication, contact, connection
+1377|ワープロ|ワープロ|N4||word processor
+1378|沸かす|わかす|N4|v1|to boil
+1379|別れる|わかれる|N4|v2|to part from, to separate
+1380|沸く|わく|N4|v1|to boil, to grow hot
+1381|訳|わけ|N4||reason; explanation
+1382|忘れ物|わすれもの|N4||lost article, something forgotten
+1383|笑う|わらう|N4|v1|to laugh, to smile
+1384|割合|わりあい|N4||rate, ratio, percentage
+1385|割れる|われる|N4|v2|to break
+1386|いただく|頂く|N4||-- extra-modest expression for たべる and のむ; humble expression for もらう --

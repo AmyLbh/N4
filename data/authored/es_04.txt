@@ -1,0 +1,336 @@
+1051|comida (acto de comer)|n|c|家族と食事をしました。|Comí con mi familia.|r=しょくじ
+1052|alimentos, comestibles|n|c|スーパーで食料品を買います。|Compro alimentos en el supermercado.
+1053|mujer (formal)|n|p|あの女性は医者です。|Aquella mujer es médica.
+1054|avisar, notificar|v2|a|結果を知らせてください。|Avísame del resultado.
+1055|investigar, buscar (en el diccionario)|v2|e|辞書で意味を調べます。|Busco el significado en el diccionario.
+1056|población|n|w|東京の人口は多いです。|Tokio tiene mucha población.
+1057|santuario sintoísta|n|l|お正月に神社へ行きます。|En Año Nuevo voy al santuario.
+1058|amable, amabilidad|adj-na|f|田中さんは親切です。|El señor Tanaka es amable.
+1059|preocupación, preocuparse|n|f|心配しないでください。|No te preocupes.|r=しんぱい
+1060|empresa periodística|n|w|姉は新聞社で働いています。|Mi hermana mayor trabaja en un periódico.
+1061|natación|n|o|水泳が得意です。|Se me da bien la natación.
+1062|agua corriente|n|h|水道の水を飲みます。|Bebo agua del grifo.
+1063|bastante, muchísimo|adv|g|ずいぶん寒くなりましたね。|Ha refrescado bastante, ¿verdad?
+1064|matemáticas|n|e|数学が苦手です。|Las matemáticas se me dan mal.
+1065|traje|n|r|スーツを着て面接に行きます。|Voy a la entrevista de traje.
+1066|maleta|n|v|スーツケースが重いです。|La maleta pesa.
+1067|supermercado|n|s|スーパーで野菜を買います。|Compro verduras en el supermercado.
+1068|pasar (tiempo); excederse|v2|t|約束の時間が過ぎました。|Ya pasó la hora acordada.
+1069|vaciarse; tener hambre (お腹が)|v1|b|お腹が空きました。|Tengo hambre.
+1070|pantalla|n|o|大きいスクリーンで映画を見ます。|Veo la película en una pantalla grande.
+1071|increíble, tremendo|adj-i|f|すごいですね!|¡Qué increíble!
+1072|avanzar|v1|v|前に進んでください。|Avance, por favor.
+1073|completamente|adv|g|約束をすっかり忘れていました。|Me olvidé por completo de la cita.
+1074|de golpe, con suavidad|adv|g|薬を飲んだら、すっと痛みが消えました。|Al tomar la medicina, el dolor se fue de golpe.
+1075|filete, bistec|n|c|ステーキを食べました。|Comí un filete.
+1076|tirar, desechar|v2|h|これ、すててもいいですか。|¿Puedo tirar esto?
+1077|equipo estéreo|n|h|新しいステレオを買いました。|Compré un equipo de música nuevo.
+1078|arena|n|z|子どもが砂で遊んでいます。|Los niños juegan con la arena.
+1079|maravilloso|adj-i|f|素晴らしい景色です。|Es un paisaje maravilloso.
+1080|resbalar|v1|o|雪の道で滑りました。|Resbalé en la calle nevada.
+1081|rincón|n|h|部屋の隅に机があります。|Hay un escritorio en el rincón.
+1082|terminar, resolverse|v1|a|仕事が済みました。|Terminé el trabajo.
+1083|carterista|n|w|電車ですりにあいました。|Me robó un carterista en el tren.
+1084|entonces, acto seguido|conj|g|ボタンを押した。すると、ドアが開いた。|Pulsé el botón. Entonces se abrió la puerta.
+1085|vida (cotidiana), vivir|n|p|日本での生活はどうですか。|¿Qué tal la vida en Japón?|r=せいかつ
+1086|producción, producir|n|w|この工場で車を生産しています。|En esta fábrica producen coches.|r=せいさん
+1087|política|n|w|政治に興味があります。|Me interesa la política.
+1088|Occidente|n|w|西洋の音楽が好きです。|Me gusta la música occidental.
+1089|mundo|n|w|世界を旅行したいです。|Quiero viajar por el mundo.
+1090|asiento|n|v|この席は空いていますか。|¿Está libre este asiento?
+1091|explicación|n|e|先生の説明は分かりやすいです。|La explicación del profesor es fácil de entender.
+1092|espalda|n|b|背中が痛いです。|Me duele la espalda.
+1093|sin falta, a toda costa|adv|g|ぜひ遊びに来てください。|Ven a visitarme sin falta.
+1094|cuidado, cuidar|n|p|犬の世話をします。|Cuido del perro.|r=せわ
+1095|línea|n|e|線の上に名前を書いてください。|Escribe tu nombre sobre la línea.
+1096|en absoluto (+ negativo)|adv|g|テスト、全然できませんでした。|El examen no me salió en absoluto.
+1097|guerra|n|w|戦争はいけません。|La guerra está mal.
+1098|compañero mayor (senpai)|n|p|先輩に仕事を教えてもらいました。|Mi senpai me enseñó el trabajo.
+1099|especialidad|n|e|専門は何ですか。|¿Cuál es tu especialidad?
+1100|así; ¿de verdad?|adv|g|そうですか。|¿Ah, sí?
+1101|consulta, consultar|n|w|先生に相談しました。|Lo consulté con el profesor.|r=そうだん
+1102|criar, educar|v2|p|祖母が私を育ててくれました。|Mi abuela me crió.
+1103|graduación|n|e|来年、大学を卒業します。|El año que viene me gradúo de la universidad.
+1104|mi abuelo|n|p|祖父は八十歳です。|Mi abuelo tiene ochenta años.
+1105|suave; software|n|w|新しいソフトを使っています。|Uso un programa nuevo.
+1106|mi abuela|n|p|祖母に手紙を書きました。|Le escribí una carta a mi abuela.
+1107|y por eso, así que|conj|g|雨が降った。それで、行かなかった。|Llovió. Por eso no fui.
+1108|además|conj|g|この部屋は広い。それに、安い。|Esta habitación es amplia. Además, es barata.
+1109|no tanto (+ negativo)|adv|g|今日はそれほど寒くないです。|Hoy no hace tanto frío.
+1110|ya va siendo hora|adv|t|そろそろ帰りましょう。|Ya va siendo hora de volver.
+1111|así, de ese tipo|adj-na|g|そんなこと、できないよ。|Eso no lo puedo hacer.
+1112|tanto, tan|adv|g|そんなにむずかしかったんですか。|¿Tan difícil fue?
+1113|alta hospitalaria, salir del hospital|n|b|父は来週退院します。|Mi padre sale del hospital la semana que viene.|r=たいいん
+1114|estudiante universitario|n|e|兄は大学生です。|Mi hermano mayor es universitario.
+1115|importante|adj-na|d|大事な話があります。|Tengo algo importante que contarte.
+1116|más o menos; en general|adv|g|宿題は大体終わりました。|Casi terminé la tarea.
+1117|normalmente|adv|t|大抵七時に起きます。|Normalmente me levanto a las siete.
+1118|tipo|n|p|彼は私のタイプです。|Él es mi tipo.
+1119|bastante, considerablemente|adv|g|大分暖かくなりました。|Ha empezado a hacer bastante calor.
+1120|tifón|n|z|台風のため、飛行機がおくれました。|El avión se retrasó por el tifón.
+1121|caerse, desplomarse|v2|a|木が倒れました。|Se cayó un árbol.
+1122|por eso|conj|g|雨だ。だから、行かない。|Llueve. Por eso no voy.
+1123|seguro; si no me equivoco|adj-na|g|確か、明日は休みです。|Si no me equivoco, mañana es día libre.
+1124|sumar, añadir|v1|n|二に三を足すと五です。|Dos más tres son cinco.
+1125|preguntar|v2|e|道を尋ねました。|Pregunté el camino.
+1126|visitar|v2|p|友だちの家を訪ねました。|Visité la casa de un amigo.
+1127|correcto|adj-i|e|正しい答えを選んでください。|Elige la respuesta correcta.
+1128|tatami|n|h|畳の部屋で寝ます。|Duermo en una habitación de tatami.
+1129|construir|v2|h|新しい家を建てました。|Construyeron una casa nueva.
+1130|levantar, poner de pie; hacer (planes)|v2|a|旅行の計画を立てます。|Hago el plan del viaje.
+1131|por ejemplo|adv|g|例えば、すしが好きです。|Por ejemplo, me gusta el sushi.
+1132|estante|n|h|棚の上に箱があります。|Hay una caja encima del estante.
+1133|ilusión, algo que esperar|n|f|旅行が楽しみです。|Tengo muchas ganas del viaje.
+1134|disfrutar|v1|f|旅行を楽しみました。|Disfruté del viaje.|w=楽しむ
+1135|de vez en cuando|adv|t|たまに映画を見ます。|De vez en cuando veo películas.
+1136|para; por causa de|n|g|家を買うために、貯金をしています。|Ahorro para comprar una casa.
+1137|inútil, no vale, prohibido|adj-na|g|ここでたばこを吸ってはだめです。|Aquí no se puede fumar.
+1138|ser suficiente|v2|n|お金が足りません。|No me alcanza el dinero.
+1139|hombre (formal)|n|p|あの男性は誰ですか。|¿Quién es aquel hombre?
+1140|calefacción|n|h|暖房をつけましょう。|Pongamos la calefacción.
+1141|sangre|n|b|指から血が出ました。|Me salió sangre del dedo.
+1142|comprobar, revisar|v3|e|答えをチェックしてください。|Revisa las respuestas.
+1143|fuerza|n|b|力が強いです。|Tiene mucha fuerza.
+1144|en absoluto (+ negativo)|adv|g|ちっとも分かりません。|No entiendo nada en absoluto.
+1145|atención, cuidado; advertir|n|f|車に注意してください。|Ten cuidado con los coches.
+1146|secundaria (escuela)|n|e|弟は中学校に通っています。|Mi hermano menor va a la secundaria.
+1147|inyección|n|b|病院で注射をしました。|Me pusieron una inyección en el hospital.
+1148|aparcamiento|n|v|駐車場はどこですか。|¿Dónde está el aparcamiento?
+1149|geografía|n|e|地理の授業が好きです。|Me gusta la clase de geografía.
+1150|atrapar, capturar|v2|a|警察が泥棒を捕まえました。|La policía atrapó al ladrón.
+1151|luna|n|z|今夜は月がきれいです。|Esta noche la luna es preciosa.
+1152|encenderse|v1|h|電気が点いています。|La luz está encendida.
+1153|remojar, encurtir|v2|c|野菜を塩水に漬けます。|Remojo las verduras en agua con sal.
+1154|conveniencia, disponibilidad|n|t|明日の都合はどうですか。|¿Qué tal te viene mañana?
+1155|transmitir, comunicar|v2|e|先生によろしく伝えてください。|Dale recuerdos al profesor.
+1156|continuar (algo continúa)|v1|t|雨が三日続いています。|Lleva tres días lloviendo.
+1157|continuar (algo)|v2|a|日本語の勉強を続けます。|Sigo estudiando japonés.
+1158|envolver|v1|s|プレゼントを包んでください。|Envuélvame el regalo, por favor.
+1159|mi esposa|n|p|妻に、家の中ではたばこを吸わないように言われています。|Mi esposa me dice que no fume dentro de casa.
+1160|intención|n|g|来年、日本へ行くつもりです。|Tengo intención de ir a Japón el año que viene.
+1161|pescar|v1|o|川で魚を釣りました。|Pesqué en el río.
+1162|llevar (a alguien)|v2|v|友だちに東京駅まで連れて行ってもらいました。|Un amigo me llevó hasta la estación de Tokio.
+1163|cortés; cuidadoso|adj-na|f|中村先生はていねいにやさしく教えてくださるので、人気があります。|El profesor Nakamura es popular porque enseña con cuidado y amabilidad.
+1164|libro de texto|n|e|テキストの十ページを見てください。|Miren la página diez del libro.
+1165|adecuado; al azar|adj-na|d|適当な答えを選んでください。|Elige la respuesta adecuada.
+1166|en lo posible|adv|g|できるだけ早く来てください。|Ven lo antes posible.
+1167|ayudar|v1|a|手伝ってくれて、ありがとう。|Gracias por ayudarme.
+1168|tenis|n|o|週末にテニスをします。|Juego al tenis el fin de semana.
+1169|guantes|n|r|寒いから手袋をします。|Me pongo guantes porque hace frío.
+1170|templo budista|n|l|京都でお寺を見物しました。|Visité templos en Kioto.
+1171|punto, nota|n|e|テストで百点を取りました。|Saqué cien puntos en el examen.
+1172|dependiente, empleado de tienda|n|s|店員に聞きました。|Le pregunté al dependiente.
+1173|pronóstico del tiempo|n|z|天気予報によると、明日は雨です。|Según el pronóstico, mañana llueve.
+1174|lámpara eléctrica|n|h|電灯をつけてください。|Enciende la lámpara.
+1175|telegrama|n|w|電報を打ちました。|Envié un telegrama.
+1176|exposición|n|o|絵の展覧会に行きました。|Fui a una exposición de pintura.
+1177|capital, metrópoli (Tokio)|n|l|東京都に住んでいます。|Vivo en la metrópoli de Tokio.
+1178|herramienta|n|h|道具を使って直します。|Lo arreglo con herramientas.
+1179|por fin, finalmente|adv|t|とうとう試験の日が来ました。|Por fin llegó el día del examen.
+1180|zoológico|n|l|動物園でパンダを見ました。|Vi pandas en el zoológico.
+1181|lejos, a lo lejos|n|l|遠くに山が見えます。|A lo lejos se ven montañas.
+1182|calle, avenida|n|l|この通りはにぎやかです。|Esta calle es animada.
+1183|pasar (por)|v1|v|この道を通って駅へ行きます。|Paso por esta calle para ir a la estación.
+1184|especialmente|adv|g|特に肉が好きです。|Me gusta especialmente la carne.
+1185|especial|adj-na|d|今日は特別な日です。|Hoy es un día especial.
+1186|barbería|n|l|床屋で髪を切りました。|Me corté el pelo en la barbería.
+1187|a mitad de camino|n|v|学校へ行く途中で、友だちに会いました。|De camino a la escuela me encontré con un amigo.
+1188|tren expreso limitado|n|v|特急で大阪へ行きます。|Voy a Osaka en el expreso limitado.
+1189|entregar, llevar (a domicilio)|v2|a|荷物を届けました。|Entregué el paquete.
+1190|alojarse|v1|v|日本の旅館にとまってみたいです。|Quiero probar a alojarme en un ryokan japonés.
+1191|parar (algo)|v2|v|車を止めてください。|Pare el coche, por favor.
+1192|cambiar, reemplazar|v2|s|このシャツを取り替えてください。|Cámbieme esta camisa, por favor.
+1193|ladrón|n|w|泥棒が入りました。|Entró un ladrón.
+1194|rápidamente, cada vez más|adv|g|どんどん食べてください。|Coman sin parar, por favor.
+1195|arreglar, corregir|v1|a|自転車を直しました。|Arreglé la bicicleta.
+1196|curarse|v1|b|母の病気が早く治ればいいですが…。|Ojalá la enfermedad de mi madre se cure pronto...
+1197|arreglarse, quedar reparado|v1|a|テレビが直りました。|Se arregló la tele.
+1198|bastante; (no) fácilmente|adv|g|この本はなかなか面白いです。|Este libro es bastante interesante.
+1199|llorar|v1|f|赤ちゃんが泣いています。|El bebé está llorando.
+1200|perderse, acabarse|v1|a|お金がなくなりました。|Se me acabó el dinero.
+1201|fallecer|v1|p|祖父は去年亡くなりました。|Mi abuelo falleció el año pasado.
+1202|lanzar, tirar|v2|o|ボールを投げてください。|Lanza la pelota.
+1203|hacer (honorífico)|v1|g|先生は何をなさいますか。|¿Qué hará usted, profesor?
+1204|sonar|v1|o|電話が鳴っています。|Está sonando el teléfono.
+1205|en lo posible|adv|g|なるべく早く帰ります。|Vuelvo lo antes que pueda.
+1206|ya veo|int|g|なるほど、分かりました。|Ya veo, entendido.
+1207|acostumbrarse|v2|f|日本の生活に慣れました。|Me acostumbré a la vida en Japón.
+1208|olor|n|c|いい匂いがします。|Huele bien.
+1209|amargo|adj-i|c|この薬は苦いです。|Esta medicina es amarga.
+1210|escapar, huir|v2|a|犬が逃げました。|Se escapó el perro.
+1211|diario (cuaderno)|n|e|日記を書くようにしましょう。|Procuremos escribir un diario.
+1212|hospitalización, ingresar|n|b|祖母が入院しました。|Mi abuela fue hospitalizada.|r=にゅういん
+1213|ingreso escolar|n|e|四月に大学に入学します。|En abril entro en la universidad.|r=にゅうがく
+1214|parecerse|v2|p|私は母に似ています。|Me parezco a mi madre.
+1215|muñeca, figura|n|o|日本の人形をもらいました。|Me regalaron una muñeca japonesa.
+1216|robar|v1|w|財布を盗まれました。|Me robaron la cartera.
+1217|pintar, untar|v1|h|壁を白く塗りました。|Pinté la pared de blanco.
+1218|mojarse|v2|z|雨で服が濡れました。|Se me mojó la ropa con la lluvia.
+1219|precio|n|s|この値段は高いです。|Este precio es alto.
+1220|fiebre; calor|n|b|熱があります。|Tengo fiebre.
+1221|entusiasta, aplicado|adj-na|f|妹は熱心に勉強しています。|Mi hermana estudia con entusiasmo.
+1222|dormirse, quedarse dormido|n|t|寝坊して、遅れました。|Me quedé dormida y llegué tarde.
+1223|tener sueño|adj-i|b|眠いです。|Tengo sueño.
+1224|dormir|v1|b|よく眠れましたか。|¿Dormiste bien?
+1225|quedar, sobrar|v1|a|残っていたワインを飲んでしまいました。|Me bebí el vino que quedaba.
+1226|garganta|n|b|喉が痛いです。|Me duele la garganta.
+1227|hacer transbordo|v2|v|次の駅で乗り換えます。|Hago transbordo en la próxima estación.
+1228|vehículo|n|v|好きな乗り物は電車です。|Mi transporte favorito es el tren.
+1229|hoja (de planta)|n|z|木の葉が赤くなりました。|Las hojas del árbol se pusieron rojas.
+1230|caso, situación|n|g|雨の場合は中止です。|En caso de lluvia, se cancela.
+1231|trabajo a tiempo parcial|n|w|母はパートで働いています。|Mi madre trabaja a tiempo parcial.
+1232|doble, ~ veces|n|n|値段が二倍になりました。|El precio se duplicó.
+1233|ver (humilde)|n|g|お手紙を拝見しました。|He leído su carta.|r=はいけん
+1234|dentista|n|b|歯医者へ行きます。|Voy al dentista.
+1235|transportar, llevar|v1|a|荷物を運びます。|Llevo el equipaje.
+1236|empezar (algo)|v2|a|授業を始めましょう。|Empecemos la clase.
+1237|lugar, sitio|n|l|会議の場所はどこですか。|¿Dónde es la reunión?
+1238|debería (ser), se supone|n|g|彼はもう着いたはずです。|Él ya debería haber llegado.
+1239|vergonzoso, que da vergüenza|adj-i|f|まちがえて、恥ずかしかったです。|Me equivoqué y me dio vergüenza.
+1240|ordenador personal|n|w|パソコンでレポートを書きます。|Escribo el informe en el ordenador.
+1241|pronunciación|n|e|発音がきれいですね。|Tienes buena pronunciación.
+1242|claramente|adv|g|はっきり言ってください。|Dilo claramente.
+1243|contemplar los cerezos|n|o|公園で花見をしました。|Vimos los cerezos en el parque.
+1244|papá|n|p|パパ、早く来て。|Papá, ven rápido.
+1245|bosquecillo, arboleda|n|z|林の中を歩きました。|Caminé por la arboleda.
+1246|pagar|v1|s|来週中に授業料をはらわないといけない。|Tengo que pagar la matrícula durante la próxima semana.
+1247|programa (de TV/radio)|n|o|好きな番組は何ですか。|¿Cuál es tu programa favorito?
+1248|oposición, lo contrario|n|w|その意見に反対です。|Me opongo a esa opinión.
+1249|filete de carne picada|n|c|ハンバーグを作ります。|Hago hamburguesa.
+1250|sol; día|n|z|日が出ました。|Salió el sol.
+1251|fuego|n|h|火を消してください。|Apaga el fuego.
+1252|piano|n|o|ピアノを習っています。|Aprendo piano.
+1253|enfriarse|v2|z|ビールが冷えています。|La cerveza está fría.
+1254|luz|n|z|窓から光が入ります。|Entra luz por la ventana.
+1255|brillar|v1|z|星が光っています。|Brillan las estrellas.
+1256|cajón|n|h|引き出しに鍵があります。|La llave está en el cajón.
+1257|barba, bigote|n|b|父はひげがあります。|Mi padre tiene barba.
+1258|aeródromo, aeropuerto|n|v|飛行場へ友だちを迎えに行きます。|Voy al aeropuerto a recoger a un amigo.
+1259|cuánto tiempo|adj-na|t|久しぶりですね。|Cuánto tiempo sin vernos.
+1260|museo de arte|n|l|美術館で絵を見ました。|Vi cuadros en el museo de arte.
+1261|extremadamente|adv|g|非常に危険です。|Es extremadamente peligroso.
+1262|sorprenderse|v3|f|そのニュースにびっくりしました。|Me sorprendió esa noticia.
+1263|mudarse (de casa)|v1|h|私は友だちの引っこしを手伝ってあげました。|Ayudé a mi amigo con la mudanza.
+1264|necesario|adj-na|g|パスポートが必要です。|Se necesita el pasaporte.
+1265|terrible, cruel|adj-i|d|ひどい雨ですね。|Qué lluvia tan terrible.
+1266|abrir; celebrar (evento)|v1|a|本を開いてください。|Abran el libro.|r=ひらく
+1267|edificio (moderno)|n|l|駅の前に高いビルがあります。|Frente a la estación hay un edificio alto.
+1268|durante el día|n|t|昼間は暖かいです。|Durante el día hace templado.
+1269|pausa del almuerzo|n|w|昼休みに散歩します。|Paseo en la pausa del almuerzo.
+1270|recoger (del suelo)|v1|a|ごみを拾いました。|Recogí la basura.
+1271|fax|n|w|ファックスを送ります。|Envío un fax.
+1272|aumentar|v2|n|学生が増えました。|Aumentaron los estudiantes.
+1273|profundo|adj-i|d|この川は深いです。|Este río es profundo.
+1274|complicado|adj-na|d|この問題は複雑です。|Este problema es complicado.
+1275|repaso|n|e|習ったことは、忘れないように、復習しましょう。|Repasemos lo aprendido para no olvidarlo.
+1276|director de departamento|n|w|部長は今出かけています。|El director ha salido.
+1277|normal, habitual|adj-na|d|普通の電車で行きます。|Voy en tren normal.
+1278|uvas|n|c|ぶどうを食べました。|Comí uvas.
+1279|engordar|v1|b|最近太りました。|Últimamente he engordado.
+1280|futón|n|h|布団を敷きます。|Extiendo el futón.
+1281|barco, bote|n|v|舟で島へ行きます。|Voy a la isla en barco.
+1282|incómodo, poco práctico|adj-na|d|この町は交通が不便です。|En este pueblo el transporte es incómodo.
+1283|pisar|v1|a|足を踏まないでください。|No me pises el pie.
+1284|regalo|n|o|プレゼントをもらいました。|Recibí un regalo.
+1285|cultura|n|o|日本の文化が好きです。|Me gusta la cultura japonesa.
+1286|literatura|n|e|大学で文学を勉強しています。|Estudio literatura en la universidad.
+1287|gramática|n|e|文法は難しいです。|La gramática es difícil.
+1288|distinto, aparte|adj-na|g|ありがとう。でも、その日は、別の約束があって…。|Gracias. Pero ese día tengo otro compromiso...
+1289|timbre, campana|n|h|ベルが鳴りました。|Sonó el timbre.
+1290|raro, extraño|adj-na|d|変な音がします。|Se oye un ruido raro.
+1291|respuesta (a un mensaje)|n|e|メールの返事を書きます。|Escribo la respuesta al correo.
+1292|comercio exterior|n|w|貿易の会社に勤めています。|Trabajo en una empresa de comercio exterior.
+1293|emisión, emitir|n|o|この番組は夜に放送します。|Este programa se emite por la noche.|r=ほうそう
+1294|ley|n|w|法律を勉強しています。|Estudio derecho.
+1295|yo (chico)|pron|p|ぼくは妹に教えてもらってるよ。|A mí me enseña mi hermana menor.
+1296|estrella|n|z|空に星が光っています。|Brillan estrellas en el cielo.
+1297|grado; aproximadamente|n|g|三十分ほど待ちました。|Esperé unos treinta minutos.
+1298|casi todo; casi (no)|adv|g|宿題はほとんど終わりました。|Casi terminé la tarea.
+1299|elogiar|v2|f|先生にほめられました。|El profesor me elogió.
+1300|traducción|n|e|この本の翻訳をしています。|Estoy traduciendo este libro.
+1301|ir/venir (humilde)|v1|g|明日、また参ります。|Vendré otra vez mañana.
+1302|perder (un partido)|v2|o|試合に負けました。|Perdimos el partido.
+1303|serio, aplicado|adj-na|f|兄は真面目な学生です。|Mi hermano mayor es un estudiante serio.
+1304|primero, antes que nada|adv|g|まず、手を洗ってください。|Primero, lávate las manos.
+1305|o, o bien|conj|g|ペンまたは鉛筆で書いてください。|Escribe con bolígrafo o lápiz.
+1306|equivocarse|v2|e|答えを間違えました。|Me equivoqué de respuesta.
+1307|llegar a tiempo|v1|t|電車がおくれたため、会議に間に合いませんでした。|Por el retraso del tren, no llegué a tiempo a la reunión.
+1308|alrededor|n|l|家の周りに木があります。|Hay árboles alrededor de la casa.
+1309|girar, dar vueltas|v1|a|地球は回っています。|La Tierra gira.|w=回る;r=まわる
+1310|manga, cómic|n|o|その本だなのまんがは全部読んでしまいました。|Me leí todos los mangas de esa estantería.
+1311|centro, en medio|n|l|部屋の真ん中にテーブルがあります。|Hay una mesa en medio de la habitación.|w=真ん中
+1312|verse, ser visible; venir (cortés)|v2|o|窓から山が見えます。|Desde la ventana se ve la montaña.
+1313|lago|n|z|湖でボートに乗りました。|Monté en barca en el lago.
+1314|miso|n|c|味噌汁を飲みます。|Tomo sopa de miso.
+1315|ser encontrado, aparecer|v1|a|仕事が早く見つかったらいいですね。|Ojalá encuentres trabajo pronto.
+1316|encontrar|v2|a|鍵を見つけました。|Encontré la llave.
+1317|todos|pron|p|皆、元気です。|Todos están bien.
+1318|puerto|n|l|港に船が着きました。|El barco llegó al puerto.
+1319|dirigirse a|v1|v|今、駅に向かっています。|Ahora voy camino de la estación.
+1320|recibir, ir a recoger|v2|v|駅まで迎えに行きます。|Voy a recogerte a la estación.
+1321|antiguamente|n|t|昔、ここに寺がありました。|Antiguamente aquí había un templo.
+1322|insecto, bicho|n|z|虫が嫌いです。|No me gustan los bichos.
+1323|mi hijo|n|p|息子は五歳です。|Mi hijo tiene cinco años.
+1324|mi hija|n|p|娘は大学生です。|Mi hija es universitaria.
+1325|imposible, forzado|adj-na|d|無理をしないでください。|No te fuerces.
+1326|comer/beber (honorífico)|v1|g|どうぞ召し上がってください。|Sírvase, por favor.
+1327|raro, poco común|adj-i|d|珍しい花ですね。|Qué flor tan rara.
+1328|decir (humilde)|v2|g|お礼を申し上げます。|Le expreso mi agradecimiento.
+1329|llamarse, decir (humilde)|v1|g|私はアミと申します。|Me llamo Amy.
+1330|ya mismo, dentro de poco|adv|t|もうすぐ試験です。|Ya mismo es el examen.
+1331|si (condicional)|adv|g|もし雨が降ったら、行きません。|Si llueve, no voy.
+1332|por supuesto|adv|g|もちろん行きます。|Por supuesto que voy.
+1333|el más|adv|g|富士山は日本で最も高い山です。|El Fuji es la montaña más alta de Japón.
+1334|regresar|v1|a|すぐ戻ります。|Vuelvo enseguida.
+1335|algodón|n|r|木綿のシャツです。|Es una camisa de algodón.
+1336|recibir|v1|g|私は田中さんにセーターをもらいました。|Recibí un suéter del señor Tanaka.
+1337|bosque|n|z|森の中に小さな家があります。|Hay una casita en el bosque.
+1338|asar, hornear|v1|c|魚を焼きます。|Aso el pescado.
+1339|promesa, cita|n|p|友だちと約束があります。|Tengo una cita con una amiga.
+1340|ser útil|v1|g|この辞書は役に立ちます。|Este diccionario es útil.
+1341|asarse, quemarse|v2|c|パンが焼けました。|El pan ya está horneado.
+1342|amable; fácil|adj-i|f|あの先生はいつもやさしく教えてくださいます。|Ese profesor siempre enseña con amabilidad.
+1343|adelgazar|v2|b|少し痩せました。|Adelgacé un poco.
+1344|por fin|adv|t|やっと宿題が終わりました。|Por fin terminé la tarea.
+1345|como pensaba, al final|adv|g|やっぱり行きます。|Al final sí voy.
+1346|parar, cesar (lluvia)|v1|z|雨が止みました。|Paró la lluvia.
+1347|dejar (de hacer), parar|v2|a|たばこをやめました。|Dejé de fumar.
+1348|suave, blando|adj-i|d|このパンは柔らかいです。|Este pan es blando.
+1349|agua caliente|n|h|お湯を沸かします。|Caliento agua.
+1350|exportación|n|w|日本は車を輸出しています。|Japón exporta coches.|r=ゆしゅつ
+1351|importación|n|w|この国は石油を輸入しています。|Este país importa petróleo.
+1352|dedo|n|b|指が痛いです。|Me duele el dedo.
+1353|anillo|n|r|指輪をもらいました。|Me regalaron un anillo.
+1354|sueño|n|f|私の夢は先生になることです。|Mi sueño es ser profesora.
+1355|temblar, balancearse|v2|z|地震で家が揺れました。|La casa tembló con el terremoto.
+1356|asunto, recado|n|w|何か用ですか。|¿Necesitas algo?
+1357|manera, como|n|g|日本人のように話したいです。|Quiero hablar como un japonés.
+1358|preparación|n|a|食事の用意ができました。|La comida está preparada.
+1359|recado, asunto que atender|n|w|今日は用事があります。|Hoy tengo un asunto que atender.
+1360|ensuciarse|v2|h|服が汚れました。|Se me ensució la ropa.
+1361|preparación de la lección|n|e|明日の予習をします。|Preparo la lección de mañana.
+1362|plan, agenda|n|t|週末の予定は何ですか。|¿Qué planes tienes para el fin de semana?
+1363|reserva|n|v|ホテルを予約しました。|Reservé el hotel.
+1364|pasar por, acercarse|v1|v|帰りにスーパーに寄ります。|De vuelta paso por el supermercado.
+1365|alegrarse|v1|f|母はとても喜びました。|Mi madre se alegró mucho.
+1366|bien (cortés)|adj-i|g|これでよろしいですか。|¿Así está bien?
+1367|razón, motivo|n|g|遅れた理由を教えてください。|Dime por qué llegaste tarde.
+1368|uso, utilización|n|a|図書館を利用します。|Uso la biblioteca.
+1369|ambos|n|g|両方とも好きです。|Me gustan los dos.
+1370|ryokan, posada japonesa|n|v|日本の旅館にとまってみたいです。|Quiero probar a alojarme en un ryokan.
+1371|ausencia (de casa)|n|h|今、母は留守です。|Ahora mi madre no está en casa.
+1372|aire acondicionado|n|h|冷房をつけてください。|Pon el aire acondicionado.
+1373|historia|n|e|日本の歴史を勉強します。|Estudio historia de Japón.
+1374|caja registradora|n|s|レジでお金を払います。|Pago en la caja.
+1375|informe|n|e|あしたまでにレポートを出してください。|Entrega el informe antes de mañana.
+1376|contacto, comunicar|n|w|あとで連絡します。|Te contacto luego.
+1377|procesador de textos|n|w|昔はワープロを使っていました。|Antes usaba un procesador de textos.
+1378|hervir (algo)|v1|c|お湯を沸かします。|Pongo a hervir agua.
+1379|separarse, despedirse|v2|p|駅で友だちと別れました。|Me despedí de mi amigo en la estación.
+1380|hervir (el agua hierve)|v1|c|お湯が沸きました。|Ya hirvió el agua.
+1381|razón, motivo; significado|n|g|そういう訳で、行けません。|Por esa razón, no puedo ir.
+1382|objeto olvidado|n|h|忘れ物はありませんか。|¿No olvidas nada?
+1383|reír|v1|f|みんなが笑いました。|Todos se rieron.
+1384|proporción; relativamente|n|n|この学校は女子の割合が多いです。|En esta escuela hay una proporción alta de chicas.
+1385|romperse (cristal, plato)|v2|a|お皿が割れました。|Se rompió el plato.
+1386|recibir; comer/beber (humilde)|v1|g|先生に地図をかいていただきました。|El profesor me dibujó un mapa (keigo).|w=いただく;r=いただく

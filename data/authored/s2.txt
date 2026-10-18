@@ -1,0 +1,130 @@
+# Palabras de las páginas de la Semana 2 (libro) — se marcan S2. Las que no están en N5/N4 de Tanos se añaden como "libro".
+# Línea con solo palabra = buscar en el banco; línea completa = extra: w|r|es|tipo|tema|ejemplo|traducción|día
+宿題
+起きる
+走る
+飲む
+洗濯
+勉強
+片付ける
+返す
+捨てる
+使う
+泳ぐ
+降る
+見つかる
+治る
+病気
+試験
+忘れる
+出す
+客
+掃除
+旅行
+読む
+開ける
+机
+残る
+電車
+傘
+駅
+はく
+旅館
+泊まる
+つまらない
+パーティー
+冷蔵庫
+事故
+遅れる
+待つ
+始める
+レストラン
+セーター
+地図
+手伝う
+引っ越す
+英語
+教える
+花
+犬
+連れる
+先生
+姉
+父
+約束
+別
+丁寧
+社長
+会議
+出席
+準備
+台風
+飛行機
+間に合う
+聞こえる
+声
+雪
+復習
+歩く
+赤ちゃん
+寝る
+日記
+歯
+磨く
+静か
+帰る
+吸う
+妻
+甘い
+外国人
+遠い
+生活
+楽しい
+医者
+薬
+食事
+難しい
+音楽
+漢字
+本当
+意味
+近く
+働く
+タクシー
+風邪
+川
+危ない
+肉
+野菜
+言葉
+たばこ
+止める
+褒める
+授業料|じゅぎょうりょう|matrícula, cuota de clases|n|e|来週中に授業料をはらわないといけない。|Tengo que pagar la matrícula la semana que viene.|1
+結果|けっか|resultado|n|e|試験の結果はあした出ます。|Los resultados del examen salen mañana.|1
+発表|はっぴょう|anuncio, publicación; presentación|n|e|あしたは結果の発表の日です。|Mañana es el día del anuncio de resultados.|1
+受かる|うかる|aprobar (un examen)|v1|e|試験に受かっていればいいんですが…。|Ojalá haya aprobado el examen...|1
+はさみ|はさみ|tijeras|n|h|このはさみ、切れないね。|Estas tijeras no cortan, ¿eh?|1
+切れる|きれる|cortar bien; agotarse|v2|h|このナイフはよく切れます。|Este cuchillo corta bien.|1
+ワイン|ワイン|vino|n|c|残っていたワインを飲んでしまいました。|Me bebí el vino que quedaba.|2
+ビール|ビール|cerveza|n|c|パーティーのためにビールを買っておいてください。|Compra cerveza para la fiesta, por favor.|2
+ゲーム|ゲーム|videojuego, juego|n|o|そのゲーム、やってみたけれど、つまらなかった。|Probé ese juego, pero era aburrido.|2
+ガイドブック|ガイドブック|guía de viaje|n|v|旅行の前に、ガイドブックを読んでおきましょう。|Antes del viaje, leamos la guía.|2
+誘う|さそう|invitar (a hacer algo)|v1|o|さそってくれて、ありがとう。|Gracias por invitarme.|3
+編む|あむ|tejer|v1|r|友だちがマフラーをあんでくれました。|Una amiga me tejió una bufanda.|3
+マフラー|マフラー|bufanda|n|r|このマフラーは、友だちがあんでくれました。|Esta bufanda me la tejió una amiga.|3
+えさ|えさ|comida para animales|n|z|犬にえさをやる。|Le doy de comer al perro.|3
+人気|にんき|popularidad|n|f|中村先生は人気があります。|El profesor Nakamura es popular.|3
+カード|カード|tarjeta|n|s|学校でIDカードをもらいました。|Me dieron la tarjeta de identificación en la escuela.|3
+市役所|しやくしょ|ayuntamiento|n|l|市役所でカードをもらいました。|Me dieron la tarjeta en el ayuntamiento.|3
+貯金|ちょきん|ahorro, ahorrar|n|s|家を買うために、貯金しています。|Ahorro para comprar una casa.|4
+遅刻|ちこく|llegar tarde (a clase/trabajo)|n|t|ちこくしないように、早く家を出ます。|Salgo temprano para no llegar tarde.|4
+メモ|メモ|nota, apunte|n|e|忘れないように、メモします。|Tomo nota para no olvidarlo.|4
+成績|せいせき|notas, calificaciones|n|e|こんなに勉強しているのに、成績が悪い。|Con lo que estudio, y mis notas son malas.|5
+居酒屋|いざかや|taberna japonesa|n|l|駅前の居酒屋へ行きましょう。|Vamos a la taberna frente a la estación.|5
+電気代|でんきだい|factura de la luz|n|s|電気代があがるという話は、本当ですか。|¿Es verdad que va a subir la luz?|5
+全然|ぜんぜん|en absoluto (+ negativo)|adv|g|テスト、全然できませんでした。|El examen no me salió en absoluto.|5
+落ちる|おちる|suspender (un examen); caer|v2|e|試験に落ちたそうですよ。|Dicen que suspendió el examen.|5
+渡る|わたる|cruzar|v1|v|渡るな！|¡No cruces!
+混ぜる|まぜる|mezclar|v2|c|混ぜるな、危険！|¡No mezclar, peligro!|6
+母親|ははおや|madre (término general)|n|p|母親は子どもに「早く寝なさい」と言いました。|La madre le dijo al niño: "Duérmete ya".|6

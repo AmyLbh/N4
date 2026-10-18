@@ -1,0 +1,350 @@
+351|falda|n|r|赤いスカートをはきました。|Me puse una falda roja.
+352|que gusta, favorito|adj-na|f|音楽が好きです。|Me gusta la música.
+353|poco, escaso|adj-i|d|この町は人が少ないです。|En este pueblo hay poca gente.
+354|enseguida|adv|t|すぐに行きます。|Voy enseguida.
+355|un poco|adv|g|少し待ってください。|Espera un poco.
+356|fresco (clima)|adj-i|z|今日は涼しいですね。|Hoy hace fresco, ¿verdad?
+357|estufa, calefactor|n|h|寒いからストーブをつけます。|Enciendo la estufa porque hace frío.
+358|cuchara|n|c|スプーンでスープを飲みます。|Tomo la sopa con cuchara.
+359|deporte|n|o|どんなスポーツが好きですか。|¿Qué deporte te gusta?
+360|pantalón|n|r|黒いズボンをはいています。|Lleva pantalones negros.
+361|vivir (residir)|v1|h|東京に住んでいます。|Vivo en Tokio.
+362|hacer|v3|a|毎日運動をします。|Hago ejercicio cada día.
+363|sentarse|v1|a|ここに座ってもいいですか。|¿Puedo sentarme aquí?
+364|estatura|n|b|兄は背が高いです。|Mi hermano mayor es alto.|w=背;r=せい
+365|alumno (escuela)|n|e|生徒が先生に質問します。|Los alumnos le preguntan al profesor.
+366|suéter|n|r|母がセーターをくれました。|Mi madre me regaló un suéter.
+367|jabón|n|h|石鹸で手を洗います。|Me lavo las manos con jabón.
+368|traje de hombre|n|r|父は背広を着て会社へ行きます。|Mi padre va a la oficina de traje.
+369|estrecho, pequeño (espacio)|adj-i|d|私の部屋は狭いです。|Mi habitación es pequeña.
+370|cero|num|n|電話番号はゼロから始まります。|El número de teléfono empieza por cero.
+371|mil|num|n|このシャツは三千円です。|Esta camisa cuesta tres mil yenes.
+372|el mes pasado|n|t|先月、引っ越しました。|El mes pasado me mudé.
+373|la semana pasada|n|t|先週は忙しかったです。|La semana pasada estuve ocupada.
+374|profesor, maestro; doctor|n|e|先生に聞きましょう。|Preguntémosle al profesor.
+375|lavado de ropa|n|h|日曜日に洗濯をします。|Lavo la ropa los domingos.
+376|todo|n|g|宿題は全部終わりました。|Terminé toda la tarea.
+377|así; ¿ah, sí?|adv|g|私もそう思います。|Yo también lo creo así.
+378|limpieza, limpiar|n|h|お客さんが来る前にそうじしておきます。|Limpio antes de que vengan las visitas.|w=掃除;r=そうじ
+379|y, y entonces|conj|g|朝ご飯を食べました。そして、学校へ行きました。|Desayuné. Y luego fui a la escuela.
+380|ahí (cerca de ti)|pron|g|そこに何がありますか。|¿Qué hay ahí?
+381|ahí, por ahí (cortés)|pron|g|そちらは雨ですか。|¿Por ahí está lloviendo?
+382|ahí (coloquial)|pron|g|そっちは寒い?|¿Ahí hace frío?
+383|afuera|n|l|外で遊びましょう。|Juguemos afuera.
+384|ese, esa (cerca de ti)|pron|g|その本は私のです。|Ese libro es mío.
+385|al lado; soba (fideos)|n|l|駅のそばに住んでいます。|Vivo cerca de la estación.
+386|cielo|n|z|空が青いです。|El cielo está azul.
+387|eso (cerca de ti)|pron|g|それは何ですか。|¿Qué es eso?
+388|y después, luego|conj|g|宿題をして、それから寝ます。|Hago la tarea y luego me acuesto.
+389|bueno entonces, en ese caso|conj|g|それでは、始めましょう。|Bueno, empecemos.
+390|universidad|n|e|姉は大学で勉強しています。|Mi hermana mayor estudia en la universidad.
+391|embajada|n|l|大使館はどこですか。|¿Dónde está la embajada?
+392|estar bien, no pasa nada|adj-na|f|大丈夫ですか。|¿Estás bien?
+393|que encanta|adj-na|f|ラーメンが大好きです。|Me encanta el ramen.
+394|importante, valioso|adj-na|d|家族は大切です。|La familia es importante.
+395|cocina (lugar)|n|h|母は台所にいます。|Mi madre está en la cocina.
+396|muy; duro, difícil|adj-na|f|仕事が大変です。|El trabajo es duro.
+397|alto; caro|adj-i|d|この時計は高いです。|Este reloj es caro.
+398|mucho|adv|g|本がたくさんあります。|Hay muchos libros.
+399|taxi|n|v|時間がないから、タクシーで行ったほうがいいです。|Como no hay tiempo, mejor ve en taxi.
+400|sacar; entregar|v1|a|あしたまでにレポートを出してください。|Entrega el informe antes de mañana.
+401|ponerse de pie|v1|a|立ってください。|Levántense, por favor.
+402|largo, vertical|n|d|たて十センチの箱です。|Es una caja de diez centímetros de largo.
+403|edificio|n|l|あの建物は図書館です。|Aquel edificio es la biblioteca.
+404|divertido, agradable|adj-i|f|旅行は楽しかったです。|El viaje fue divertido.
+405|pedir (un favor)|v1|a|友だちに手伝いを頼みました。|Le pedí ayuda a un amigo.
+406|tabaco, cigarrillo|n|h|たばこは体に悪いです。|El tabaco es malo para el cuerpo.
+407|quizás, probablemente|adv|g|明日は多分雨です。|Mañana probablemente llueva.
+408|comida (alimento)|n|c|好きな食べ物は何ですか。|¿Cuál es tu comida favorita?
+409|comer|v2|c|毎朝パンを食べます。|Como pan cada mañana.
+410|huevo|n|c|卵を二つ使います。|Uso dos huevos.
+411|¿quién?|pron|p|あの人は誰ですか。|¿Quién es aquella persona?
+412|alguien|pron|p|誰か来ましたよ。|Ha venido alguien.
+413|cumpleaños|n|t|誕生日おめでとう。|Feliz cumpleaños.
+414|poco a poco|adv|t|だんだん寒くなります。|Poco a poco hace más frío.
+415|pequeño|adj-i|d|小さい猫がいます。|Hay un gato pequeño.
+416|pequeño (antes de sustantivo)|adj-na|d|小さな町に住んでいます。|Vivo en un pueblo pequeño.
+417|cerca|adj-i|d|駅は近いです。|La estación está cerca.
+418|ser diferente; estar equivocado|v1|d|答えが違います。|La respuesta es incorrecta.
+419|cercanía, cerca de|n|l|近くにコンビニがあります。|Hay una tienda cerca.
+420|metro|n|v|地下鉄で行きます。|Voy en metro.
+421|mapa|n|v|田中さんに地図をかいてもらいました。|El señor Tanaka me dibujó un mapa.
+422|mi padre|n|p|父は医者です。|Mi padre es médico.
+423|marrón|n|d|茶色の靴を買いました。|Compré zapatos marrones.
+424|cuenco de arroz|n|c|茶碗にご飯を入れます。|Sirvo arroz en el cuenco.
+425|justo, exactamente|adv|t|ちょうど三時です。|Son las tres en punto.
+426|un poco; un momento|adv|g|ちょっと待ってください。|Espera un momento.
+427|primer día del mes|n|t|四月一日は入学式です。|El uno de abril es la ceremonia de ingreso.|r=ついたち
+428|usar|v1|a|このペンを使ってもいいですか。|¿Puedo usar este bolígrafo?
+429|cansarse|v2|b|仕事で疲れました。|Me cansé con el trabajo.
+430|siguiente|n|t|次の駅で降ります。|Me bajo en la siguiente estación.
+431|llegar|v1|v|駅に着きました。|Llegué a la estación.
+432|escritorio|n|h|机の上を片づけます。|Ordeno la mesa del escritorio.
+433|hacer, fabricar|v1|c|母がケーキを作りました。|Mi madre hizo un pastel.
+434|encender; poner|v2|a|電気をつけてください。|Enciende la luz.
+435|trabajar (para una empresa)|v2|w|銀行に勤めています。|Trabajo en un banco.
+436|aburrido|adj-i|f|そのゲーム、やってみたけれど、つまらなかった。|Probé ese juego, pero era aburrido.
+437|frío (al tacto)|adj-i|d|冷たい水を飲みたいです。|Quiero beber agua fría.
+438|fuerte|adj-i|d|風が強いです。|El viento es fuerte.
+439|mano|n|b|手を上げてください。|Levanta la mano.
+440|cinta|n|h|テープで紙を貼ります。|Pego el papel con cinta.
+441|mesa|n|h|テーブルの上に花があります。|Hay flores sobre la mesa.
+442|grabadora|n|h|古いテープレコーダーがあります。|Tengo una grabadora vieja.
+443|salir (de casa)|v2|a|母は今出かけています。|Mi madre ha salido ahora.
+444|carta|n|e|祖母に手紙を書きました。|Le escribí una carta a mi abuela.
+445|poder, saber hacer; estar hecho|v2|a|日本語ができます。|Sé japonés.
+446|salida|n|l|出口はあちらです。|La salida está por allá.
+447|examen|n|e|明日、テストがあります。|Mañana hay examen.
+448|bueno, entonces|conj|g|では、また明日。|Bueno, hasta mañana.
+449|grandes almacenes|n|s|デパートで服を買いました。|Compré ropa en los grandes almacenes.
+450|pero|conj|g|行きたい。でも、時間がない。|Quiero ir. Pero no tengo tiempo.
+451|salir; aparecer|v2|a|七時に家を出ます。|Salgo de casa a las siete.
+452|televisión|n|o|夜、テレビを見ます。|Por la noche veo la tele.
+453|tiempo (clima)|n|z|今日はいい天気です。|Hoy hace buen tiempo.
+454|electricidad; luz|n|h|電気を消してください。|Apaga la luz.
+455|tren|n|v|電車で会社へ行きます。|Voy a la empresa en tren.
+456|teléfono|n|h|あとで電話します。|Te llamo luego.
+457|puerta (japonesa)|n|h|戸を閉めてください。|Cierra la puerta.
+458|puerta|n|h|ドアを開けておいてください。|Deja la puerta abierta, por favor.
+459|baño, inodoro|n|h|トイレはどこですか。|¿Dónde está el baño?
+460|¿cómo?|adv|g|日本語でどう言いますか。|¿Cómo se dice en japonés?
+461|¿por qué?|adv|g|どうして遅れたんですか。|¿Por qué llegaste tarde?
+462|adelante, por favor|adv|g|どうぞ、入ってください。|Adelante, pase.
+463|animal|n|z|どんな動物が好きですか。|¿Qué animales te gustan?
+464|gracias; muy|adv|g|どうもありがとう。|Muchas gracias.
+465|lejos|adj-i|d|学校は家から遠いです。|La escuela está lejos de casa.
+466|día diez; diez días|n|t|十日に試験があります。|El día diez hay examen.
+467|a veces|adv|t|時々映画を見ます。|A veces veo películas.
+468|reloj|n|h|この時計は高かったです。|Este reloj fue caro.
+469|¿dónde?|pron|g|駅はどこですか。|¿Dónde está la estación?
+470|lugar, sitio|n|l|静かな所に住みたいです。|Quiero vivir en un lugar tranquilo.
+471|año; edad|n|t|父は年をとりました。|Mi padre se ha hecho mayor.
+472|biblioteca|n|l|図書館で勉強します。|Estudio en la biblioteca.
+473|¿cuál? ¿dónde? (cortés)|pron|g|どちらが好きですか。|¿Cuál te gusta más?
+474|¿cuál? (coloquial)|pron|g|どっちがいい?|¿Cuál es mejor?
+475|muy|adv|g|とても寒いです。|Hace mucho frío.
+476|¿quién? (cortés)|pron|p|どなたですか。|¿Quién es usted?
+477|al lado, vecino|n|l|隣の部屋はうるさいです。|La habitación de al lado es ruidosa.
+478|¿cuál? (+ sustantivo)|pron|g|どの本がいいですか。|¿Qué libro está bien?
+479|volar; saltar|v1|z|鳥が飛んでいます。|Un pájaro está volando.
+480|detenerse|v1|v|電車が止まりました。|El tren se detuvo.
+481|amigo|n|p|友達と映画を見ました。|Vi una película con un amigo.
+482|sábado|n|t|土曜日に会いましょう。|Veámonos el sábado.
+483|pájaro, ave|n|z|鳥が鳴いています。|Un pájaro está cantando.
+484|carne de pollo|n|c|鶏肉を焼きます。|Aso pollo.
+485|tomar, agarrar; conseguir|v1|a|塩を取ってください。|Pásame la sal.
+486|sacar (una foto)|v1|o|写真を撮ってもいいですか。|¿Puedo sacar una foto?
+487|¿cuál? (de varios)|pron|g|どれがあなたのですか。|¿Cuál es el tuyo?
+488|¿qué tipo de?|adj-na|g|どんな音楽が好きですか。|¿Qué tipo de música te gusta?
+489|no hay, no tener|adj-i|g|お金がない。|No tengo dinero.
+490|cuchillo|n|c|ナイフでパンを切ります。|Corto el pan con cuchillo.
+491|dentro; en medio|n|l|かばんの中に財布があります。|La cartera está dentro de la bolsa.
+492|largo|adj-i|d|髪が長いです。|Tiene el pelo largo.
+493|cantar, piar (animales)|v1|z|犬が鳴いています。|El perro está ladrando.
+494|perder (algo)|v1|a|鍵をなくしてしまいました。|Perdí la llave (y lo lamento).
+495|¿por qué?|adv|g|なぜ日本語を勉強していますか。|¿Por qué estudias japonés?
+496|verano|n|z|夏は暑いです。|El verano es caluroso.
+497|vacaciones de verano|n|t|夏休みに旅行します。|En las vacaciones de verano viajo.
+498|siete (cosas)|num|n|りんごを七つ買いました。|Compré siete manzanas.
+499|día siete; siete días|n|t|七日に帰ります。|Vuelvo el día siete.
+500|nombre|n|p|名前を書いてください。|Escribe tu nombre.
+501|aprender (de alguien)|v1|e|ピアノを習っています。|Estoy aprendiendo piano.
+502|ponerse en fila|v1|a|店の前に人が並んでいます。|Hay gente haciendo fila frente a la tienda.
+503|alinear, poner en fila|v2|a|机を並べてください。|Alinea los escritorios.
+504|volverse, llegar a ser|v1|a|日本語が話せるようになりました。|He llegado a poder hablar japonés.
+505|¿qué?|pron|g|何を食べますか。|¿Qué vas a comer?|r=なに; なん
+506|¿qué ~?, ¿cuántos ~?|pref|g|今、何時ですか。|¿Qué hora es?
+507|dos|num|n|二時に会いましょう。|Veámonos a las dos.
+508|animado, concurrido|adj-na|d|この町はにぎやかです。|Este pueblo es animado.
+509|carne|n|c|肉ばかり食べないで、野菜も食べなさい。|No comas solo carne, come también verduras.
+510|oeste|n|l|西の空が赤いです。|El cielo del oeste está rojo.
+511|domingo|n|t|日曜日も会社に行かなくてはいけない。|También el domingo tengo que ir a la empresa.
+512|equipaje|n|v|荷物が重いです。|El equipaje pesa.
+513|noticias|n|o|毎朝ニュースを見ます。|Veo las noticias cada mañana.
+514|jardín|n|h|庭に花が咲いています。|Hay flores en el jardín.
+515|quitarse (ropa)|v1|r|ここで靴を脱いでください。|Quítate los zapatos aquí.
+516|tibio|adj-i|d|このお茶はぬるいです。|Este té está tibio.
+517|corbata|n|r|父はネクタイをしています。|Mi padre lleva corbata.
+518|gato|n|z|猫が二匹います。|Hay dos gatos.
+519|dormir, acostarse|v2|a|毎晩十一時に寝ます。|Me acuesto a las once cada noche.
+520|cuaderno|n|e|ノートに書いてください。|Escríbelo en el cuaderno.
+521|subir, escalar|v1|o|山に登りました。|Subí a la montaña.
+522|bebida|n|c|飲み物は何がいいですか。|¿Qué bebida quieres?
+523|beber; tomar (medicina)|v1|c|残っていたワインを飲んでしまいました。|Me bebí todo el vino que quedaba.
+524|subir (a un vehículo)|v1|v|バスに乗ります。|Subo al autobús.
+525|diente|n|b|毎食後、歯をみがくようにしています。|Procuro lavarme los dientes después de cada comida.
+526|fiesta|n|o|パーティーのためにビールを買っておいてください。|Compra cerveza para la fiesta, por favor.
+527|sí|int|g|はい、そうです。|Sí, así es.
+528|cenicero|n|h|灰皿はありますか。|¿Hay un cenicero?
+529|entrar; caber|v1|a|部屋に入ってください。|Entra en la habitación.
+530|postal|n|e|葉書を出しました。|Envié una postal.
+531|ponerse (de cintura abajo)|v1|r|くつを買う前には必ずはいてみましょう。|Antes de comprar zapatos, pruébatelos siempre.
+532|caja|n|h|箱の中に何がありますか。|¿Qué hay dentro de la caja?
+533|puente|n|l|橋を渡ります。|Cruzo el puente.
+534|palillos|n|c|箸で食べます。|Como con palillos.
+535|empezar (algo empieza)|v1|a|授業が始まります。|Empieza la clase.
+536|comienzo|n|t|初めはむずかしかったです。|Al principio fue difícil.
+537|por primera vez|adv|t|初めて日本へ来ました。|Vine a Japón por primera vez.
+538|correr|v1|o|駅まで走りましたが、電車は行ってしまいました。|Corrí hasta la estación, pero el tren ya se había ido.
+539|autobús|n|v|バスで学校へ行きます。|Voy a la escuela en autobús.
+540|mantequilla|n|c|パンにバターをつけます。|Le pongo mantequilla al pan.
+541|veinte años de edad|n|n|妹は二十歳です。|Mi hermana menor tiene veinte años.
+542|trabajar|v1|w|父は銀行で働いています。|Mi padre trabaja en un banco.
+543|ocho|num|n|八時に起きます。|Me levanto a las ocho.
+544|día veinte; veinte días|n|t|二十日に会いましょう。|Veámonos el día veinte.
+545|flor|n|z|花に水をやります。|Riego las flores.
+546|nariz|n|b|鼻が赤いです。|Tiene la nariz roja.
+547|conversación, historia|n|e|面白い話を聞きました。|Escuché una historia interesante.
+548|hablar|v1|e|大きい声で話してください。|Habla en voz alta.
+549|mi madre|n|p|母は料理が上手です。|A mi madre se le da bien cocinar.
+550|temprano|adj-i|t|明日は早く起きなければなりません。|Mañana tengo que levantarme temprano.
+551|rápido|adj-i|d|新幹線は速いです。|El tren bala es rápido.
+552|primavera|n|z|春は暖かいです。|La primavera es templada.
+553|pegar|v1|a|切手を貼ってください。|Pega el sello.
+554|tiempo despejado|n|z|明日は晴れです。|Mañana estará despejado.
+555|despejarse (el cielo)|v2|z|午後は晴れるでしょう。|Por la tarde se despejará.
+556|y media; mitad|n|t|二時半に会いましょう。|Veámonos a las dos y media.
+557|noche|n|t|朝から晩まで働きます。|Trabajo de la mañana a la noche.
+558|pan|n|c|パンを買いに行きます。|Voy a comprar pan.
+559|pañuelo|n|r|ハンカチを忘れました。|Olvidé el pañuelo.
+560|número|n|n|電話番号を教えてください。|Dime tu número de teléfono.
+561|cena|n|c|晩ご飯は何ですか。|¿Qué hay de cena?
+562|mitad|n|n|ケーキを半分食べました。|Me comí la mitad del pastel.
+563|este (punto cardinal)|n|l|駅の東に公園があります。|Al este de la estación hay un parque.
+564|tirar de; restar; pescar (un resfriado)|v1|a|かぜをひいたときは、早く寝たほうがいいですよ。|Cuando te resfríes, mejor acuéstate temprano.
+565|tocar (instrumento)|v1|o|ピアノを弾きます。|Toco el piano.
+566|bajo|adj-i|d|この椅子は低いです。|Esta silla es baja.
+567|avión|n|v|台風のため、飛行機がおくれました。|Por el tifón, el avión se retrasó.
+568|izquierda|n|l|左に曲がってください。|Gira a la izquierda.
+569|persona|n|p|あの人は先生です。|Aquella persona es profesora.
+570|uno (cosa)|num|n|りんごを一つください。|Deme una manzana.
+571|un mes|n|t|一月に一回、映画を見ます。|Veo una película una vez al mes.|r=ひとつき
+572|una persona; solo|n|p|一人で行きます。|Voy sola.
+573|tiempo libre|adj-na|o|今日は暇です。|Hoy estoy libre.
+574|cien|num|n|百円のペンです。|Es un bolígrafo de cien yenes.
+575|hospital|n|b|病院へ行きます。|Voy al hospital.
+576|enfermedad|n|b|母の病気が早く治ればいいですが…。|Ojalá la enfermedad de mi madre se cure pronto...
+577|hiragana|n|e|ひらがなで書いてください。|Escríbelo en hiragana.
+578|mediodía, día|n|t|昼は暑いです。|Al mediodía hace calor.
+579|almuerzo|n|c|昼ご飯を食べましたか。|¿Almorzaste?
+580|amplio, ancho|adj-i|d|この部屋は広いです。|Esta habitación es amplia.
+581|película fotográfica|n|o|フィルムを買いました。|Compré un carrete.
+582|sobre (de carta)|n|e|封筒に手紙を入れます。|Meto la carta en el sobre.
+583|piscina|n|o|プールで泳ぎます。|Nado en la piscina.
+584|tenedor|n|c|フォークで食べます。|Como con tenedor.
+585|soplar|v1|z|風が吹いています。|Sopla el viento.
+586|ropa|n|r|新しい服を買いました。|Compré ropa nueva.
+587|dos (cosas)|num|n|卵を二つください。|Deme dos huevos.
+588|carne de cerdo|n|c|豚肉が好きです。|Me gusta el cerdo.
+589|dos personas|n|p|二人で行きましょう。|Vamos los dos.
+590|día dos; dos días|n|t|二日休みました。|Descansé dos días.
+591|grueso, gordo|adj-i|d|太いペンで書きます。|Escribo con un bolígrafo grueso.
+592|invierno|n|z|冬は寒いです。|El invierno es frío.
+593|caer (lluvia, nieve)|v1|z|雨が降らないといいですね。|Ojalá no llueva.
+594|viejo (cosas)|adj-i|d|この家は古いです。|Esta casa es vieja.
+595|texto, escrito|n|e|この文章を読んでください。|Lee este texto.
+596|página|n|e|十ページを開けてください。|Abran en la página diez.
+597|torpe, que se le da mal|adj-na|f|私は歌が下手です。|Canto mal.
+598|cama|n|h|ベッドで寝ます。|Duermo en la cama.
+599|mascota|n|z|ペットを飼っています。|Tengo una mascota.
+600|habitación|n|h|部屋をそうじします。|Limpio la habitación.
+601|zona, alrededores|n|l|この辺に銀行はありますか。|¿Hay un banco por esta zona?
+602|bolígrafo, pluma|n|e|テストのとき、ペンを使ってはいけません。|En el examen no se puede usar bolígrafo.
+603|estudio, estudiar|n|e|試験だから勉強しなくちゃいけない。|Tengo que estudiar porque hay examen.|w=勉強;r=べんきょう
+604|práctico, conveniente|adj-na|d|この辞書は便利です。|Este diccionario es práctico.
+605|sombrero, gorra|n|r|帽子をかぶります。|Me pongo el sombrero.
+606|bolígrafo|n|e|ボールペンで書いてください。|Escribe con bolígrafo.
+607|otro|n|g|ほかに質問はありますか。|¿Hay otras preguntas?
+608|bolsillo|n|r|ポケットに鍵があります。|Tengo la llave en el bolsillo.
+609|querer (algo)|adj-i|f|新しいかばんがほしいです。|Quiero una bolsa nueva.
+610|buzón|n|l|ポストに手紙を入れます。|Echo la carta al buzón.
+611|delgado, fino|adj-i|d|細い道を歩きます。|Camino por una calle estrecha.
+612|botón|n|h|このボタンを押してください。|Pulsa este botón.
+613|hotel|n|v|ホテルに泊まります。|Me alojo en un hotel.
+614|libro|n|e|本を読みます。|Leo un libro.
+615|estantería|n|h|その本だなのまんがは全部読んでしまいました。|Leí todos los mangas de esa estantería.
+616|verdad, real|n|g|本当ですか。|¿De verdad?
+617|cada mañana|n|t|毎朝、新聞を読みます。|Leo el periódico cada mañana.
+618|cada mes|n|t|毎月、本を買います。|Compro libros cada mes.|r=まいつき
+619|cada semana|n|t|毎週、テニスをします。|Juego al tenis cada semana.
+620|cada día|n|t|毎日、日本語を話すようにしています。|Procuro hablar japonés todos los días.
+621|cada año|n|t|毎年、日本へ行きます。|Voy a Japón cada año.|r=まいとし
+622|cada noche|n|t|毎晩、日記を書きます。|Escribo el diario cada noche.
+623|delante; antes|n|l|旅行する前に、ガイドブックを読んでおきましょう。|Antes de viajar, leamos la guía.
+624|girar, doblar|v1|v|あの角を右に曲がってください。|Gira a la derecha en aquella esquina.|w=曲がる
+625|que sabe mal|adj-i|c|この料理はまずいです。|Esta comida sabe mal.
+626|otra vez; además|adv|t|また来てください。|Vuelve otra vez.
+627|todavía|adv|t|まだ宿題が終わりません。|Todavía no termino la tarea.
+628|ciudad, pueblo|n|l|この町が好きです。|Me gusta este pueblo.
+629|esperar|v1|a|駅で待っています。|Te espero en la estación.
+630|recto, derecho|adv|v|まっすぐ行ってください。|Siga todo recto.
+631|cerilla|n|h|マッチで火をつけます。|Enciendo fuego con una cerilla.
+632|ventana|n|h|暑いから、窓を開けてください。|Abre la ventana porque hace calor.
+633|redondo|adj-i|d|丸いテーブルがあります。|Hay una mesa redonda.
+634|diez mil|num|n|一万円を払いました。|Pagué diez mil yenes.
+635|pluma estilográfica|n|e|万年筆で手紙を書きます。|Escribo cartas con pluma.
+636|cepillar (dientes); pulir|v1|b|歯を磨きます。|Me cepillo los dientes.
+637|derecha|n|l|右に曲がってください。|Gira a la derecha.
+638|corto|adj-i|d|髪が短いです。|Tiene el pelo corto.
+639|agua|n|c|水を一杯ください。|Un vaso de agua, por favor.
+640|tienda|n|s|この店は安いです。|Esta tienda es barata.
+641|mostrar|v2|a|写真を見せてください。|Enséñame la foto.
+642|camino, calle|n|l|道を教えてください。|Indíqueme el camino.
+643|día tres; tres días|n|t|三日休みます。|Descanso tres días.
+644|tres (cosas)|num|n|みかんを三つ食べました。|Comí tres mandarinas.
+645|verde|n|d|緑が多い町です。|Es un pueblo con mucho verde.
+646|todos ustedes|pron|p|皆さん、おはようございます。|Buenos días a todos.
+647|sur|n|l|南の国へ行きたいです。|Quiero ir a un país del sur.
+648|oreja|n|b|耳が痛いです。|Me duele el oído.
+649|ver, mirar|v2|o|映画を見ます。|Veo una película.
+650|todos|pron|p|みんなに聞こえるように、大きい声で話してください。|Habla alto para que todos te oigan.
+651|día seis; seis días|n|t|六日に帰ります。|Vuelvo el día seis.
+652|el otro lado, allá|n|l|川の向こうに村があります。|Al otro lado del río hay un pueblo.
+653|difícil|adj-i|d|漢字は難しいです。|Los kanji son difíciles.
+654|seis (cosas)|num|n|卵が六つあります。|Hay seis huevos.
+655|aldea, pueblo|n|l|小さな村に住んでいます。|Vivo en una aldea pequeña.
+656|ojo|n|b|目が痛いです。|Me duelen los ojos.
+657|metro (medida)|n|n|百メートル走りました。|Corrí cien metros.
+658|gafas|n|r|眼鏡をかけています。|Lleva gafas.
+659|ya; más|adv|t|もう晩ご飯を食べました。|Ya cené.
+660|jueves|n|t|木曜日に会議があります。|El jueves hay reunión.
+661|¿diga? (al teléfono)|int|g|もしもし、田中です。|¿Diga? Soy Tanaka.
+662|tener, llevar, sujetar|v1|a|かばんを持っています。|Llevo una bolsa.
+663|más|adv|g|もっと勉強したほうがいいですよ。|Deberías estudiar más.
+664|cosa (objeto)|n|g|甘いものは食べないようにしています。|Procuro no comer cosas dulces.
+665|portón, puerta exterior|n|l|学校の門の前で待っています。|Te espero frente al portón de la escuela.
+666|problema, pregunta|n|e|この問題は難しいです。|Este problema es difícil.
+667|verdulería|n|s|八百屋で野菜を買います。|Compro verduras en la verdulería.
+668|verdura|n|c|野菜も食べなさい。|Come también verduras.
+669|fácil, sencillo|adj-i|d|この問題は易しいです。|Este problema es fácil.
+670|barato|adj-i|s|この店は安いです。|Esta tienda es barata.
+671|descanso, día libre|n|t|明日は休みです。|Mañana es día libre.
+672|descansar; faltar|v1|a|今日は学校を休みます。|Hoy falto a la escuela.
+673|ocho (cosas)|num|n|みかんが八つあります。|Hay ocho mandarinas.
+674|montaña|n|z|山に登ります。|Subo a la montaña.
+675|hacer; dar (a inferiores, plantas, animales)|v1|a|花に水をやる。|Riego las flores.
+676|atardecer|n|t|夕方、雨が降りました。|Al atardecer llovió.
+677|cena|n|c|夕飯を作ります。|Preparo la cena.
+678|oficina de correos|n|l|郵便局で切手を買います。|Compro sellos en correos.
+679|anoche|n|t|昨夜、よく寝ました。|Anoche dormí bien.
+680|famoso|adj-na|d|この店は有名です。|Esta tienda es famosa.
+681|nieve|n|z|雪が降っています。|Está nevando.
+682|despacio|adv|g|ゆっくり話してください。|Habla despacio, por favor.
+683|día ocho; ocho días|n|t|八日に試験があります。|El día ocho hay examen.
+684|ropa occidental|n|r|洋服を買いました。|Compré ropa.
+685|a menudo; bien|adv|g|よく図書館へ行きます。|Voy a menudo a la biblioteca.
+686|lado; ancho|n|l|駅の横に銀行があります。|Al lado de la estación hay un banco.
+687|día cuatro; cuatro días|n|t|四日に会いましょう。|Veámonos el día cuatro.
+688|cuatro (cosas)|num|n|りんごを四つください。|Deme cuatro manzanas.
+689|llamar; invitar|v1|a|友だちをパーティーに呼びます。|Invito a mis amigos a la fiesta.
+690|leer|v1|e|本を読んでおきます。|Leo el libro con antelación.
+691|noche|n|t|夜、勉強します。|Estudio por la noche.
+692|débil|adj-i|d|体が弱いです。|Tengo una salud débil.
+693|el mes que viene|n|t|来月、引っ越します。|El mes que viene me mudo.
+694|la semana que viene|n|t|来週の日曜日、映画に行かない?|¿Vamos al cine el domingo de la semana que viene?
+695|el año que viene|n|t|来年、日本へ行きます。|El año que viene voy a Japón.
+696|radio|n|o|ラジオを聞きます。|Escucho la radio.
+697|radiocasete|n|o|古いラジカセがあります。|Tengo un radiocasete viejo.
+698|espléndido, magnífico|adj-na|d|りっぱな家ですね。|Qué casa tan espléndida.
+699|estudiante extranjero|n|e|私は留学生です。|Soy estudiante de intercambio.
+700|padres|n|p|両親と住んでいます。|Vivo con mis padres.

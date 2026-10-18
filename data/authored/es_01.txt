@@ -1,0 +1,350 @@
+1|diez (cosas, años de edad)|num|n|子どもは十になりました。|El niño cumplió diez años.|w=十;r=とお
+2|~ yenes|cnt|s|このパンは百円です。|Este pan cuesta cien yenes.
+3|~ veces|cnt|n|一日に三回、薬を飲みます。|Tomo la medicina tres veces al día.
+4|~ piso (de un edificio)|cnt|n|トイレは二階にあります。|El baño está en el segundo piso.
+5|~ meses (duración)|cnt|t|日本に三か月いました。|Estuve tres meses en Japón.
+6|mes ~ (del año)|cnt|t|誕生日は五月です。|Mi cumpleaños es en mayo.
+7|mostrar (sentimiento ajeno: ~がる)|suf|f|妹は犬をほしがっています。|Mi hermana menor quiere un perro.
+8|lado ~|suf|l|駅の北側に公園があります。|Hay un parque en el lado norte de la estación.
+9|aproximadamente (cantidad)|suf|n|駅まで十分ぐらいです。|Son unos diez minutos hasta la estación.
+10|~ piezas (objetos pequeños)|cnt|n|りんごを三個買いました。|Compré tres manzanas.
+11|idioma ~|suf|e|スペイン語を話します。|Hablo español.
+12|alrededor de (hora)|suf|t|七時ごろ起きます。|Me levanto hacia las siete.
+13|~ años de edad|cnt|n|弟は十五歳です。|Mi hermano menor tiene quince años.
+14|~ libros (contador)|cnt|n|本を二冊借りました。|Pedí prestados dos libros.
+15|señor/señora ~|suf|p|田中さんは先生です。|El señor Tanaka es profesor.
+16|~ en punto (hora)|cnt|t|今、三時です。|Ahora son las tres.
+17|~ horas (duración)|cnt|t|毎日二時間勉強します。|Estudio dos horas al día.
+18|durante todo ~|suf|t|一日中、雨でした。|Llovió todo el día.|w=～中;r=～じゅう
+19|~ semanas|cnt|t|二週間休みます。|Descanso dos semanas.
+20|persona de ~ (nacionalidad)|suf|p|マリアさんはメキシコ人です。|María es mexicana.|w=～人;r=～じん
+21|pasado de; demasiado (~すぎ)|suf|t|今、九時すぎです。|Ahora son las nueve y pico.
+22|~ cada uno, de a ~|suf|n|一人に二つずつあげます。|Le doy dos a cada persona.
+23|~ máquinas/vehículos (contador)|cnt|n|車が二台あります。|Hay dos coches.
+24|solo ~|part|g|水だけ飲みました。|Solo bebí agua.
+25|plural (personas)|suf|p|子どもたちが遊んでいます。|Los niños están jugando.
+26|en medio de ~, durante|suf|t|今、会議中です。|Ahora estoy en una reunión.
+27|~ veces; ~ grados|cnt|n|もう一度言ってください。|Dígalo una vez más, por favor.
+28|cuando ~|suf|t|子どもの時、犬がいました。|Cuando era niña tenía un perro.|w=～時;r=～とき
+29|etcétera, cosas como ~|part|g|りんごやバナナなどを買いました。|Compré manzanas, plátanos, etc.
+30|día ~ del mes; ~ días|cnt|t|十五日に会いましょう。|Veámonos el día quince.
+31|~ personas (contador)|cnt|n|学生が五人います。|Hay cinco estudiantes.|w=～人;r=～にん
+32|~ años; año ~|cnt|t|日本語を二年勉強しています。|Llevo dos años estudiando japonés.
+33|~ vasos/tazas (contador)|cnt|n|コーヒーを二杯飲みました。|Tomé dos tazas de café.
+34|número ~ (orden)|suf|n|三番のバスに乗ってください。|Suba al autobús número tres.
+35|~ animales pequeños (contador)|cnt|n|猫が二匹います。|Hay dos gatos.
+36|~ minutos|cnt|t|あと五分待ってください。|Espera cinco minutos más.
+37|~ objetos largos (contador)|cnt|n|ペンを三本ください。|Deme tres bolígrafos, por favor.
+38|~ objetos planos (contador)|cnt|n|切手を十枚買いました。|Compré diez sellos.
+39|antes de ~; hace ~|suf|t|三年前に日本へ来ました。|Vine a Japón hace tres años.
+40|tienda de ~|suf|l|あの本屋は大きいです。|Esa librería es grande.
+41|¡ah!, ¡oh!|int|g|ああ、そうですか。|Ah, ¿así es?
+42|encontrarse con, ver a alguien|v1|a|駅で友だちに会いました。|Me encontré con un amigo en la estación.
+43|azul (sustantivo)|n|d|空の青がきれいです。|El azul del cielo es precioso.
+44|azul|adj-i|d|青いシャツを買いました。|Compré una camisa azul.
+45|rojo (sustantivo)|n|d|赤が好きです。|Me gusta el rojo.
+46|rojo|adj-i|d|赤いりんごを食べました。|Comí una manzana roja.
+47|luminoso; alegre|adj-i|d|この部屋は明るいです。|Esta habitación es luminosa.
+48|otoño|n|z|秋は涼しいです。|El otoño es fresco.
+49|abrirse|v1|a|ドアが開きました。|La puerta se abrió.
+50|abrir (algo)|v2|a|窓を開けてください。|Abre la ventana, por favor.
+51|subir, levantar; dar|v2|a|手を上げてください。|Levanten la mano.
+52|mañana (parte del día)|n|t|朝、コーヒーを飲みます。|Por la mañana tomo café.
+53|desayuno|n|c|朝ご飯を食べましたか。|¿Desayunaste?
+54|pasado mañana|n|t|あさって、テストがあります。|Pasado mañana hay examen.
+55|pie; pierna|n|b|足が痛いです。|Me duele el pie.
+56|mañana (día siguiente)|n|t|明日は休みです。|Mañana es día libre.
+57|allí (lejos de ambos)|pron|g|あそこに銀行があります。|Allí hay un banco.
+58|jugar; divertirse, salir|v1|o|公園で遊びましょう。|Juguemos en el parque.
+59|cálido, templado|adj-i|z|今日は暖かいですね。|Hoy hace un tiempo templado.
+60|cabeza|n|b|頭が痛いです。|Me duele la cabeza.
+61|nuevo|adj-i|d|新しい車を買いました。|Compré un coche nuevo.
+62|allá, por allá (cortés)|pron|g|お手洗いはあちらです。|El baño está por allá.
+63|caluroso (clima)|adj-i|z|夏は暑いです。|El verano es caluroso.
+64|caliente (objetos)|adj-i|d|このお茶は熱いです。|Este té está caliente.
+65|grueso|adj-i|d|厚い本を読みました。|Leí un libro grueso.
+66|allá (coloquial)|pron|g|あっちへ行こう。|Vamos para allá.
+67|después; el resto|n|t|あとで電話します。|Te llamo después.
+68|tú, usted|pron|p|あなたの名前は何ですか。|¿Cómo te llamas?
+69|mi hermano mayor|n|p|兄は大学生です。|Mi hermano mayor es universitario.
+70|mi hermana mayor|n|p|姉は銀行で働いています。|Mi hermana mayor trabaja en un banco.
+71|aquel, aquella (lejos de ambos)|pron|g|あの人はだれですか。|¿Quién es aquella persona?
+72|apartamento|n|h|アパートに住んでいます。|Vivo en un apartamento.
+73|ducharse, bañarse (con agua)|v2|a|毎朝シャワーを浴びます。|Me ducho cada mañana.
+74|peligroso|adj-i|d|この道は危ないです。|Este camino es peligroso.
+75|dulce|adj-i|c|このケーキは甘いです。|Este pastel es dulce.
+76|no mucho (+ negativo); sobrante|adv|g|あまり食べませんでした。|No comí mucho.
+77|lluvia|n|z|雨が降っています。|Está lloviendo.
+78|caramelo|n|c|子どもに飴をあげました。|Le di un caramelo al niño.
+79|lavar|v1|a|手を洗ってください。|Lávate las manos.
+80|haber, estar (cosas)|v1|a|机の上に本がある。|Hay un libro sobre la mesa.
+81|tener, haber (cosas)|v1|a|時間がありますか。|¿Tienes tiempo?
+82|caminar|v1|a|駅まで歩きます。|Camino hasta la estación.
+83|aquello (lejos de ambos)|pron|g|あれは何ですか。|¿Qué es aquello?
+84|bueno|adj-i|d|いい天気ですね。|Hace buen tiempo, ¿verdad?
+85|no|int|g|いいえ、違います。|No, no es así.
+86|decir|v1|a|もう一度言ってください。|Dilo otra vez, por favor.
+87|casa|n|h|家に帰ります。|Vuelvo a casa.
+88|¿qué tal? (cortés)|adv|g|お茶はいかがですか。|¿Qué tal un té?
+89|ir|v1|v|明日、東京へ行きます。|Mañana voy a Tokio.
+90|¿cuántos?; ¿cuántos años?|adv|n|りんごはいくつありますか。|¿Cuántas manzanas hay?
+91|¿cuánto (cuesta)?|adv|s|これはいくらですか。|¿Cuánto cuesta esto?
+92|estanque|n|z|池に魚がいます。|Hay peces en el estanque.
+93|médico|n|b|医者に行きました。|Fui al médico.
+94|silla|n|h|椅子に座ってください。|Siéntese en la silla.
+95|ocupado|adj-i|w|今週は忙しいです。|Esta semana estoy ocupada.
+96|doloroso, que duele|adj-i|b|歯が痛いです。|Me duele una muela.
+97|uno|num|n|一から十まで数えます。|Cuento del uno al diez.
+98|un día (duración)|n|t|一日、休みました。|Descansé un día.
+99|el número uno, lo más|adv|d|夏が一番好きです。|El verano es lo que más me gusta.
+100|¿cuándo?|adv|t|いつ日本へ来ましたか。|¿Cuándo viniste a Japón?
+101|día cinco; cinco días|n|t|五日に会いましょう。|Veámonos el día cinco.
+102|juntos|n|g|一緒に行きましょう。|Vamos juntos.
+103|cinco (cosas)|num|n|卵を五つください。|Deme cinco huevos.
+104|siempre|adv|t|いつも七時に起きます。|Siempre me levanto a las siete.
+105|perro|n|z|犬が好きです。|Me gustan los perros.
+106|ahora|n|t|今、何時ですか。|¿Qué hora es ahora?
+107|significado|n|e|この言葉の意味は何ですか。|¿Qué significa esta palabra?
+108|mi hermana menor|n|p|妹は高校生です。|Mi hermana menor está en el bachillerato.
+109|desagradable, que no me gusta|adj-na|f|雨の日は嫌です。|Los días de lluvia no me gustan.
+110|entrada|n|l|入口はこちらです。|La entrada es por aquí.
+111|estar, haber (seres vivos)|v2|a|部屋に猫がいます。|Hay un gato en la habitación.
+112|necesitar|v1|a|お金が要ります。|Necesito dinero.
+113|meter, poner dentro|v2|a|かばんに本を入れます。|Meto el libro en la bolsa.
+114|color|n|d|好きな色は何ですか。|¿Cuál es tu color favorito?
+115|varios, diversos|adj-na|g|色々な国へ行きました。|Fui a varios países.
+116|arriba, encima|n|l|机の上に本があります。|Hay un libro encima del escritorio.
+117|detrás|n|l|家の後ろに木があります。|Hay un árbol detrás de la casa.
+118|delgado; claro; poco cargado|adj-i|d|このお茶は薄いです。|Este té está flojo.
+119|canción|n|o|日本の歌を歌います。|Canto canciones japonesas.
+120|cantar|v1|o|カラオケで歌いました。|Canté en el karaoke.
+121|casa, mi casa|n|h|うちに来てください。|Ven a mi casa.
+122|nacer|v2|p|メキシコで生まれました。|Nací en México.
+123|mar|n|z|夏に海へ行きます。|En verano voy al mar.
+124|vender|v1|s|この店は本を売っています。|Esta tienda vende libros.
+125|ruidoso; molesto|adj-i|d|外がうるさいです。|Afuera hay mucho ruido.
+126|chaqueta, abrigo|n|r|上着を着てください。|Ponte la chaqueta.
+127|cuadro, dibujo|n|o|絵をかくのが好きです。|Me gusta dibujar.
+128|película|n|o|映画を見に行きます。|Voy a ver una película.
+129|cine (sala)|n|l|映画館は駅の前です。|El cine está frente a la estación.
+130|inglés (idioma)|n|e|英語を教えています。|Enseño inglés.
+131|sí (informal)|int|g|ええ、そうです。|Sí, así es.
+132|estación (de tren)|n|v|駅はどこですか。|¿Dónde está la estación?
+133|ascensor|n|h|エレベーターで五階へ行きます。|Subo al quinto piso en ascensor.
+134|lápiz|n|e|鉛筆で書いてください。|Escribe con lápiz.
+135|prefijo honorífico お~|pref|g|お茶をどうぞ。|Tome un té, por favor.
+136|delicioso|adj-i|c|このラーメンはおいしいです。|Este ramen está delicioso.
+137|mucho, numeroso|adj-i|d|東京は人が多いです。|En Tokio hay mucha gente.
+138|grande|adj-i|d|大きい犬がいます。|Hay un perro grande.
+139|grande (antes de sustantivo)|adj-na|d|大きな声で話してください。|Habla en voz alta.
+140|mucha gente|n|p|公園に人が大勢います。|Hay mucha gente en el parque.
+141|madre (de alguien / al llamarla)|n|p|お母さんは元気ですか。|¿Tu madre está bien?
+142|dulces, golosinas|n|c|お菓子を食べました。|Comí golosinas.
+143|dinero|n|s|お金がありません。|No tengo dinero.
+144|levantarse; ocurrir|v2|a|毎朝六時に起きます。|Me levanto a las seis cada mañana.
+145|poner, dejar|v1|a|かばんをここに置いてください。|Deja la bolsa aquí.
+146|esposa (de otro)|n|p|奥さんはお元気ですか。|¿Su esposa está bien?
+147|sake; alcohol|n|c|父はお酒を飲みません。|Mi padre no bebe alcohol.
+148|plato|n|c|お皿を洗います。|Lavo los platos.
+149|abuelo; señor mayor|n|p|おじいさんは八十歳です。|El abuelo tiene ochenta años.
+150|enseñar; decir, informar|v2|e|日本語を教えてください。|Enséñame japonés.
+151|tío; señor de mediana edad|n|p|おじさんは大阪に住んでいます。|Mi tío vive en Osaka.
+152|empujar, presionar|v1|a|このボタンを押してください。|Presione este botón.
+153|lento; tarde|adj-i|d|バスが遅いです。|El autobús va lento.
+154|té verde|n|c|お茶を飲みましょう。|Tomemos té.
+155|baño, servicio|n|h|お手洗いはどこですか。|¿Dónde está el baño?
+156|padre (de alguien / al llamarlo)|n|p|お父さんは何歳ですか。|¿Cuántos años tiene tu padre?
+157|mi hermano menor|n|p|弟はサッカーが好きです。|A mi hermano menor le gusta el fútbol.
+158|hombre|n|p|あの男の人は先生です。|Aquel hombre es profesor.
+159|niño, chico|n|p|男の子が走っています。|Un niño está corriendo.
+160|anteayer|n|t|おととい、雨が降りました。|Anteayer llovió.
+161|hace dos años|n|t|おととし、日本へ行きました。|Hace dos años fui a Japón.
+162|adulto|n|p|大人は千円です。|Los adultos pagan mil yenes.
+163|barriga, estómago|n|b|お腹がすきました。|Tengo hambre.
+164|igual, mismo|adj-na|d|同じ色のかばんです。|Es una bolsa del mismo color.
+165|hermano mayor (de otro / al llamarlo)|n|p|お兄さんはどこにいますか。|¿Dónde está tu hermano mayor?
+166|hermana mayor (de otro / al llamarla)|n|p|お姉さんはきれいですね。|Tu hermana mayor es guapa.
+167|abuela; señora mayor|n|p|おばあさんと住んでいます。|Vivo con mi abuela.
+168|tía; señora de mediana edad|n|p|おばさんが来ました。|Vino mi tía.
+169|baño (bañera)|n|h|毎晩お風呂に入ります。|Me baño cada noche.
+170|bentō, almuerzo en caja|n|c|お弁当を作りました。|Preparé un bentō.
+171|memorizar; recordar|v2|e|漢字を覚えます。|Memorizo kanji.
+172|policía (amable)|n|w|おまわりさんに道を聞きました。|Le pregunté el camino a un policía.
+173|pesado; grave|adj-i|d|このかばんは重いです。|Esta bolsa pesa.
+174|interesante, divertido|adj-i|d|この本は面白いです。|Este libro es interesante.
+175|nadar|v1|o|海で泳ぎました。|Nadé en el mar.
+176|bajar (de un vehículo)|v2|v|次の駅で降ります。|Me bajo en la próxima estación.
+177|terminar(se)|v1|a|授業は三時に終わります。|La clase termina a las tres.|w=終わる
+178|música|n|o|音楽を聞きます。|Escucho música.
+179|mujer|n|p|女の人が歌っています。|Una mujer está cantando.
+180|niña, chica|n|p|女の子が二人います。|Hay dos niñas.
+181|país extranjero|n|v|外国に住みたいです。|Quiero vivir en el extranjero.
+182|extranjero (persona)|n|p|外国人の友だちがいます。|Tengo amigos extranjeros.
+183|empresa|n|w|会社へ行きます。|Voy a la empresa.
+184|escaleras|n|h|階段を上ります。|Subo las escaleras.
+185|compras|n|s|デパートで買い物をします。|Hago compras en el centro comercial.
+186|comprar|v1|s|パンを買いました。|Compré pan.
+187|devolver|v1|a|本を返します。|Devuelvo el libro.
+188|volver (a casa)|v1|a|七時に家へ帰ります。|Vuelvo a casa a las siete.
+189|cara|n|b|顔を洗います。|Me lavo la cara.
+190|tardar, costar (tiempo/dinero)|v1|a|駅まで十分かかります。|Se tarda diez minutos hasta la estación.
+191|llave; cerradura|n|h|鍵をなくしました。|Perdí la llave.
+192|escribir|v1|e|手紙を書きます。|Escribo una carta.
+193|estudiante|n|e|私は学生です。|Soy estudiante.
+194|colgar; ponerse (gafas)|v2|a|眼鏡を掛けています。|Lleva gafas.
+195|llamar (por teléfono); sentarse|v2|a|友だちに電話をかけます。|Llamo a una amiga.
+196|paraguas|n|h|傘を持っていきます。|Me llevo el paraguas.
+197|prestar|v1|a|ペンを貸してください。|Préstame un bolígrafo.
+198|viento|n|z|風が強いです。|El viento es fuerte.
+199|resfriado|n|b|風邪をひきました。|Me resfrié.
+200|familia|n|p|家族は四人です。|Somos cuatro en la familia.
+201|persona (cortés); forma de hacer|n|p|あの方はどなたですか。|¿Quién es aquella persona?
+202|katakana|n|e|名前を片仮名で書きます。|Escribo mi nombre en katakana.
+203|escuela|n|e|学校は八時からです。|La escuela empieza a las ocho.
+204|taza (de té, con asa)|n|c|カップにコーヒーを入れます。|Sirvo café en la taza.
+205|hogar|n|p|明るい家庭です。|Es un hogar alegre.
+206|esquina|n|l|次の角を右に曲がってください。|Gira a la derecha en la próxima esquina.
+207|bolso, mochila|n|r|かばんの中に本があります。|Hay un libro dentro de la bolsa.
+208|florero|n|h|花瓶に花を入れます。|Pongo flores en el florero.
+209|ponerse (en la cabeza)|v1|r|帽子をかぶります。|Me pongo el sombrero.
+210|papel|n|e|紙に名前を書いてください。|Escribe tu nombre en el papel.
+211|cámara|n|o|新しいカメラがほしいです。|Quiero una cámara nueva.
+212|martes|n|t|火曜日にテストがあります。|El martes hay examen.
+213|picante; salado|adj-i|c|このカレーは辛いです。|Este curry pica.
+214|cuerpo; salud|n|b|体に気をつけてください。|Cuida tu salud.
+215|pedir prestado|v2|a|図書館で本を借ります。|Saco libros prestados de la biblioteca.
+216|ligero|adj-i|d|このかばんは軽いです。|Esta bolsa es ligera.
+217|curry|n|c|カレーを作りました。|Hice curry.
+218|calendario|n|t|カレンダーを見てください。|Mira el calendario.
+219|río|n|z|川で泳ぎました。|Nadé en el río.
+220|bonito, mono|adj-i|d|この猫は可愛いです。|Este gato es muy mono.
+221|kanji|n|e|漢字は難しいです。|Los kanji son difíciles.
+222|árbol; madera|n|z|庭に大きい木があります。|Hay un árbol grande en el jardín.
+223|amarillo (sustantivo)|n|d|黄色が好きです。|Me gusta el amarillo.
+224|amarillo|adj-i|d|黄色い花が咲いています。|Han florecido flores amarillas.
+225|apagarse, desaparecer|v2|a|電気が消えました。|Se apagó la luz.
+226|oír, escuchar; preguntar|v1|a|音楽を聞きます。|Escucho música.
+227|norte|n|l|北の空が暗いです。|El cielo del norte está oscuro.
+228|guitarra|n|o|ギターを弾きます。|Toco la guitarra.
+229|sucio|adj-i|d|部屋が汚いです。|La habitación está sucia.
+230|cafetería|n|l|喫茶店で会いましょう。|Veámonos en la cafetería.
+231|sello postal|n|s|切手を買いました。|Compré sellos.
+232|billete, boleto|n|v|切符を買ってください。|Compra el billete.
+233|ayer|n|t|昨日は日曜日でした。|Ayer fue domingo.
+234|nueve|num|n|九時に寝ます。|Me acuesto a las nueve.
+235|carne de res|n|c|牛肉を買いました。|Compré carne de res.
+236|leche|n|c|毎朝牛乳を飲みます。|Bebo leche cada mañana.
+237|hoy|n|t|今日は暑いです。|Hoy hace calor.
+238|aula|n|e|教室に学生がいます。|Hay estudiantes en el aula.
+239|hermanos|n|p|兄弟がいますか。|¿Tienes hermanos?
+240|el año pasado|n|t|去年、日本へ行きました。|El año pasado fui a Japón.
+241|que no gusta, odiar|adj-na|f|野菜が嫌いです。|No me gustan las verduras.
+242|cortar; colgar (teléfono)|v1|a|ナイフで肉を切ります。|Corto la carne con cuchillo.
+243|ponerse (ropa de cintura arriba)|v2|r|コートを着ます。|Me pongo el abrigo.
+244|bonito; limpio|adj-na|d|この部屋はきれいです。|Esta habitación está limpia.
+245|kilo(gramo)|n|n|米を五キロ買いました。|Compré cinco kilos de arroz.
+246|kilómetro|n|n|駅まで二キロあります。|Hay dos kilómetros hasta la estación.
+247|banco|n|l|銀行でお金をおろします。|Saco dinero en el banco.
+248|viernes|n|t|金曜日は忙しいです。|Los viernes estoy ocupada.
+249|nueve (lectura く)|num|n|九月に日本へ行きます。|En septiembre voy a Japón.
+250|medicina|n|b|この薬を飲んでください。|Tome esta medicina.
+251|por favor, deme / hágame|exp|g|水を下さい。|Agua, por favor.
+252|fruta|n|c|果物が好きです。|Me gusta la fruta.
+253|boca|n|b|口を開けてください。|Abra la boca.
+254|zapatos|n|r|新しい靴を買いました。|Compré zapatos nuevos.
+255|calcetines|n|r|靴下をはきます。|Me pongo los calcetines.
+256|país|n|v|どこの国から来ましたか。|¿De qué país vienes?
+257|nublado|n|z|明日は曇りです。|Mañana estará nublado.
+258|nublarse|v1|z|空が曇ってきました。|El cielo se ha nublado.
+259|oscuro|adj-i|d|外はもう暗いです。|Afuera ya está oscuro.
+260|clase (grupo)|n|e|クラスに学生が二十人います。|Hay veinte estudiantes en la clase.
+261|gramo|n|n|肉を三百グラム買いました。|Compré trescientos gramos de carne.
+262|venir|v3|a|友だちが家に来ます。|Viene una amiga a casa.
+263|coche|n|v|車で会社へ行きます。|Voy a la empresa en coche.
+264|negro (sustantivo)|n|d|黒が好きです。|Me gusta el negro.
+265|negro|adj-i|d|黒いシャツを着ています。|Llevo una camisa negra.
+266|agente de policía|n|w|警官が立っています。|Hay un policía de pie.
+267|esta mañana|n|t|今朝、パンを食べました。|Esta mañana comí pan.
+268|borrar; apagar|v1|a|電気を消してください。|Apaga la luz.
+269|bastante; está bien, no gracias|adj-na|g|もう結構です。|Ya es suficiente, gracias.
+270|matrimonio, casarse|n|p|姉は来月結婚します。|Mi hermana mayor se casa el mes que viene.|w=結婚;r=けっこん
+271|lunes|n|t|月曜日から仕事です。|Trabajo a partir del lunes.
+272|entrada (de la casa)|n|h|玄関で靴を脱ぎます。|Me quito los zapatos en la entrada.
+273|sano, con energía|adj-na|f|お元気ですか。|¿Cómo estás?
+274|cinco|num|n|五時に会いましょう。|Veámonos a las cinco.
+275|parque|n|l|公園を散歩します。|Paseo por el parque.
+276|cruce|n|l|交差点を左に曲がります。|Giro a la izquierda en el cruce.
+277|té negro|n|c|紅茶を飲みますか。|¿Tomas té negro?
+278|caseta de policía|n|l|交番で道を聞きました。|Pregunté el camino en la caseta de policía.
+279|voz|n|b|大きい声で話してください。|Habla en voz alta.
+280|abrigo; cancha|n|r|コートを着て出かけます。|Salgo con el abrigo puesto.
+281|café|n|c|コーヒーを一杯ください。|Un café, por favor.
+282|aquí|pron|g|ここに座ってください。|Siéntate aquí.
+283|tarde, p. m.|n|t|午後三時に会いましょう。|Veámonos a las tres de la tarde.
+284|día nueve; nueve días|n|t|九日は日曜日です。|El día nueve es domingo.
+285|nueve (cosas)|num|n|卵が九つあります。|Hay nueve huevos.
+286|mañana, a. m.|n|t|午前十時に来てください。|Ven a las diez de la mañana.
+287|responder|v2|e|質問に答えてください。|Responde a la pregunta.
+288|por aquí; esta persona (cortés)|pron|g|こちらは田中さんです。|Este es el señor Tanaka.
+289|por aquí (coloquial)|pron|g|こっちに来て。|Ven aquí.
+290|vaso|n|c|コップに水を入れます。|Echo agua en el vaso.
+291|este año|n|t|今年、日本へ行きます。|Este año voy a Japón.
+292|palabra; idioma|n|e|この言葉の意味がわかりません。|No entiendo el significado de esta palabra.
+293|niño, niños|n|p|子供が公園で遊んでいます。|Los niños juegan en el parque.
+294|este, esta|pron|g|この本は面白いです。|Este libro es interesante.
+295|arroz cocido; comida|n|c|ご飯を食べましょう。|Vamos a comer.
+296|copiar, fotocopiar|v3|e|この紙をコピーしてください。|Fotocopia este papel.|w=コピーする;r=コピーする
+297|tener problemas, estar en apuros|v1|f|お金がなくて困っています。|Estoy en apuros porque no tengo dinero.
+298|esto|pron|g|これは私の本です。|Esto es mi libro.
+299|este mes|n|t|今月は忙しいです。|Este mes estoy ocupada.
+300|esta semana|n|t|今週、テストがあります。|Esta semana hay examen.
+301|así, de este tipo|adj-na|g|こんな家に住みたいです。|Quiero vivir en una casa así.
+302|esta noche|n|t|今晩、映画を見ます。|Esta noche veo una película.
+303|bueno, venga|int|g|さあ、行きましょう。|Venga, vámonos.
+304|cartera, monedero|n|s|財布を落としました。|Se me cayó la cartera.
+305|pescado, pez|n|c|魚を食べます。|Como pescado.
+306|adelante; antes; punta|n|t|お先に失礼します。|Me retiro antes, con permiso.
+307|florecer|v1|z|桜が咲きました。|Florecieron los cerezos.
+308|redacción|n|e|日本語で作文を書きました。|Escribí una redacción en japonés.
+309|abrir (paraguas)|v1|a|傘を差します。|Abro el paraguas.
+310|revista|n|o|雑誌を読んでいます。|Estoy leyendo una revista.
+311|azúcar|n|c|コーヒーに砂糖を入れます。|Le echo azúcar al café.
+312|frío (clima)|adj-i|z|冬は寒いです。|El invierno es frío.
+313|dentro de dos años|n|t|さ来年、大学に入ります。|Dentro de dos años entro en la universidad.
+314|tres|num|n|三時に会います。|Nos vemos a las tres.
+315|paseo, pasear|n|o|毎朝、犬と散歩します。|Cada mañana paseo con el perro.|w=散歩;r=さんぽ
+316|cuatro (lectura し)|num|n|四月に学校が始まります。|La escuela empieza en abril.
+317|sal|n|c|塩を取ってください。|Pásame la sal.
+318|sin embargo, pero|conj|g|日本語は難しい。しかし、面白い。|El japonés es difícil. Sin embargo, es interesante.
+319|tiempo|n|t|時間がありません。|No tengo tiempo.
+320|trabajo|n|w|仕事は何時に終わりますか。|¿A qué hora termina tu trabajo?
+321|diccionario|n|e|辞書で調べます。|Lo busco en el diccionario.
+322|tranquilo, silencioso|adj-na|d|図書館は静かです。|La biblioteca es silenciosa.
+323|abajo, debajo|n|l|机の下に猫がいます。|Hay un gato debajo del escritorio.
+324|siete (lectura しち)|num|n|七時に起きます。|Me levanto a las siete.
+325|pregunta|n|e|質問がありますか。|¿Tienen preguntas?
+326|bicicleta|n|v|自転車で学校へ行きます。|Voy a la escuela en bicicleta.
+327|automóvil|n|v|自動車の会社で働いています。|Trabajo en una empresa de automóviles.
+328|morir|v1|z|花が死んでしまいました。|Las flores se murieron.
+329|diccionario (antiguo)|n|e|字引を引きます。|Consulto el diccionario.
+330|uno mismo|pron|p|自分で作りました。|Lo hice yo misma.
+331|cerrarse|v1|a|店が閉まりました。|La tienda cerró.
+332|cerrar (algo)|v2|a|窓を閉めてください。|Cierra la ventana.
+333|atar, apretar|v2|r|ネクタイを締めます。|Me anudo la corbata.
+334|bueno, entonces|conj|g|じゃ、また明日。|Bueno, hasta mañana.
+335|foto|n|o|写真を撮りましょう。|Saquemos una foto.
+336|camisa|n|r|白いシャツを着ています。|Llevo una camisa blanca.
+337|ducha|n|h|シャワーを浴びます。|Me ducho.
+338|diez|num|n|十時に寝ます。|Me acuesto a las diez.
+339|clase (lección)|n|e|授業は九時からです。|La clase es desde las nueve.
+340|tarea, deberes|n|e|宿題をしなければなりません。|Tengo que hacer la tarea.
+341|hábil, que se le da bien|adj-na|f|妹は歌が上手です。|A mi hermana se le da bien cantar.
+342|resistente, sano|adj-na|d|このかばんは丈夫です。|Esta bolsa es resistente.
+343|salsa de soja|n|c|醤油をかけます。|Le echo salsa de soja.
+344|comedor|n|l|食堂で昼ご飯を食べます。|Almuerzo en el comedor.
+345|saber, conocer|v1|e|その人を知っています。|Conozco a esa persona.
+346|blanco (sustantivo)|n|d|白が好きです。|Me gusta el blanco.
+347|blanco|adj-i|d|白い犬がいます。|Hay un perro blanco.
+348|periódico|n|o|毎朝新聞を読みます。|Leo el periódico cada mañana.
+349|miércoles|n|t|水曜日は休みです。|El miércoles es día libre.
+350|aspirar; fumar|v1|a|ここでたばこを吸わないでください。|No fume aquí, por favor.
