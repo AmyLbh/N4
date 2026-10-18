@@ -145,11 +145,14 @@ function header() {
   const dl = daysLeft(); $('#cdD').textContent = dl >= 0 ? dl + 'd' : '0d';
   const ms = examDate() - Date.now(); const h = Math.max(0, Math.floor((ms % DAY) / 3600000)); $('#cdT').textContent = dl >= 0 ? h + 'h' : '';
 }
-const ARCH = `<svg class="arch-top" viewBox="0 0 400 46" preserveAspectRatio="none" aria-hidden="true"><path class="o" d="M0 46 L0 40 Q120 36 200 0 Q280 36 400 40 L400 46 Z"/><path class="i" d="M14 46 Q130 38 200 8 Q270 38 386 46"/></svg>`;
-const THORNS = `<svg class="divider" viewBox="0 0 400 18" preserveAspectRatio="none" aria-hidden="true"><path d="M0 9 H400" stroke="#262236" stroke-width="1"/><path d="M20 9 q20 -8 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#3b1d73" stroke-width="1.2"/><g fill="#8a3dff" opacity=".7"><path d="M60 9 l3 -6 l1 6z"/><path d="M140 9 l3 6 l1 -6z"/><path d="M220 9 l3 -6 l1 6z"/><path d="M300 9 l3 6 l1 -6z"/></g><g fill="#a4ff3c"><rect x="196" y="6" width="8" height="6"/><rect x="100" y="8" width="3" height="2"/><rect x="280" y="8" width="3" height="2"/></g></svg>`;
+const SIGIL = `<svg class="arch-orn" viewBox="-40 -24 80 48" aria-hidden="true"><ellipse cx="0" cy="-12" rx="17" ry="5" fill="none" stroke="#ffb8d9" stroke-width="1"/><ellipse cx="0" cy="-12" rx="22" ry="7" fill="none" stroke="#ff5fae" stroke-width=".5" opacity=".6"/><path d="M0 -4 L3 8 L0 22 L-3 8Z" fill="#ff5fae"/><path d="M-3 4 C-14 2 -22 -6 -36 -2 C-24 -1 -16 6 -4 10 M3 4 C14 2 22 -6 36 -2 C24 -1 16 6 4 10" fill="none" stroke="#e9dfe5" stroke-width=".9"/><path d="M-6 12 C-14 14 -18 20 -26 22 M6 12 C14 14 18 20 26 22" fill="none" stroke="#ff5fae" stroke-width=".7"/></svg>`;
+const ARCH = `<div class="arch-hd"><svg class="arch-top" viewBox="0 0 400 54" preserveAspectRatio="none" aria-hidden="true"><path class="o" d="M0 54 L0 46 C70 44 120 40 160 22 C178 14 190 8 200 0 C210 8 222 14 240 22 C280 40 330 44 400 46 L400 54 Z"/><path class="i" d="M12 54 C80 50 130 44 168 28 C184 21 194 14 200 9 C206 14 216 21 232 28 C270 44 320 50 388 54"/><path class="s" d="M28 54 C90 52 140 47 174 34 C188 28 196 22 200 18 C204 22 212 28 226 34 C260 47 310 52 372 54"/></svg>${SIGIL}</div>`;
+const THORNS = `<svg class="divider" viewBox="0 0 400 28" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><g fill="none" stroke-linecap="round"><path d="M10 14 C80 14 120 6 170 12 M390 14 C320 14 280 6 230 12" stroke="#e9dfe5" stroke-width=".8"/><path d="M40 14 C90 18 130 24 176 16 M360 14 C310 18 270 24 224 16" stroke="#ff5fae" stroke-width=".8"/><path d="M60 13 l8 -7 M90 12 l7 -8 M120 10 l6 -8 M150 10 l5 -7 M340 13 l-8 -7 M310 12 l-7 -8 M280 10 l-6 -8 M250 10 l-5 -7" stroke="#e9dfe5" stroke-width=".7"/><path d="M75 17 l6 7 M105 20 l5 6 M135 21 l4 5 M325 17 l-6 7 M295 20 l-5 6 M265 21 l-4 5" stroke="#ff5fae" stroke-width=".7"/></g><g fill="#ff5fae"><path d="M200 2 L208 14 L200 26 L192 14Z"/></g><path d="M200 7 L204 14 L200 21 L196 14Z" fill="#040203"/><g fill="#e9dfe5"><circle cx="184" cy="14" r="1.6"/><circle cx="216" cy="14" r="1.6"/><circle cx="176" cy="14" r="1"/><circle cx="224" cy="14" r="1"/></g></svg>`;
 function rankBadge(i) {
-  const cols = ['#5f5a75', '#8a86a0', '#b48bff', '#c4142f', '#c9ccd8', '#a4ff3c'];
-  return `<svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2 L40 12 V30 L22 42 L4 30 V12 Z" fill="#0c0b14" stroke="${cols[i]}" stroke-width="1.5"/><path d="M22 9 L33 15 V28 L22 35 L11 28 V15 Z" fill="none" stroke="${cols[i]}" stroke-width=".8" opacity=".6"/>${Array.from({ length: i + 1 }, (_, j) => `<circle cx="${22 + (j - i / 2) * 5}" cy="22" r="1.7" fill="${cols[i]}"/>`).join('')}</svg>`;
+  const c = ['#7a6370', '#b9a7b1', '#e9dfe5', '#ffb8d9', '#ff5fae', '#ffffff'][i];
+  let w = '';
+  for (let j = 0; j <= i; j++) { const y = 26 + j * 4.2, l = 18 - j * 2; w += `<path d="M20 ${y} C${20 - l * .5} ${y - 6} ${20 - l} ${y - 4} ${20 - l - 4} ${y - 9}" stroke="${c}"/><path d="M44 ${y} C${44 + l * .5} ${y - 6} ${44 + l} ${y - 4} ${44 + l + 4} ${y - 9}" stroke="${c}"/>`; }
+  return `<svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="9" rx="11" ry="3.5" fill="none" stroke="${c}" stroke-width="1.2"${i >= 4 ? ' style="filter:drop-shadow(0 0 4px #ff5fae)"' : ''}/><g fill="none" stroke-width="1" stroke-linecap="round">${w}</g><path d="M32 16 L40 32 L32 56 L24 32Z" fill="#0b0609" stroke="${c}" stroke-width="1.2"/><path d="M32 24 L35 32 L32 44 L29 32Z" fill="${i >= 3 ? '#ff5fae' : c}"/></svg>`;
 }
 
 // ================= HOY =================
@@ -365,10 +368,9 @@ function openReading() {
 // ================= MOTOR DE RONDA =================
 let SES = null;
 function roseSVG() {
-  let s = '<svg class="rose" viewBox="-50 -50 100 100" aria-hidden="true"><circle r="48" fill="#07060c" stroke="#262236"/>';
-  const cols = ['#8a3dff', '#c4142f', '#5b2bb0', '#a4ff3c'];
-  for (let i = 0; i < 12; i++) { const a = i * 30; s += `<path class="pt" data-i="${i}" transform="rotate(${a})" d="M0 -10 Q10 -28 0 -44 Q-10 -28 0 -10Z" fill="${cols[i % 4]}" opacity=".9"/>`; }
-  s += '<circle r="10" fill="#0c0b14" stroke="#c9ccd8" stroke-width=".8"/><circle r="4" fill="#c4142f"/><circle r="47" fill="none" stroke="#c9ccd8" stroke-width=".6" opacity=".5"/></svg>';
+  let s = '<svg class="rose" viewBox="-50 -50 100 100" aria-hidden="true"><circle r="48" fill="#070305" stroke="#3a2631"/><circle r="44" fill="none" stroke="#e9dfe5" stroke-width=".4" opacity=".5"/>';
+  for (let i = 0; i < 12; i++) { const a = i * 30; s += `<g transform="rotate(${a})"><path class="pt" data-i="${i}" d="M0 -11 C6 -22 4 -32 0 -45 C-4 -32 -6 -22 0 -11Z" fill="${i % 2 ? '#ff5fae' : '#ffb8d9'}" stroke="#fff" stroke-width=".5" opacity=".95"/><path d="M0 -30 l4 -5 M0 -30 l-4 -5" stroke="#e9dfe5" stroke-width=".5" fill="none"/></g>`; }
+  s += '<circle r="10" fill="#0b0609" stroke="#e9dfe5" stroke-width=".8"/><path d="M0 -6 L4 0 L0 6 L-4 0Z" fill="#ff5fae"/></svg>';
   return s;
 }
 function setRose(frac) { $$('.rose .pt').forEach(p => p.setAttribute('opacity', +p.dataset.i < Math.ceil(frac * 12) ? '.9' : '.08')); }
@@ -535,7 +537,7 @@ function endSession(broken) {
   const causeTxt = Object.entries(SES.causes).map(([k, v]) => `${k} ×${v}`).join(' · ');
   stage().innerHTML = `<div class="col" style="overflow:auto">
     <div class="lbl">${esc(c.title)} · fin de ronda</div>
-    <div class="panel"><div class="integ"><div class="big num" style="color:${sc === 100 ? 'var(--acid)' : sc >= 90 ? '#e6c35a' : 'var(--blood-hi)'}">${sc}</div><div class="mono mute" style="font-size:12px;padding-bottom:6px">puntuación /100<br>${SES.ok}/${n} · ${(avg / 1000).toFixed(1)} s media · ${SES.pts} pts · combo máx ${SES.best}</div></div>
+    <div class="panel"><div class="integ"><div class="big num" style="color:${sc === 100 ? 'var(--acid)' : sc >= 90 ? '#f0cf8a' : 'var(--blood-hi)'}">${sc}</div><div class="mono mute" style="font-size:12px;padding-bottom:6px">puntuación /100<br>${SES.ok}/${n} · ${(avg / 1000).toFixed(1)} s media · ${SES.pts} pts · combo máx ${SES.best}</div></div>
     ${prev ? `<div class="mono" style="font-size:12px;margin-top:6px">Tu récord anterior: <span class="uv">${c.mode === 'r60' ? prev.pts + ' pts' : prev.s}</span> ${newRec ? '<span class="acid">· SUPERADO</span>' : ''}</div>` : ''}
     ${broken ? '<div class="red mono" style="margin-top:6px">ESPEJO ROTO en la pregunta ' + SES.i + '</div>' : ''}
     ${causeTxt ? `<div class="mono mute" style="font-size:12px;margin-top:6px">Causas: ${esc(causeTxt)}</div>` : ''}</div>
@@ -704,15 +706,15 @@ function chartSVG() {
   const span = Math.max(1, (end - start) / DAY);
   const x = d => pl + ((d - start) / DAY) / span * (W - pl - pr), y = v => pt + (1 - v / 100) * (H - pt - pb);
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Porcentaje listo para N4 por día">`;
-  [0, 25, 50, 75, 100].forEach(v => s += `<line x1="${pl}" x2="${W - pr}" y1="${y(v)}" y2="${y(v)}" stroke="#262236" stroke-width=".6"/><text x="${pl - 4}" y="${y(v) + 3}" text-anchor="end">${v}</text>`);
-  s += `<line x1="${pl}" x2="${W - pr}" y1="${y(100)}" y2="${y(100)}" stroke="#a4ff3c" stroke-dasharray="4 3" stroke-width="1"/><text x="${W - pr}" y="${y(100) - 3}" text-anchor="end" style="fill:#a4ff3c">meta 100%</text>`;
-  s += `<line x1="${x(end)}" x2="${x(end)}" y1="${pt}" y2="${H - pb}" stroke="#c4142f" stroke-width="1.2"/><text x="${x(end) - 3}" y="${H - pb + 14}" text-anchor="end" style="fill:#ff3a55">juicio ${end.toLocaleDateString('es', { day: 'numeric', month: 'short' })}</text>`;
+  [0, 25, 50, 75, 100].forEach(v => s += `<line x1="${pl}" x2="${W - pr}" y1="${y(v)}" y2="${y(v)}" stroke="#3a2631" stroke-width=".6"/><text x="${pl - 4}" y="${y(v) + 3}" text-anchor="end">${v}</text>`);
+  s += `<line x1="${pl}" x2="${W - pr}" y1="${y(100)}" y2="${y(100)}" stroke="#ff5fae" stroke-dasharray="4 3" stroke-width="1"/><text x="${W - pr}" y="${y(100) - 3}" text-anchor="end" style="fill:#ff5fae">meta 100%</text>`;
+  s += `<line x1="${x(end)}" x2="${x(end)}" y1="${pt}" y2="${H - pb}" stroke="#e9dfe5" stroke-width="1"/><text x="${x(end) - 3}" y="${H - pb + 14}" text-anchor="end" style="fill:#e9dfe5">juicio ${end.toLocaleDateString('es', { day: 'numeric', month: 'short' })}</text>`;
   s += `<text x="${pl}" y="${H - pb + 14}">${start.toLocaleDateString('es', { day: 'numeric', month: 'short' })}</text>`;
   if (ks.length) {
     const pts = ks.map(k => [x(new Date(k + 'T00:00:00')), y(S.hist[k].r || 0)]);
-    s += `<path d="M${pts.map(p => p.join(' ')).join(' L')} L${pts[pts.length - 1][0]} ${y(0)} L${pts[0][0]} ${y(0)}Z" fill="rgba(138,61,255,.15)"/>`;
-    s += `<path d="M${pts.map(p => p.join(' ')).join(' L')}" fill="none" stroke="#b48bff" stroke-width="1.8"/>`;
-    const lp = pts[pts.length - 1]; s += `<circle cx="${lp[0]}" cy="${lp[1]}" r="3.5" fill="#a4ff3c"/><text x="${lp[0] + 5}" y="${lp[1] - 5}" style="fill:#a4ff3c">${(S.hist[ks[ks.length - 1]].r || 0).toFixed(1)}%</text>`;
+    s += `<path d="M${pts.map(p => p.join(' ')).join(' L')} L${pts[pts.length - 1][0]} ${y(0)} L${pts[0][0]} ${y(0)}Z" fill="rgba(255,95,174,.14)"/>`;
+    s += `<path d="M${pts.map(p => p.join(' ')).join(' L')}" fill="none" stroke="#ffb8d9" stroke-width="1.8"/>`;
+    const lp = pts[pts.length - 1]; s += `<circle cx="${lp[0]}" cy="${lp[1]}" r="3.5" fill="#ff5fae"/><text x="${lp[0] + 5}" y="${lp[1] - 5}" style="fill:#ff5fae">${(S.hist[ks[ks.length - 1]].r || 0).toFixed(1)}%</text>`;
   } else s += `<text x="${W / 2}" y="${H / 2}" text-anchor="middle">Sin datos: juega una ronda</text>`;
   return s + '</svg>';
 }
@@ -722,7 +724,7 @@ function barsSVG() {
   if (!E.length) return '<p class="mute" style="margin:0">Sin datos todavía.</p>';
   const W = 340, rowH = 22, H = E.length * rowH + 10, pl = 70;
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Precisión por modo">`;
-  E.forEach(([k, a], i) => { const p = a.ok / a.q, yy = 5 + i * rowH, w = (W - pl - 50) * p; s += `<text x="${pl - 6}" y="${yy + 12}" text-anchor="end">${names[k]}</text><rect x="${pl}" y="${yy + 2}" width="${W - pl - 50}" height="13" fill="#100e18"/><rect x="${pl}" y="${yy + 2}" width="${w}" height="13" fill="${p === 1 ? '#a4ff3c' : p >= .9 ? '#b48bff' : '#c4142f'}"/><text x="${W - 4}" y="${yy + 12}" text-anchor="end">${Math.round(p * 100)}% · ${a.q}</text>`; });
+  E.forEach(([k, a], i) => { const p = a.ok / a.q, yy = 5 + i * rowH, w = (W - pl - 50) * p; s += `<text x="${pl - 6}" y="${yy + 12}" text-anchor="end">${names[k]}</text><rect x="${pl}" y="${yy + 2}" width="${W - pl - 50}" height="13" fill="#1a0d14"/><rect x="${pl}" y="${yy + 2}" width="${w}" height="13" fill="${p === 1 ? '#ffffff' : p >= .9 ? '#ff5fae' : '#8f0d22'}"/><text x="${W - 4}" y="${yy + 12}" text-anchor="end">${Math.round(p * 100)}% · ${a.q}</text>`; });
   return s + '</svg>';
 }
 function heatHTML() {
@@ -730,8 +732,8 @@ function heatHTML() {
   const rows = [['kN5', 'Kanji N5'], ['kN4', 'Kanji N4'], ['vS2', 'Vocab S2'], ['vN5', 'Vocab N5'], ['vN4', 'Vocab N4'], ...GPTS.map(p => ['g_' + p, PTS[p].name])];
   const now = new Date(); const cols = [];
   for (let w = 5; w >= 0; w--) { const end = new Date(now - w * 7 * DAY); const k = Object.keys(S.hist).filter(d => d <= todayKey(end)).sort().pop(); cols.push(k ? S.hist[k].cm : null); }
-  const col = v => v == null ? '#0c0b14' : v >= 1 ? '#a4ff3c' : v >= .75 ? '#6a3fc0' : v >= .5 ? '#4a2690' : v >= .25 ? '#5a0d1d' : v > 0 ? '#2e0610' : '#15131f';
-  return `<div class="heat"><span></span>${cols.map((_, i) => `<span class="mute" style="text-align:center">${i === 5 ? 'hoy' : '-' + (5 - i) + 's'}</span>`).join('')}${rows.map(([k, l]) => `<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l)}</span>${cols.map(c => `<span class="c" style="background:${col(c ? c[k] : null)}" title="${c ? Math.round((c[k] || 0) * 100) + '%' : 'sin datos'}"></span>`).join('')}`).join('')}</div><div class="mono mute" style="font-size:11px;margin-top:8px">verde = 100% dominado · violeta ≥ 50% · rojo &lt; 50% · negro = sin datos</div>`;
+  const col = v => v == null ? '#0b0609' : v >= 1 ? '#ffffff' : v >= .75 ? '#ff5fae' : v >= .5 ? '#b0337a' : v >= .25 ? '#6e1240' : v > 0 ? '#3a0a22' : '#170b11';
+  return `<div class="heat"><span></span>${cols.map((_, i) => `<span class="mute" style="text-align:center">${i === 5 ? 'hoy' : '-' + (5 - i) + 's'}</span>`).join('')}${rows.map(([k, l]) => `<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l)}</span>${cols.map(c => `<span class="c" style="background:${col(c ? c[k] : null)}" title="${c ? Math.round((c[k] || 0) * 100) + '%' : 'sin datos'}"></span>`).join('')}`).join('')}</div><div class="mono mute" style="font-size:11px;margin-top:8px">blanco = 100% dominado · rosa ≥ 75% · magenta ≥ 50% · vino &lt; 50% · negro = sin datos</div>`;
 }
 function coverageHTML() {
   const C = DATA.cov;

@@ -1,27 +1,53 @@
 // ================= FONDO: rejilla de neón, niebla, partículas y lluvia de kana =================
 const BG = (() => {
-  const cv = $('#bg'), cx = cv.getContext('2d'); let W = 0, H = 0, dpr = 1, t = 0, calm = false, raf = 0, last = 0;
-  const KANA = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん漢字日本語忘待持午牛買売';
-  let drops = [], parts = [];
-  function size() { dpr = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); drops = Array.from({ length: Math.ceil(W / 46) }, (_, i) => ({ x: i * 46 + 10, y: Math.random() * H, v: 18 + Math.random() * 30, c: KANA[rnd(KANA.length)] })); parts = Array.from({ length: 34 }, () => ({ x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.4 + .3, v: 4 + Math.random() * 10 })); }
+  // Retablo en tinta: sigilo simétrico con espinas, columna vertebral, halos y ceniza rosa que cae.
+  const cv = $('#bg'), cx = cv.getContext('2d'); let W = 0, H = 0, dpr = 1, t = 0, calm = false, raf = 0, last = 0, layer = null;
+  let ash = [];
+  function sigil(g, w, h) {
+    const cxm = w / 2, top = h * 0.12, len = h * 0.78;
+    g.lineCap = 'round';
+    // halos
+    for (const [ry, a] of [[0.035, .5], [0.05, .25], [0.075, .12]]) { g.strokeStyle = `rgba(255,184,217,${a})`; g.lineWidth = 1; g.beginPath(); g.ellipse(cxm, top, w * ry * 3.2, h * ry * .55, 0, 0, 7); g.stroke(); }
+    // columna vertebral (ciempiés)
+    const n = 26;
+    for (let i = 0; i < n; i++) {
+      const y = top + 30 + i * (len / n), s = 1 - i / n * 0.6, wv = Math.min(w * .06, 34) * s;
+      g.fillStyle = `rgba(233,223,229,${0.10 + 0.08 * Math.sin(i)})`; g.beginPath(); g.ellipse(cxm, y, wv, len / n * .34, 0, 0, 7); g.fill();
+      g.strokeStyle = 'rgba(233,223,229,.16)'; g.lineWidth = 1;
+      for (const sd of [-1, 1]) { g.beginPath(); g.moveTo(cxm + sd * wv, y); g.quadraticCurveTo(cxm + sd * (wv + 30 * s), y - 8, cxm + sd * (wv + 58 * s), y + 14 * s); g.stroke(); }
+    }
+    // alas de sigilo: curvas espinosas espejadas
+    const seed = [0.9, 1.3, 0.7, 1.6, 1.1, 0.8, 1.4];
+    for (let k = 0; k < seed.length; k++) {
+      const y0 = top + 40 + k * len * 0.09, span = w * (0.22 + 0.06 * seed[k]), drop = 40 + 30 * seed[k];
+      for (const sd of [-1, 1]) {
+        g.strokeStyle = k % 2 ? 'rgba(255,95,174,.20)' : 'rgba(233,223,229,.16)'; g.lineWidth = k % 3 === 0 ? 1.6 : 1;
+        g.beginPath(); g.moveTo(cxm + sd * 14, y0);
+        g.bezierCurveTo(cxm + sd * span * .3, y0 - drop, cxm + sd * span * .7, y0 + drop * .2, cxm + sd * span, y0 - drop * .6); g.stroke();
+        // espinas
+        for (let j = 1; j < 6; j++) { const u = j / 6, px = cxm + sd * span * u, py = y0 - drop * (0.55 * Math.sin(u * Math.PI)) + (u > .7 ? -drop * .3 * (u - .7) * 3 : 0); g.beginPath(); g.moveTo(px, py); g.lineTo(px + sd * 7, py - 11 - 6 * seed[(j + k) % 7]); g.stroke(); }
+      }
+    }
+    // filigrana virreinal: arcos inferiores
+    g.strokeStyle = 'rgba(233,223,229,.08)'; g.lineWidth = 1;
+    for (let r = 1; r <= 3; r++) { g.beginPath(); g.arc(cxm, h + 40, w * 0.18 * r, Math.PI * 1.08, Math.PI * 1.92); g.stroke(); }
+  }
+  function size() {
+    dpr = Math.min(2, devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    layer = document.createElement('canvas'); layer.width = W * dpr; layer.height = H * dpr; const g = layer.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); sigil(g, W, H);
+    ash = Array.from({ length: 42 }, () => ({ x: Math.random() * W, y: Math.random() * H, r: Math.random() * 1.6 + .4, v: 6 + Math.random() * 14, s: Math.random() * 6, p: Math.random() < .35 }));
+  }
   function frame(now) {
     const dt = Math.min(0.1, (now - last) / 1000 || 0.016); last = now; t += dt;
-    cx.fillStyle = '#050509'; cx.fillRect(0, 0, W, H);
-    // halo violeta superior (rosetón lejano)
-    const g = cx.createRadialGradient(W / 2, H * 0.18, 10, W / 2, H * 0.18, Math.max(W, H) * 0.6); g.addColorStop(0, 'rgba(138,61,255,.16)'); g.addColorStop(.5, 'rgba(196,20,47,.05)'); g.addColorStop(1, 'rgba(0,0,0,0)'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
-    // lluvia de kana
-    cx.font = '15px "Shippori Mincho", serif'; cx.textAlign = 'center';
-    for (const d of drops) { if (!calm) { d.y += d.v * dt; if (d.y > H + 20) { d.y = -20; d.c = KANA[rnd(KANA.length)]; } } cx.fillStyle = 'rgba(164,255,60,.07)'; cx.fillText(d.c, d.x, d.y); cx.fillStyle = 'rgba(180,139,255,.05)'; cx.fillText(KANA[(d.x | 0) % KANA.length], d.x, d.y - 22); }
-    // rejilla en perspectiva
-    const hz = H * 0.62; cx.strokeStyle = 'rgba(138,61,255,.22)'; cx.lineWidth = 1;
-    for (let i = -12; i <= 12; i++) { cx.beginPath(); cx.moveTo(W / 2 + i * 8, hz); cx.lineTo(W / 2 + i * W * 0.22, H); cx.stroke(); }
-    const off = calm ? 0 : (t * 0.35) % 1;
-    for (let j = 0; j < 14; j++) { const p = (j + off) / 14, y = hz + (H - hz) * p * p; cx.strokeStyle = `rgba(196,20,47,${0.05 + p * 0.22})`; cx.beginPath(); cx.moveTo(0, y); cx.lineTo(W, y); cx.stroke(); }
-    // niebla baja
-    const f = cx.createLinearGradient(0, hz - 40, 0, H); f.addColorStop(0, 'rgba(5,5,9,0)'); f.addColorStop(.55, 'rgba(20,14,34,.55)'); f.addColorStop(1, 'rgba(5,5,9,.92)'); cx.fillStyle = f; cx.fillRect(0, hz - 40, W, H - hz + 40);
-    // partículas (polvo de vitral)
-    for (const p of parts) { if (!calm) { p.y -= p.v * dt; p.x += Math.sin(t + p.y * .01) * .2; if (p.y < -5) { p.y = H + 5; p.x = Math.random() * W; } } cx.fillStyle = 'rgba(201,204,216,.35)'; cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, 7); cx.fill(); }
-    if (!calm && !document.hidden) raf = setTimeout(() => requestAnimationFrame(frame), 33);
+    cx.fillStyle = '#040203'; cx.fillRect(0, 0, W, H);
+    const g = cx.createRadialGradient(W / 2, H * 0.12, 4, W / 2, H * 0.12, Math.max(W, H) * 0.55); g.addColorStop(0, 'rgba(255,95,174,.16)'); g.addColorStop(.45, 'rgba(122,20,70,.07)'); g.addColorStop(1, 'rgba(0,0,0,0)'); cx.fillStyle = g; cx.fillRect(0, 0, W, H);
+    cx.globalAlpha = calm ? 0.9 : 0.75 + 0.2 * Math.sin(t * 0.6); cx.drawImage(layer, 0, 0, W, H); cx.globalAlpha = 1;
+    for (const a of ash) {
+      if (!calm) { a.y += a.v * dt; a.x += Math.sin(t * .8 + a.s) * .25; if (a.y > H + 6) { a.y = -6; a.x = Math.random() * W; } }
+      if (a.p) { cx.fillStyle = 'rgba(255,95,174,.55)'; cx.beginPath(); cx.ellipse(a.x, a.y, a.r * 2.2, a.r * .8, Math.sin(t + a.s), 0, 7); cx.fill(); }
+      else { cx.fillStyle = 'rgba(233,223,229,.35)'; cx.beginPath(); cx.arc(a.x, a.y, a.r, 0, 7); cx.fill(); }
+    }
+    if (!calm && !document.hidden) raf = setTimeout(() => requestAnimationFrame(frame), 40);
   }
   function setCalm(c) { calm = c; clearTimeout(raf); requestAnimationFrame(frame); }
   addEventListener('resize', () => { size(); if (calm) requestAnimationFrame(frame); });
