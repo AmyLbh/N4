@@ -4,7 +4,7 @@ const PAIR_OF = new Map(); PAIRS.forEach(p => { (PAIR_OF.get(p[0]) || PAIR_OF.se
 const kunFmt = s => s.replace(/\.(.+)$/, '($1)');
 function kReading(k) { const on = k.onK.slice(0, 2).join('・'), kun = k.kun.slice(0, 2).map(kunFmt).join('・'); return [on, kun].filter(Boolean).join(' / '); }
 function kWordsHTML(k, n = 3) {
-  const ws = k.ex.map(id => VBY.get(id)).filter(Boolean).slice(0, n).map(v => `<div class="ex">${wordRuby(v.w, v.r)} <span class="mute" style="font-size:13px">· ${esc(v.es)}</span></div>`);
+  const ws = (n > 3 && typeof KW !== 'undefined' ? (KW.get(k.k) || []) : k.ex).map(id => VBY.get(id)).filter(Boolean).slice(0, n).map(v => `<div class="ex">${wordRuby(v.w, v.r)} <span class="mute" style="font-size:13px">· ${esc(v.es)}</span></div>`);
   (k.xw || []).forEach(x => ws.push(`<div class="ex">${wordRuby(x[0], x[1])} <span class="mute" style="font-size:13px">· ${esc(x[2])}</span></div>`));
   return ws.join('');
 }
@@ -46,6 +46,30 @@ function qKanji(k, sub) {
     return { key, dir: 'b', mode: 'pares', kind: 'Pares confusos', prompt: `<div class="q-es">${esc(k.es)}</div><div class="q-sub jp">${esc(kReading(k))}</div><div class="q-sub">Cuidado con ${esc(other.k)} (${esc(other.es)})</div>`, opts: opts.map(o => ({ h: esc(o), cls: 'kj' })), ans, cause: 'significado', fb: fb + `<div class="tr">${esc(p[2])}</div>`, say };
   }
 }
+// ---- PALABRAS POR KANJI y distractores de escritura/lectura
+const KW = new Map(); for (const v of V) for (const c of new Set(v.w)) if (KSET.has(c)) (KW.get(c) || KW.set(c, []).get(c)).push(v.id);
+function kanjiAlts(c) {
+  const k = KBY.get(c); if (!k) return [];
+  const pairs = (PAIR_OF.get(c) || []).map(p => p[0] === c ? p[1] : p[0]);
+  const sameOn = k.onK.length ? K.filter(x => x.k !== c && x.onK[0] === k.onK[0]).map(x => x.k) : [];
+  return [...new Set(pairs.concat(shuffle(sameOn).slice(0, 4), shuffle(K.filter(x => x.lv === k.lv && x.k !== c)).slice(0, 3).map(x => x.k)))];
+}
+function hyokiFakes(w) {
+  const idx = [...w].map((c, i) => KSET.has(c) ? i : -1).filter(i => i >= 0); const out = new Set();
+  for (let t = 0; t < 40 && out.size < 3; t++) {
+    const ch = [...w]; const i = pick(idx); const alt = pick(kanjiAlts(ch[i]) || []); if (!alt) continue; ch[i] = alt;
+    if (idx.length > 1 && Math.random() < .3) { const j = pick(idx); const a2 = pick(kanjiAlts(ch[j])); if (a2) ch[j] = a2; }
+    const f = ch.join(''); if (f !== w) out.add(f);
+  }
+  return [...out];
+}
+function readingFakes(r) {
+  const muts = [s => s.replace(/う(?=[^う]*$)/, ''), s => s.replace(/([おこそとのほもよろごぞどぼぽ])(?!う)/, '$1う'), s => s.replace(/っ/, ''), s => s.replace(/([かきくけこさしすせそたちつてとはひふへほ])/, m => ({ か: 'が', き: 'ぎ', く: 'ぐ', け: 'げ', こ: 'ご', さ: 'ざ', し: 'じ', す: 'ず', せ: 'ぜ', そ: 'ぞ', た: 'だ', ち: 'ぢ', つ: 'づ', て: 'で', と: 'ど', は: 'ば', ひ: 'び', ふ: 'ぶ', へ: 'べ', ほ: 'ぼ' }[m])), s => s.replace(/([がぎぐげござじずぜぞだでどばびぶべぼ])/, m => ({ が: 'か', ぎ: 'き', ぐ: 'く', げ: 'け', ご: 'こ', ざ: 'さ', じ: 'し', ず: 'す', ぜ: 'せ', ぞ: 'そ', だ: 'た', で: 'て', ど: 'と', ば: 'は', び: 'ひ', ぶ: 'ふ', べ: 'へ', ぼ: 'ほ' }[m])), s => s.replace(/ゅう/, 'ゆう').replace(/ょう/, 'よう'), s => s.replace(/([くきちつ])(?=[かきくけこさしすせそたちつてとぱぴぷぺぽ])/, 'っ'), s => s.replace(/ゆう/, 'ゅう'), s => s.replace(/ん/, 'ん').replace(/い(?=[^い]*$)/, 'え')];
+  const out = new Set(); for (const m of shuffle(muts)) { const f = m(r); if (f && f !== r) out.add(f); if (out.size >= 3) break; }
+  const others = V.filter(x => x.r !== r && x.r.length === r.length && !/[ァ-ン]/.test(x.r)); while (out.size < 3 && others.length) out.add(pick(others).r);
+  return [...out].slice(0, 3);
+}
+
 // ---- VOCABULARIO
 function vDistractors(v, n = 3) {
   const sameT = V.filter(x => x.t === v.t && x.id !== v.id && x.es !== v.es);
@@ -63,13 +87,18 @@ function qVocab(v, sub) {
     return { key, dir: 'f', mode: 'vocab', kind: 'Japonés → español', prompt: show, opts: opts.map(o => ({ h: esc(o) })), ans, cause: 'significado', fb: vFb(v), say: v.r };
   }
   if (sub === 'read') {
-    const rs = distinct(v, V.filter(x => x.id !== v.id && x.r.length === v.r.length && x.r !== v.r).concat(ds), 3, x => x.r).map(x => x.r);
+    const rs = readingFakes(v.r);
     const { opts, ans } = mcq(v.r, rs);
     return { key, dir: 'f', mode: 'vocab', kind: 'Palabra → lectura', prompt: `<div class="q-word" style="font-size:clamp(40px,12vw,64px)">${esc(v.w)}</div><div class="q-sub">${esc(v.es)}</div>`, opts: opts.map(o => ({ h: esc(o), cls: 'jp' })), ans, cause: 'lectura', fb: vFb(v), say: v.r, nofuri: 1 };
   }
   if (sub === 'es') {
     const { opts, ans } = mcq(v, ds);
     return { key, dir: 'b', mode: 'vocab', kind: 'Español → japonés', prompt: `<div class="q-es">${esc(v.es)}</div><div class="q-sub">${esc(TYPES[v.t] || '')}</div>`, opts: opts.map(o => ({ h: wordRuby(o.w, o.r), cls: 'jp' })), ans, cause: 'significado', fb: vFb(v), say: v.r };
+  }
+  if (sub === 'hyoki') {
+    const fk = hyokiFakes(v.w); if (fk.length < 3) return qVocab(v, 'es');
+    const { opts, ans } = mcq(v.w, fk);
+    return { key, dir: 'b', mode: 'vocab', kind: '表記 · kana → kanji', prompt: `<div class="q-word">${esc(v.r)}</div><div class="q-sub">${esc(v.es)} · ¿cómo se escribe?</div>`, opts: opts.map(o => ({ h: esc(o), cls: 'kj' })), ans, cause: 'lectura', fb: vFb(v), say: v.r };
   }
   if (sub === 'type') {
     return { key, dir: 'b', mode: 'vocab', kind: 'Escribe en kana', prompt: `<div class="q-es">${esc(v.es)}</div><div class="q-sub">${esc(TYPES[v.t] || '')} · escribe la lectura (romaji o kana)</div>`, type: 1, answers: v.r.split(/;\s*/).map(normKana).concat(v.wa ? [] : []), cause: 'lectura', fb: vFb(v), say: v.r };
@@ -130,7 +159,7 @@ function qCounter() {
 }
 function qReadingQ(r, qi) {
   const q = r.qs[qi]; const { opts, ans } = mcq(q.o[0], q.o.slice(1));
-  return { key: 'rd:' + r.id + ':' + qi, dir: 'f', mode: 'read', kind: '読解 · ' + r.title, prompt: `<div class="q-sent" style="font-size:17px;line-height:1.9;max-height:38vh;overflow:auto;border:1px solid var(--rib);padding:8px">${ruby(furiText(r.text))}</div><div class="q-sent" style="font-size:18px">${esc(q.q)}</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'significado', fb: `<div class="ans">${esc(q.o[0])}</div><div>${esc(q.e)}</div><div class="tr mute">${esc(r.es)}</div>`, say: r.text, long: 1 };
+  return { key: 'rd:' + r.id + ':' + qi, dir: 'f', mode: 'read', kind: '読解 · ' + r.title, prompt: `<div class="q-sent keepfuri" style="font-size:17px;line-height:1.9;max-height:38vh;overflow:auto;border:1px solid var(--rib);padding:8px">${ruby(furiText(r.text))}</div><div class="q-sent" style="font-size:18px">${esc(q.q)}</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'significado', fb: `<div class="ans">${esc(q.o[0])}</div><div>${esc(q.e)}</div><div class="tr mute">${esc(r.es)}</div>`, say: r.text, long: 1 };
 }
 // furigana para lecturas: usa lecturas de palabras del banco si coinciden (precomputado en build)
 function furiText(t) { return (DATA.rfuri && DATA.rfuri[t]) || t; }

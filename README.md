@@ -13,6 +13,7 @@ App de estudio para el JLPT N4, centrada en la **Semana 2** del libro (文法を
 | Contadores | 16 contadores × 10 números | lecturas irregulares |
 | Lecturas 読解 | 6 textos, 18 preguntas | uno por día de la semana |
 | Frases de El Espejo | 151 en 14 categorías | |
+| Simulacro JLPT N4 | formato oficial vigente desde 2020 | 文字・語彙 28 (7·5·8·4·4) en 25 min · 文法・読解 29 (13·4·4·3·3·2) en 55 min · 聴解 28 (8·7·5·8) en 35 min. Las preguntas de vocabulario se generan del banco; las de sinónimos, uso, textos y diálogos están escritas en `data/authored/jlpt.js`. No se copian exámenes reales (tienen derechos de autor) |
 
 Cada kanji lleva: on'yomi, kun'yomi, significado en español, 2-3 palabras de ejemplo del banco, un truco mnemotécnico por componentes y, si aplica, su par confuso (46 pares, p. ej. 待/持, 午/牛, 買/売). Cada palabra lleva: lectura, español, tipo (G1/G2/G3, adj-i/na…), tema (18 temas), frase de ejemplo con furigana y traducción.
 

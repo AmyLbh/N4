@@ -89,7 +89,7 @@ function dueKeys() { return Object.keys(S.it).filter(k => /^[vkg]:/.test(k) && d
 function specFor(key, opts = {}) {
   const [t, id] = key.split(':');
   if (t === 'k') { const k = KBY.get(id); const subs = ['read', 'meaning', 'toR', 'toM']; if (PAIR_OF.has(id)) subs.push('pair'); return { g: 'k', id, sub: opts.dir === 'b' ? pick(['toR', 'toM']) : opts.dir === 'f' ? pick(['read', 'meaning']) : pick(subs) }; }
-  if (t === 'v') { const v = VBY.get(+id); const subs = ['jp', 'es']; if (hasKanji(v.w)) subs.push('read'); if (opts.typing) subs.push('type'); return { g: 'v', id: +id, sub: opts.dir === 'b' ? (opts.typing && Math.random() < .5 ? 'type' : 'es') : opts.dir === 'f' ? pick(subs.filter(s => s === 'jp' || s === 'read')) : pick(subs) }; }
+  if (t === 'v') { const v = VBY.get(+id); const subs = ['jp', 'es']; if (hasKanji(v.w)) subs.push('read', 'hyoki'); if (opts.typing) subs.push('type'); return { g: 'v', id: +id, sub: opts.dir === 'b' ? (opts.typing && Math.random() < .5 ? 'type' : hasKanji(v.w) && Math.random() < .4 ? 'hyoki' : 'es') : opts.dir === 'f' ? pick(subs.filter(s => s === 'jp' || s === 'read')) : pick(subs) }; }
   if (t === 'g') return { g: 'g', id };
   return null;
 }
@@ -204,6 +204,7 @@ function renderPracticar() {
   const modes = [
     ['intro', 'Iniciación', 'Tarjetas nuevas con truco y audio. Nada se examina sin verlo antes.', ni(pendingIntro().length + ' por ver')],
     ['kanji', 'Kanji', 'Lectura, significado, ida y vuelta, pares confusos.', ni(cnt('k') + ' vistos')],
+    ['kwords', 'Palabras del kanji', 'Cada kanji con todas las palabras que lo usan. Sin furigana.', ni(KW.size + ' kanji')],
     ['vocab', 'Vocabulario', 'Por tema, semana o nivel. JP→ES, ES→JP, kana escrita.', ni(cnt('v') + ' vistas')],
     ['cards', 'Tarjetas', 'Desliza: derecha lo sé, izquierda no.', ''],
     ['gram', 'Gramática S2', `${G.length} preguntas de examen, ★ y trampas.`, ni(cnt('g') + ' disponibles')],
@@ -237,6 +238,7 @@ function openMode(p) {
   if (p === 'crypt') return renderCrypt();
   if (p === 'warm') return startWarm();
   if (p === 'cards') return openCards();
+  if (p === 'kwords') return openKWords();
   if (p === 'cont') return startSimple('cont', 'Contadores', () => ({ g: 'cn' }), 15, introOnce('cont', countersTable));
   if (p === 'part') return startSimple('part', 'Partículas', () => ({ g: 'pa', id: rnd(PARTICLES.length) }), 15, introOnce('part', particlesTable));
   if (p === 'read') return openReading();
@@ -247,7 +249,7 @@ function openMode(p) {
   const st = { sub: ['mix'], dir: ['mix'], lv: ['all'], th: ['all'], wk: ['all'], pt: [], trap: ['no'], n: ['15'], forms: ['te', 'ta', 'nai'], grp: ['v1', 'v2', 'v3'], typing: ['no'] };
   let body = '';
   if (p === 'kanji') body = `<div class="lbl">Tipo</div>${chips('sub', [['mix', 'Mixto'], ['read', 'Kanji → lectura'], ['toR', 'Lectura → kanji'], ['meaning', 'Kanji → significado'], ['toM', 'Significado → kanji'], ['pair', 'Pares confusos']], st.sub)}<div class="lbl">Nivel</div>${chips('lv', [['all', 'N5+N4'], ['N5', 'N5'], ['N4', 'N4']], st.lv)}`;
-  if (p === 'vocab') body = `<div class="lbl">Dirección</div>${chips('dir', [['mix', 'Mixto'], ['f', 'JP → ES'], ['b', 'ES → JP'], ['read', 'Lectura']], st.dir)}<div class="lbl">ES→JP escribiendo kana</div>${chips('typing', [['no', 'No'], ['yes', 'Sí']], st.typing)}<div class="lbl">Semana / nivel</div>${chips('wk', [['all', 'Todo'], ['2', 'Semana 2']], st.wk)}${chips('lv', [['all', 'N5+N4'], ['N5', 'N5'], ['N4', 'N4']], st.lv)}<div class="lbl">Tema</div>${chips('th', [['all', 'Todos'], ...Object.entries(THEMES)], st.th)}`;
+  if (p === 'vocab') body = `<div class="lbl">Dirección</div>${chips('dir', [['mix', 'Mixto'], ['f', 'JP → ES'], ['b', 'ES → JP'], ['read', 'Lectura (漢字読み)'], ['hyoki', 'Kana → kanji (表記)']], st.dir)}<div class="lbl">ES→JP escribiendo kana</div>${chips('typing', [['no', 'No'], ['yes', 'Sí']], st.typing)}<div class="lbl">Semana / nivel</div>${chips('wk', [['all', 'Todo'], ['2', 'Semana 2']], st.wk)}${chips('lv', [['all', 'N5+N4'], ['N5', 'N5'], ['N4', 'N4']], st.lv)}<div class="lbl">Tema</div>${chips('th', [['all', 'Todos'], ...Object.entries(THEMES)], st.th)}`;
   if (p === 'gram') { st.pt = GPTS.slice(); body = `<div class="lbl">Puntos (Semana 2)</div>${chips('pt', GPTS.map(k => [k, PTS[k].name]), st.pt)}<div class="lbl">Solo trampas</div>${chips('trap', [['no', 'No'], ['yes', 'Sí, solo trampas']], st.trap)}`; }
   if (p === 'conj') body = `<div class="lbl">Formas</div>${chips('forms', Object.entries(FORMS), st.forms)}<div class="lbl">Grupos</div>${chips('grp', [['v1', 'G1 五段'], ['v2', 'G2 一段'], ['v3', 'G3 する/来る']], st.grp)}`;
   stage().innerHTML = `<div class="col">${back}<h1 class="h-title">${esc({ kanji: 'Kanji', vocab: 'Vocabulario', gram: 'Gramática S2', conj: 'Conjugador' }[p])}</h1><div class="panel col">${body}<div class="lbl">Preguntas</div>${chips('n', [['10', '10'], ['15', '15'], ['25', '25'], ['40', '40']], st.n)}<button class="btn pri block" id="go">Empezar</button></div></div>`;
@@ -266,7 +268,7 @@ function openMode(p) {
       if (pool.length < 4) return needIntro('Necesitas al menos 4 palabras presentadas con ese filtro.');
       const typing = st.typing[0] === 'yes';
       let specs = choose(pool, n, { typing, dir: st.dir[0] === 'f' ? 'f' : st.dir[0] === 'b' ? 'b' : null });
-      if (st.dir[0] === 'read') specs = specs.map(s => ({ ...s, sub: hasKanji(VBY.get(s.id).w) ? 'read' : 'jp' }));
+      if (st.dir[0] === 'read' || st.dir[0] === 'hyoki') specs = specs.map(s => ({ ...s, sub: hasKanji(VBY.get(s.id).w) ? st.dir[0] : 'jp' }));
       return runSession({ mode: 'vocab', title: 'Vocabulario', specs });
     }
     if (p === 'gram') {
@@ -289,6 +291,38 @@ function introOnce(id, fn) { return S['seen_' + id] ? null : () => { S['seen_' +
 function countersTable() { return `<div class="tblwrap"><table class="tbl"><tr><th>×</th>${COUNTERS.slice(0, 6).map(c => `<th>${c.c}</th>`).join('')}</tr>${[0, 1, 2, 3, 5, 7, 9].map(i => `<tr><td>${i + 1}</td>${COUNTERS.slice(0, 6).map(c => `<td class="jp" style="font-family:var(--f-jp)">${c.r[i]}</td>`).join('')}</tr>`).join('')}</table></div><p class="mute">Ojo con 1, 3, 6, 8, 10: ahí cambian los sonidos (いっぽん, さんぼん, ろっぽん, はっぽん, じゅっぽん). 人: ひとり, ふたり, よにん. 日: ついたち, ふつか, みっか…</p>`; }
 function particlesTable() { return `<div class="col" style="font-size:15px"><p><b class="jp">は</b> tema · <b class="jp">が</b> sujeto / con 好き・わかる・できる・ほしい · <b class="jp">を</b> objeto, recorrer, salir de · <b class="jp">に</b> hora, destino, existencia, de quién recibes / pasiva · <b class="jp">で</b> lugar de acción, medio · <b class="jp">へ</b> dirección · <b class="jp">と</b> con, cita · <b class="jp">から/まで/までに</b> desde / hasta / antes de.</p><p class="acid mono" style="font-size:13px">が → くれる · に → もらう</p></div>`; }
 
+// ================= PALABRAS DEL KANJI =================
+function openKWords() {
+  const ks = K.filter(k => KW.has(k.k));
+  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">Palabras del kanji</h1>
+    <p class="mute" style="margin:0">Un kanji, varias palabras y varias lecturas. Toca un kanji para ver todas sus palabras del N5/N4 y practicarlas sin furigana. Rosa = ya presentado.</p>
+    <button class="btn pri block" id="kall">Practicar palabras de mis kanji presentados</button>
+    ${['N5', 'N4'].map(lv => `<div class="lbl">${lv}</div><div class="kwl">${ks.filter(k => k.lv === lv).map(k => `<button class="${isIntro('k:' + k.k) ? 'seen' : ''}" data-k="${k.k}">${k.k}<small>${KW.get(k.k).length}</small></button>`).join('')}</div>`).join('')}</div>`;
+  $('#mb').onclick = render;
+  $$('[data-k]').forEach(b => b.onclick = () => openKWord(b.dataset.k));
+  $('#kall').onclick = () => {
+    const ids = [...new Set(K.filter(k => isIntro('k:' + k.k)).flatMap(k => KW.get(k.k) || []))].filter(id => isIntro('v:' + id));
+    if (ids.length < 4) return needIntro('Primero presenta algunos kanji y sus palabras (o abre un kanji y pulsa "Estudiar").');
+    runSession({ mode: 'vocab', title: 'Palabras de mis kanji', specs: shuffle(ids).slice(0, 20).map(id => ({ g: 'v', id, sub: hasKanji(VBY.get(id).w) ? pick(['read', 'read', 'hyoki', 'jp']) : 'jp' })) });
+  };
+}
+function openKWord(c) {
+  const k = KBY.get(c), ws = (KW.get(c) || []).map(id => VBY.get(id));
+  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Kanji</button>
+    <div class="panel"><div class="row" style="align-items:center;gap:16px"><div class="q-big" style="font-size:84px">${esc(c)}</div><div><div class="q-es" style="font-size:22px">${esc(k.es)}</div><div class="mute" style="font-family:var(--f-jp)">${esc(kReading(k))}</div></div></div><div class="tr mute" style="font-size:14px;margin-top:6px">${esc(k.mn)}</div></div>
+    <div class="lbl">${ws.length} palabras con ${esc(c)} · toca "ver" para mostrar la lectura</div>
+    <div class="wl">${ws.map(v => `<div class="w"><span class="jw">${esc(v.w)}</span><span class="rd" hidden>${esc(v.r)}</span><span class="es">${esc(v.es)}</span><button class="btn ghost" data-show="${v.id}">ver</button><button class="btn ghost" data-say="${v.id}" aria-label="Escuchar">▶</button></div>`).join('')}</div>
+    <button class="btn pri block" id="kgo">Estudiar estas ${ws.length} palabras</button></div>`;
+  $('#mb').onclick = openKWords;
+  $$('[data-show]').forEach(b => b.onclick = () => { const r = b.parentElement.querySelector('.rd'); r.hidden = !r.hidden; b.textContent = r.hidden ? 'ver' : 'ocultar'; });
+  $$('[data-say]').forEach(b => b.onclick = () => speak(VBY.get(+b.dataset.say).r));
+  $('#kgo').onclick = () => {
+    introduce('k:' + c); ws.forEach(v => introduce('v:' + v.id)); save();
+    const specs = shuffle(ws.flatMap(v => hasKanji(v.w) ? [{ g: 'v', id: v.id, sub: 'read' }, { g: 'v', id: v.id, sub: pick(['hyoki', 'jp']) }] : [{ g: 'v', id: v.id, sub: 'jp' }]));
+    runSession({ mode: 'vocab', title: 'Palabras de ' + c, specs });
+  };
+}
+
 // ================= INTRODUCCIÓN (INICIACIÓN) =================
 function introCardHTML(key) {
   const [t, id] = key.split(/:(.+)/);
@@ -298,7 +332,7 @@ function introCardHTML(key) {
       <dl class="kv"><dt>On</dt><dd>${esc(k.onK.join('・') || '—')}</dd><dt>Kun</dt><dd>${esc(k.kun.map(kunFmt).join('・') || '—')}</dd><dt>Significa</dt><dd style="font-family:var(--f-body)">${esc(k.es)}</dd><dt>Nivel</dt><dd class="mono" style="font-size:13px">${k.lv} · ${k.st} trazos ${k.ok ? '' : '<span class="tag warn">revisar: 1 sola lista</span>'}</dd></dl>
       <div class="tr"><b class="acid mono" style="font-size:12px">TRUCO</b> ${esc(k.mn)}</div>
       ${PAIR_OF.has(k.k) ? `<div class="mute" style="font-size:14px">No confundir: ${PAIR_OF.get(k.k).map(p => esc(p[2])).join(' ')}</div>` : ''}
-      <div>${kWordsHTML(k)}</div>`;
+      <div class="lbl">Todas sus palabras (${(KW.get(k.k) || []).length})</div><div>${kWordsHTML(k, 99)}</div>`;
   }
   if (t === 'v') {
     const v = VBY.get(+id);
@@ -478,6 +512,7 @@ function answer(i, typed) {
     if (SES.streak >= 5) SES.broke = SES.streak; SES.bad++; SES.streak = 0; SES.causes[cause] = (SES.causes[cause] || 0) + 1; SND.glass(); hitFx(); crack($('.q-card'));
     if (SES.clock && c.record) SES.clockLeft -= 3000; // cada error resta 3 s
   }
+  $('.q-wrap').classList.add('revealed');
   // marcar opciones
   if (!q.type) $$('.opt').forEach((b, j) => { b.disabled = true; if (j === q.ans) b.classList.add('ok'); else if (j === i) b.classList.add('bad'); });
   const verdict = ok ? (fast ? 'CORRECTO · ' + (ms / 1000).toFixed(1) + ' s' : 'CORRECTO PERO LENTO · ' + (ms / 1000).toFixed(1) + ' s') : timeout ? 'TIEMPO AGOTADO' : 'ERROR' + (typed != null ? ' · escribiste ' + typed : '');
@@ -619,7 +654,7 @@ function renderExamen() {
     ['ghost', 'Tu reflejo', S.ghost ? `Repite tu mejor ronda (${S.ghost.s}, ${fmtTime(S.ghost.ms)}) contra tu fantasma.` : 'Aparece tras tu primer Récord 10.', startGhost],
     ['roto', 'Espejo roto', '20 preguntas. Un error y se rompe.', startRoto],
     ['guard', 'El Guardián', gu.dom ? 'Semana 2 DOMINADA.' : wr >= 95 ? 'Desbloqueado. Dominado solo con 100%.' : `Se desbloquea con 95% de la Semana 2 dominada (ahora ${wr.toFixed(1)}%).`, startGuard, wr < 95],
-    ['final', 'La Prueba Final', lf ? `Último simulacro: ${lf.pct}% · ${lf.pass ? 'aprobado' : 'no aprobado'}.` : 'Simulacro N4: 25 + 55 + 35 min, formato real.', openFinal],
+    ['final', 'La Prueba Final · JLPT N4', lf ? `Último simulacro: ${lf.tot}/180 · ${lf.pass ? '合格' : '不合格'} · ${lf.pct}%.` : 'Formato oficial: 文字・語彙 25 min · 文法・読解 55 min · 聴解 35 min.', openFinal],
     ['diag', 'Diagnóstico', S.diag ? `Hecho: ${Math.round(S.diag.acc * 100)}%. Repetir recalibra.` : 'Calibra tu punto de partida.', startDiag]
   ];
   stage().innerHTML = `<div class="col"><h1 class="h-title">Examen</h1><div class="grid2">${items.map((m, i) => `<button class="mode ${m[4] ? 'locked' : ''}" data-x="${i}" ${m[4] ? 'aria-disabled="true"' : ''}><span class="mn">${m[1]}</span><span class="md">${esc(m[2])}</span>${S.rec[m[0]] && S.rec[m[0]][0] ? `<span class="tag mk">${m[0] === 'r60' ? S.rec[m[0]][0].pts + ' pts' : S.rec[m[0]][0].s}</span>` : ''}${m[4] ? '<span class="tag mk">bloqueado</span>' : ''}</button>`).join('')}</div>${logHTML()}</div>`;
@@ -642,39 +677,6 @@ function startDiag() {
     L.filter(l => l.ok && l.ms <= fastMs() && /^[vk]:/.test(l.k)).forEach(l => { introduce(l.k); const r = rec(l.k); r.b = 2; r.d = Date.now() + DAY; });
     if (S.plan) delete S.plan[todayKey()];
     save();
-  } });
-}
-
-// ================= PRUEBA FINAL (simulacro N4) =================
-function openFinal() {
-  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">La Prueba Final</h1>
-  <div class="panel col"><div class="lbl">Formato N4 (simulado)</div>
-  <table class="tbl"><tr><th>Sección</th><th>Tiempo</th><th>Contenido</th></tr>
-  <tr><td>言語知識 文字・語彙</td><td>25 min</td><td>漢字読み 7 · 表記 5 · 文脈規定 8 · 言い換え 5</td></tr>
-  <tr><td>言語知識 文法・読解</td><td>55 min</td><td>文法形式 13 · 組み立て 4 · 読解 6</td></tr>
-  <tr><td>聴解</td><td>35 min</td><td>12 ítems con voz ja-JP</td></tr></table>
-  <p class="mute" style="font-size:14px;margin:0">Puntuación escalada como el N4: 言語知識・読解 /120 y 聴解 /60. Aprobado: total ≥ 90, ≥ 38 y ≥ 19 por sección. Aquí la meta es 100%. El simulacro usa todo el temario N5+N4: no hace falta haberlo presentado.</p>
-  <button class="btn pri block" id="fs">Empezar sección 1</button></div></div>`;
-  $('#mb').onclick = render; $('#fs').onclick = () => finalSection(0, []);
-}
-function finalSpecs(sec) {
-  const kv = V.filter(v => v.lv !== 'S2' && hasKanji(v.w) && [...v.w].every(c => !hasKanji(c) || KSET.has(c)));
-  if (sec === 0) return [...shuffle(kv).slice(0, 7).map(v => ({ g: 'v', id: v.id, sub: 'read' })), ...shuffle(kv).slice(0, 5).map(v => ({ g: 'v', id: v.id, sub: 'es' })), ...shuffle(V.filter(v => v.lv !== 'S2')).slice(0, 8).map(v => ({ g: 'v', id: v.id, sub: 'es' })), ...shuffle(V).slice(0, 5).map(v => ({ g: 'v', id: v.id, sub: 'jp' }))];
-  if (sec === 1) { const r = shuffle(READINGS).slice(0, 2); return [...shuffle(G.filter(g => g.k === 'F')).slice(0, 13).map(g => ({ g: 'g', id: g.id })), ...shuffle(G.filter(g => g.k === 'S')).slice(0, 4).map(g => ({ g: 'g', id: g.id })), ...r.flatMap(x => x.qs.map((_, qi) => ({ g: 'rd', id: x.id, q: qi })))]; }
-  return shuffle(V).slice(0, 12).map(v => ({ g: 'v', id: v.id, sub: 'audio' }));
-}
-function finalSection(sec, acc) {
-  const T = [25, 55, 35][sec] * 60000, names = ['文字・語彙', '文法・読解', '聴解'];
-  runSession({ mode: 'final', title: 'Prueba Final · ' + names[sec], specs: finalSpecs(sec), clock: T, perQ: T, gentle: 1, after: () => {
-    acc = acc.concat([{ ok: SES.ok, n: SES.cfg.specs.length }]);
-    if (sec < 2) { setTimeout(() => { $('#again').textContent = 'Sección ' + (sec + 2); $('#again').onclick = () => finalSection(sec + 1, acc); }, 0); return; }
-    const lr = (acc[0].ok + acc[1].ok) / (acc[0].n + acc[1].n) * 120, li = acc[2].ok / acc[2].n * 60, tot = Math.round(lr + li);
-    const pass = tot >= 90 && lr >= 38 && li >= 19, pct = Math.round((acc[0].ok + acc[1].ok + acc[2].ok) / (acc[0].n + acc[1].n + acc[2].n) * 100);
-    S.finals.push({ t: Date.now(), tot, lr: Math.round(lr), li: Math.round(li), pass, pct });
-    const nBad = (acc[0].n + acc[1].n + acc[2].n) - (acc[0].ok + acc[1].ok + acc[2].ok);
-    if (!pass) mirror('final', { pct }); else if (pct === 100) mirror('perfecto'); else if (pct >= 95) mirror('casi', { pct }); else mirror('errores', { n: nBad });
-    save();
-    setTimeout(() => { const p = document.createElement('div'); p.className = 'panel'; p.innerHTML = `<div class="lbl">Resultado del simulacro</div><div class="integ"><div class="big num">${tot}<span class="mute" style="font-size:20px">/180</span></div><div class="mono" style="padding-bottom:6px">言語知識・読解 ${Math.round(lr)}/120<br>聴解 ${Math.round(li)}/60<br><span class="${pass ? 'acid' : 'red'}">${pass ? 'APROBADO' : 'NO APROBADO'}</span> · ${pct}% aciertos</div></div>`; stage().firstElementChild.insertBefore(p, stage().firstElementChild.children[1]); $('#again').textContent = 'Nuevo simulacro'; $('#again').onclick = () => openFinal(); }, 0);
   } });
 }
 
@@ -753,7 +755,7 @@ function renderSettings() {
   <div class="panel col">
     <div class="field"><label class="lbl" for="exd">Fecha del examen</label><input type="date" id="exd" value="${esc(c.exam || todayKey(examDate()))}"></div>
     <div class="field"><label class="lbl" for="dif">Dificultad del reloj</label><select id="dif"><option value="normal">Normal · 15 s por pregunta</option><option value="dura">Dura · 10 s</option><option value="brutal">Brutal · 6 s</option></select><span class="mute" style="font-size:13px">Acierto "rápido" = antes del 60% del tiempo. Solo los rápidos cuentan para dominar.</span></div>
-    <div class="row"><button class="chip" id="fu" aria-pressed="${!!c.furi}">Furigana</button><button class="chip" id="sn" aria-pressed="${!!c.snd}">Sonido</button><button class="chip" id="cl" aria-pressed="${!!c.calm}">Efectos reducidos</button><button class="chip" id="vt">Probar voz</button></div>
+    <div class="row"><button class="chip" id="fu" aria-pressed="${!!c.furiQ}">Furigana en preguntas</button><button class="chip" id="sn" aria-pressed="${!!c.snd}">Sonido</button><button class="chip" id="cl" aria-pressed="${!!c.calm}">Efectos reducidos</button><button class="chip" id="vt">Probar voz</button></div>
     <div class="mono mute" style="font-size:12px" id="cloudState">${dbDoc ? 'sincronizado en la nube' : 'guardado en este navegador (la nube no respondió)'}</div>
   </div>
   <div class="panel col"><div class="lbl">Progreso</div>
@@ -765,7 +767,7 @@ function renderSettings() {
   $('#exd').onchange = e => { c.exam = e.target.value; delete (S.plan || {})[todayKey()]; save(); header(); };
   $('#dif').onchange = e => { c.diff = e.target.value; save(); };
   const tog = (id, k, fn) => $(id).onclick = () => { c[k] = c[k] ? 0 : 1; $(id).setAttribute('aria-pressed', !!c[k]); fn && fn(); save(); };
-  tog('#fu', 'furi', applyCfg); tog('#sn', 'snd', () => { SND.init(); SND.setVol(); paintMute(); }); tog('#cl', 'calm', applyCfg);
+  tog('#fu', 'furiQ', applyCfg); tog('#sn', 'snd', () => { SND.init(); SND.setVol(); paintMute(); }); tog('#cl', 'calm', applyCfg);
   $('#vt').onclick = () => speak('日本語の勉強をしましょう。');
   $('#ex').onclick = async () => {
     const data = JSON.stringify(S); $('#io').value = data;
@@ -777,6 +779,6 @@ function renderSettings() {
   $('#imf').onchange = e => { const f = e.target.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => doImport(r.result); r.readAsText(f); };
   $('#rs').onclick = () => { $('#rsc').innerHTML = `<p class="red">Se borrará todo: ítems, cripta, récords. No se puede deshacer.</p><button class="btn pri block" id="rsy">Sí, borrar todo</button>`; $('#rsy').onclick = () => { const cfg = S.cfg; for (const k of ['it', 'crypt', 'rec', 'hist', 'acc', 'days', 'guard', 'plan']) S[k] = {}; S.intro = []; S.finals = []; S.ghost = null; S.xp = 0; S.streak = 0; S.log = []; S.diag = null; S.cfg = cfg; save(true); toast('Progreso borrado.'); render(); }; };
 }
-function applyCfg() { document.body.classList.toggle('nofuri', !S.cfg.furi); document.body.classList.toggle('calm', !!S.cfg.calm); BG.setCalm(reduceMotion()); }
+function applyCfg() { document.body.classList.toggle('furiq', !!S.cfg.furiQ); document.body.classList.toggle('calm', !!S.cfg.calm); BG.setCalm(reduceMotion()); }
 const ICON_ON = '<svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16 8a5 5 0 010 8M19 5a9 9 0 010 14"/></svg>', ICON_OFF = '<svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 9l5 6M22 9l-5 6"/></svg>';
 function paintMute() { $('#muteBtn').innerHTML = S.cfg.snd ? ICON_ON : ICON_OFF; $('#muteBtn').setAttribute('aria-label', S.cfg.snd ? 'Silenciar sonido' : 'Activar sonido'); $('#vol').value = S.cfg.vol; }
