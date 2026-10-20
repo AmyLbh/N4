@@ -37,13 +37,18 @@ const WEEKS = {
   }
 };
 const CUR_WEEK = 2;
-const PTS = WEEKS[CUR_WEEK].points;
-const GPTS = Object.keys(PTS);
+// PTS / GPTS se construyen al final de weeks_book.js, con todas las semanas
 
 // Biblioteca: guía de la Semana 2 (tu PDF + anotaciones del libro)
-function libraryHTML() {
-  const W = WEEKS[CUR_WEEK];
-  let h = `<div class="lib col">`;
+function libraryHTML(w = 2) {
+  const W = WEEKS[w];
+  if (!W) return libTables();
+  let h = `<div class="lib col"><div class="lbl">${esc(W.title)}</div>`;
+  if (W.tips) {
+    h += W.tips.map(([t, x]) => `<h3><span class="jp">${esc(t)}</span></h3><p>${ruby(x)}</p>`).join('');
+    h += W.reading ? `<button class="btn pri block" data-lx="read">Practicar las lecturas del libro (${READINGS.filter(r => r.wk === 5).length})</button>` : `<p class="mute">El audio del CD no viene en el PDF: los ejemplos con guion del libro están en el simulacro con la voz ja-JP, junto a preguntas originales del mismo formato.</p><button class="btn pri block" data-lx="listen">Practicar 聴解 (formato JLPT, 35 min)</button>`;
+    return h + '</div>';
+  }
   for (const day of W.days) {
     h += `<h3>Día ${day.d} · <span class="jp">${esc(day.t)}</span></h3><div class="lbl">${esc(day.s)}</div>`;
     for (const p of day.pts) {
@@ -51,6 +56,7 @@ function libraryHTML() {
       h += `<div class="pt"><div class="pat">${esc(P.pat)}</div><div>${ruby(P.es)}</div>${P.ex.map(e => `<div class="ex">${ruby(e[0])}<small>${esc(e[1])}</small></div>`).join('')}<div class="mono acid" style="font-size:13px">TRUCO · ${ruby(P.tr)}</div></div>`;
     }
   }
+  if (w !== 2) return h + '</div>';
   h += `<h3>Tus confusiones resueltas</h3>
   <div class="tblwrap"><table><tr><th></th><th>いい = BIEN</th><th>いけない = MAL / NO SE DEBE</th></tr>
   <tr><th>V-て</th><td><b class="jp">Vてもいい</b><br>PERMISO</td><td><b class="jp">Vてはいけない</b><br>PROHIBIDO</td></tr>
@@ -74,4 +80,14 @@ function libraryHTML() {
   <ol><li>ないほうがいい: siempre ない, nunca なかった.</li><li>来なくても, no 来ないでも.</li><li>飲んでしまう o 飲んじゃう, nunca mezclados.</li><li>はじめて en 「待たないではじめておいて」 = el verbo EMPEZAR.</li><li>くれ, no くれろ.</li><li>が + くれる / に + もらう.</li></ol>
   <p class="mute">Rutina diaria (5 min): tapa la columna del medio, di el significado en voz alta, destapa y corrige.</p></div>`;
   return h;
+}
+
+// Tablas de conjugación (libro, págs. 125-127) y pares 他動詞 / 自動詞
+function libTables() {
+  const ex = [['書く', 'v1'], ['飲む', 'v1'], ['話す', 'v1'], ['言う', 'v1'], ['食べる', 'v2'], ['見る', 'v2'], ['する', 'v3'], ['来る', 'v3']];
+  const fs = ['masu', 'te', 'nai', 'pot', 'vol', 'ba', 'imp', 'pas', 'cau', 'caup'];
+  return `<div class="lib col"><h3>Formas verbales</h3><div class="tblwrap"><table class="tbl"><tr><th></th>${fs.map(f => `<th style="font-size:12px">${esc(FORMS[f].split(' (')[0])}</th>`).join('')}</tr>${ex.map(([v, g]) => `<tr><th class="jp">${v}</th>${fs.map(f => `<td class="jp">${esc(conj(v, g, f))}</td>`).join('')}</tr>`).join('')}</table></div>
+  <p>Causativa (使役): G1 u→a+せる · G2 る→させる · する→させる · 来る→来させる. Causativa pasiva (使役受身): G1 u→a+される (o せられる); con す siempre させられる (話させられる) · G2 る→させられる · させられる · 来させられる. <span class="jp">母に野菜を食べさせられた</span> = mi madre me obligó a comer verduras.</p>
+  <h3>他動詞 (を) / 自動詞 (が)</h3><p>Transitivo: alguien lo hace (<span class="jp">ドアを開ける</span>). Intransitivo: pasa solo (<span class="jp">ドアが開く</span>). Con ている va el 自動詞 (<span class="jp">ドアが開いている</span>); con てある, el 他動詞 (<span class="jp">ドアが開けてある</span>).</p>
+  <div class="tblwrap"><table class="tbl"><tr><th>他動詞 を</th><th>自動詞 が</th><th></th></tr>${TADOU.map(t => `<tr><td class="jp">${wordRuby(t[0], t[1])}</td><td class="jp">${wordRuby(t[2], t[3])}</td><td>${esc(t[4])}</td></tr>`).join('')}</table></div></div>`;
 }

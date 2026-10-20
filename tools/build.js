@@ -44,8 +44,8 @@ kuromoji.builder({ dicPath: __dirname + '/node_modules/kuromoji/dict' }).build((
     return out + furiK(text.slice(last));
   }
   // overrides for known kuromoji misreadings in short sentences
-  const FIX = [['一日{いちにち}に', '一日{いちにち}に'], ['何{なん}を', '何{なに}を'], ['何{なん}が', '何{なに}が'], ['日本{にっぽん}', '日本{にほん}'], ['今日{こんにち}', '今日{きょう}'], ['私{わたくし}', '私{わたし}'], ['上手{うわて}', '上手{じょうず}'], ['下手{しもて}', '下手{へた}'], ['大人{だいにん}', '大人{おとな}'], ['一人{いちにん}', '一人{ひとり}'], ['二人{ふたり}', '二人{ふたり}'], ['明日{あす}', '明日{あした}'], ['昨日{さくじつ}', '昨日{きのう}'], ['何{なん}時', '何{なん}時'], ['方{ほう}は', '方{かた}は'], ['風邪{ふうじゃ}', '風邪{かぜ}'], ['お腹{おなか}', 'お腹{なか}'], ['紅茶{こうちゃ}', '紅茶{こうちゃ}'], ['入口{いりぐち}', '入口{いりぐち}'], ['一緒{いっしょ}', '一緒{いっしょ}'], ['十{じゅう}に', '十{とお}に'], ['この間{かん}', 'この間{あいだ}'], ['四月{しがつ}一日{いちにち}', '四月{しがつ}一日{ついたち}'], ['一月{いちがつ}に一回', '一月{ひとつき}に一回'], ['十{じゅう}になりました', '十{とお}になりました'], ['お腹{なか}', 'お腹{なか}'], ['一日{いちにち}中{なか}', '一日中{いちにちじゅう}'], ['行{おこな}っ', '行{い}っ'], ['角{かく}を', '角{かど}を'], ['間{ま}、', '間{あいだ}、'], ['今{こん}会議', '今{いま}会議'], ['洗濯{せんたく}物{ぶつ}', '洗濯物{せんたくもの}'], ['木{こ}の葉', '木{き}の葉'], ['誕生{たんじょう}日{び}', '誕生日{たんじょうび}']];
-  const fixF = s => { for (const [a, b] of FIX) s = s.split(a).join(b); return s; };
+  const FIX = [['国{こく}の', '国{くに}の'], ['正{まさ}しく', '正{ただ}しく'], ['10分{ぶん}', '10分{ぷん}'], ['20分{ぶん}', '20分{ぷん}'], ['一日{いちにち}に', '一日{いちにち}に'], ['何{なん}を', '何{なに}を'], ['何{なん}が', '何{なに}が'], ['日本{にっぽん}', '日本{にほん}'], ['今日{こんにち}', '今日{きょう}'], ['私{わたくし}', '私{わたし}'], ['上手{うわて}', '上手{じょうず}'], ['下手{しもて}', '下手{へた}'], ['大人{だいにん}', '大人{おとな}'], ['一人{いちにん}', '一人{ひとり}'], ['二人{ふたり}', '二人{ふたり}'], ['明日{あす}', '明日{あした}'], ['昨日{さくじつ}', '昨日{きのう}'], ['何{なん}時', '何{なん}時'], ['方{ほう}は', '方{かた}は'], ['風邪{ふうじゃ}', '風邪{かぜ}'], ['お腹{おなか}', 'お腹{なか}'], ['紅茶{こうちゃ}', '紅茶{こうちゃ}'], ['入口{いりぐち}', '入口{いりぐち}'], ['一緒{いっしょ}', '一緒{いっしょ}'], ['十{じゅう}に', '十{とお}に'], ['この間{かん}', 'この間{あいだ}'], ['四月{しがつ}一日{いちにち}', '四月{しがつ}一日{ついたち}'], ['一月{いちがつ}に一回', '一月{ひとつき}に一回'], ['十{じゅう}になりました', '十{とお}になりました'], ['お腹{なか}', 'お腹{なか}'], ['一日{いちにち}中{なか}', '一日中{いちにちじゅう}'], ['行{おこな}っ', '行{い}っ'], ['角{かく}を', '角{かど}を'], ['間{ま}、', '間{あいだ}、'], ['今{こん}会議', '今{いま}会議'], ['洗濯{せんたく}物{ぶつ}', '洗濯物{せんたくもの}'], ['木{こ}の葉', '木{き}の葉'], ['誕生{たんじょう}日{び}', '誕生日{たんじょうび}']];
+  const fixF = s => { for (const [a, b] of FIX) s = s.split(a).join(b); return s.replace(/([0-9])分\{[ふぶぷ]ん\}/g, (m, d) => d + '分{' + ('013468'.includes(d) ? 'ぷん' : 'ふん') + '}'); };
 
   const base = JSON.parse(fs.readFileSync(SRC + 'voc_pos.json'));
   const es = {};
@@ -103,15 +103,17 @@ kuromoji.builder({ dicPath: __dirname + '/node_modules/kuromoji/dict' }).build((
   // grammar
   const grammar = [];
   let gi = 0;
-  for (const line of fs.readFileSync(B + 'grammar.txt', 'utf8').split('\n')) {
+  // grammar.txt primero: sus ids g1..g268 no cambian (el progreso guardado se conserva)
+  for (const gf of ['grammar.txt', 'grammar_w1.txt', 'grammar_w3.txt', 'grammar_w4.txt', 'grammar_extra.txt']) for (const line of fs.readFileSync(B + gf, 'utf8').split('\n')) {
     if (!line.trim() || line.startsWith('#')) continue;
     const p = line.split('|'); const id = 'g' + (++gi);
-    if (p[0] === 'F') grammar.push({ id, k: 'F', pt: p[1], q: p[2], o: p[3].split(';'), a: +p[4] - 1, e: p[5], tr: p[6], f: p[7] || '' });
-    else grammar.push({ id, k: 'S', pt: p[1], pre: p[2], post: p[3], pc: p[4].split(';'), st: +p[5] - 1, e: p[6], tr: p[7], f: p[8] || '' });
+    const w = /^w(\d)_/.test(p[1]) ? +p[1][1] : 2;
+    if (p[0] === 'F') grammar.push({ id, w, k: 'F', pt: p[1], q: p[2], o: p[3].split(';'), a: +p[4] - 1, e: p[5], tr: p[6], f: p[7] || '' });
+    else grammar.push({ id, w, k: 'S', pt: p[1], pre: p[2], post: p[3], pc: p[4].split(';'), st: +p[5] - 1, e: p[6], tr: p[7], f: p[8] || '' });
   }
   // lecturas: furigana precomputado
   const vm = require('vm'); const ctx = {}; vm.createContext(ctx);
-  vm.runInContext(fs.readFileSync(B + 'extra.js', 'utf8') + ';this.R=READINGS;', ctx);
+  vm.runInContext(fs.readFileSync(B + 'extra.js', 'utf8') + fs.readFileSync(B + 'jlpt.js', 'utf8') + fs.readFileSync(B + 'book.js', 'utf8') + ';this.R=READINGS;', ctx);
   const rfuri = {}; for (const r of ctx.R) rfuri[r.text] = fixF(furi(r.text));
   const cov = { kOk: kanji.filter(k => k.ok).length, vOk: vocab.filter(v => v.ok === 1).length, vRev: vocab.filter(v => v.ok === 0).length, vS2: vocab.filter(v => v.lv === 'S2').length };
   const out = { vocab, kanji, grammar, rfuri, cov, built: new Date().toISOString().slice(0, 10) };

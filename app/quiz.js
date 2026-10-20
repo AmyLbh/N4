@@ -135,9 +135,9 @@ function qConj(v, form) {
 }
 function conjRule(g, f, v) {
   const R = {
-    v1: { masu: 'u → i + ます', te: 'う/つ/る→って · む/ぶ/ぬ→んで · く→いて (行く→行って) · ぐ→いで · す→して', ta: 'como て, con た/だ', nai: 'u → a + ない (う → わない)', pot: 'u → e + る', pas: 'u → a + れる (う → わ)', imp: 'u → e', pro: 'diccionario + な', ba: 'u → e + ば', tara: 'forma た + ら', vol: 'u → o + う', dict: 'forma de diccionario' },
-    v2: { masu: 'quita る + ます', te: 'quita る + て', ta: 'quita る + た', nai: 'quita る + ない', pot: 'quita る + られる', pas: 'quita る + られる (= potencial)', imp: 'quita る + ろ (くれる → くれ)', pro: 'diccionario + な', ba: 'quita る + れば', tara: 'quita る + たら', vol: 'quita る + よう', dict: 'forma de diccionario' },
-    v3: { masu: 'します · 来ます', te: 'して · 来て(きて)', ta: 'した · 来た(きた)', nai: 'しない · 来ない(こない)', pot: 'できる · 来られる(こられる)', pas: 'される · 来られる(こられる)', imp: 'しろ · 来い(こい)', pro: 'するな · 来るな', ba: 'すれば · 来れば(くれば)', tara: 'したら · 来たら(きたら)', vol: 'しよう · 来よう(こよう)', dict: 'する · 来る' }
+    v1: { masu: 'u → i + ます', te: 'う/つ/る→って · む/ぶ/ぬ→んで · く→いて (行く→行って) · ぐ→いで · す→して', ta: 'como て, con た/だ', nai: 'u → a + ない (う → わない)', pot: 'u → e + る', pas: 'u → a + れる (う → わ)', imp: 'u → e', pro: 'diccionario + な', ba: 'u → e + ば', tara: 'forma た + ら', vol: 'u → o + う', dict: 'forma de diccionario', cau: 'u → a + せる (書く→書かせる · 言う→言わせる)', caup: 'u → a + される (飲まされる); す → させられる (話させられる)' },
+    v2: { masu: 'quita る + ます', te: 'quita る + て', ta: 'quita る + た', nai: 'quita る + ない', pot: 'quita る + られる', pas: 'quita る + られる (= potencial)', imp: 'quita る + ろ (くれる → くれ)', pro: 'diccionario + な', ba: 'quita る + れば', tara: 'quita る + たら', vol: 'quita る + よう', dict: 'forma de diccionario', cau: 'quita る + させる', caup: 'quita る + させられる' },
+    v3: { masu: 'します · 来ます', te: 'して · 来て(きて)', ta: 'した · 来た(きた)', nai: 'しない · 来ない(こない)', pot: 'できる · 来られる(こられる)', pas: 'される · 来られる(こられる)', imp: 'しろ · 来い(こい)', pro: 'するな · 来るな', ba: 'すれば · 来れば(くれば)', tara: 'したら · 来たら(きたら)', vol: 'しよう · 来よう(こよう)', dict: 'する · 来る', cau: 'させる · 来させる(こさせる)', caup: 'させられる · 来させられる(こさせられる)' }
   };
   return R[g][f];
 }
@@ -159,7 +159,20 @@ function qCounter() {
 }
 function qReadingQ(r, qi) {
   const q = r.qs[qi]; const { opts, ans } = mcq(q.o[0], q.o.slice(1));
-  return { key: 'rd:' + r.id + ':' + qi, dir: 'f', mode: 'read', kind: '読解 · ' + r.title, prompt: `<div class="q-sent keepfuri" style="font-size:17px;line-height:1.9;max-height:38vh;overflow:auto;border:1px solid var(--rib);padding:8px">${ruby(furiText(r.text))}</div><div class="q-sent" style="font-size:18px">${esc(q.q)}</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'significado', fb: `<div class="ans">${esc(q.o[0])}</div><div>${esc(q.e)}</div><div class="tr mute">${esc(r.es)}</div>`, say: r.text, long: 1 };
+  return { key: 'rd:' + r.id + ':' + qi, dir: 'f', mode: 'read', kind: '読解 · ' + r.title, prompt: `<div class="q-sent keepfuri" style="font-size:17px;line-height:1.9;white-space:pre-line;text-align:left;max-height:38vh;overflow:auto;border:1px solid var(--rib);padding:8px">${ruby(furiText(r.text))}</div><div class="q-sent" style="font-size:18px">${esc(q.q)}</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'significado', fb: `<div class="ans">${esc(q.o[0])}</div><div>${esc(q.e)}</div><div class="tr mute">${esc(r.es)}</div>`, say: r.text, long: 1 };
 }
 // furigana para lecturas: usa lecturas de palabras del banco si coinciden (precomputado en build)
 function furiText(t) { return (DATA.rfuri && DATA.rfuri[t]) || t; }
+// ---- 他動詞 / 自動詞 (pares de la Semana 4)
+function qTadou(i, sub) {
+  const T = TADOU[i], tr = Math.random() < .5, w = tr ? T[0] : T[2], r = tr ? T[1] : T[3], pw = tr ? T[2] : T[0], pr = tr ? T[3] : T[1];
+  const lab = x => x ? '他動詞 · を (alguien lo hace)' : '自動詞 · が (ocurre solo)';
+  const fb = `<div class="ans jp">${wordRuby(T[0], T[1])} ⇄ ${wordRuby(T[2], T[3])}</div><div>${esc(T[4])}: <b>を + ${esc(T[0])}</b> · <b>が + ${esc(T[2])}</b></div>`;
+  if (sub === 'part') {
+    const { opts, ans } = mcq(tr ? 'を' : 'が', [tr ? 'が' : 'を']);
+    return { key: 'td:' + i + ':' + (tr ? 't' : 'j'), dir: 'f', mode: 'tadou', kind: '他動詞 / 自動詞 · partícula', prompt: `<div class="q-word">（　）${wordRuby(w, r)}</div><div class="q-sub">${esc(T[4])}</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'gramática', fb: fb + `<div class="mute">${esc(lab(tr))}</div>`, say: r };
+  }
+  const others = shuffle(TADOU.filter((_, j) => j !== i)).slice(0, 3).map(o => tr ? o[2] : o[0]);
+  const { opts, ans } = mcq(pw, others);
+  return { key: 'td:' + i + ':' + (tr ? 't' : 'j'), dir: 'f', mode: 'tadou', kind: '他動詞 / 自動詞 · pareja', prompt: `<div class="q-word">${wordRuby(w, r)}</div><div class="q-sub">${esc(lab(tr))} · ${esc(T[4])}</div><div class="q-es">¿Cuál es su pareja ${tr ? '自動詞 (が)' : '他動詞 (を)'}?</div>`, opts: opts.map(x => ({ h: esc(x), cls: 'jp' })), ans, cause: 'gramática', fb, say: r + '、' + pr };
+}

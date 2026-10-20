@@ -184,7 +184,7 @@ const normKana = s => kata2hira(String(s).replace(/[\s。、.,!?！？・〜～]
 const ROW = { う: ['わ', 'い', 'う', 'え', 'お'], く: ['か', 'き', 'く', 'け', 'こ'], ぐ: ['が', 'ぎ', 'ぐ', 'げ', 'ご'], す: ['さ', 'し', 'す', 'せ', 'そ'], つ: ['た', 'ち', 'つ', 'て', 'と'], ぬ: ['な', 'に', 'ぬ', 'ね', 'の'], ぶ: ['ば', 'び', 'ぶ', 'べ', 'ぼ'], む: ['ま', 'み', 'む', 'め', 'も'], る: ['ら', 'り', 'る', 'れ', 'ろ'] };
 const TE = { う: 'って', つ: 'って', る: 'って', む: 'んで', ぶ: 'んで', ぬ: 'んで', く: 'いて', ぐ: 'いで', す: 'して' };
 const FORMS = {
-  dict: 'diccionario', masu: 'ます (cortés)', te: 'forma て', ta: 'forma た (pasado)', nai: 'forma ない', pot: 'potencial', pas: 'pasiva', imp: 'imperativo', pro: 'prohibitivo', ba: 'condicional ば', tara: 'condicional たら', vol: 'volitiva'
+  dict: 'diccionario', masu: 'ます (cortés)', te: 'forma て', ta: 'forma た (pasado)', nai: 'forma ない', pot: 'potencial', pas: 'pasiva', imp: 'imperativo', pro: 'prohibitivo', ba: 'condicional ば', tara: 'condicional たら', vol: 'volitiva', cau: 'causativa (させる)', caup: 'causativa pasiva (させられる)'
 };
 const CONJ_EXCL = new Set(['いらっしゃる', 'くださる', 'なさる', 'おっしゃる', 'ござる', '～ございます', 'いただく', '参る', '申す', '致す', 'おる', '伺う', 'うかがう', '召し上がる', '申し上げる', '差し上げる', 'おいでになる', 'ごらんになる', 'ご覧になる', 'かまう', '～(て) しまう', '～おわる', '～だす', '～続ける', '～始める', 'いる', '要る', 'くれる', 'あげる', 'もらう', 'やる']);
 function conj(word, group, form) {
@@ -194,16 +194,16 @@ function conj(word, group, form) {
     const isKuru = /来る$|くる$/.test(w) && (w === '来る' || w === 'くる');
     if (isKuru) {
       const k = w[0] === '来' ? '来' : '';
-      const R = { dict: 'くる', masu: 'きます', te: 'きて', ta: 'きた', nai: 'こない', pot: 'こられる', pas: 'こられる', imp: 'こい', pro: 'くるな', ba: 'くれば', tara: 'きたら', vol: 'こよう' }[form];
+      const R = { dict: 'くる', masu: 'きます', te: 'きて', ta: 'きた', nai: 'こない', pot: 'こられる', pas: 'こられる', imp: 'こい', pro: 'くるな', ba: 'くれば', tara: 'きたら', vol: 'こよう', cau: 'こさせる', caup: 'こさせられる' }[form];
       return k ? k + R.slice(1) : R;
     }
     const st = w.replace(/する$/, '');
-    return st + { dict: 'する', masu: 'します', te: 'して', ta: 'した', nai: 'しない', pot: 'できる', pas: 'される', imp: 'しろ', pro: 'するな', ba: 'すれば', tara: 'したら', vol: 'しよう' }[form];
+    return st + { dict: 'する', masu: 'します', te: 'して', ta: 'した', nai: 'しない', pot: 'できる', pas: 'される', imp: 'しろ', pro: 'するな', ba: 'すれば', tara: 'したら', vol: 'しよう', cau: 'させる', caup: 'させられる' }[form];
   }
   if (group === 'v2') {
     const st = w.slice(0, -1);
     if (form === 'imp' && /くれる$/.test(w)) return st;
-    return form === 'dict' ? w : form === 'pro' ? w + 'な' : st + { masu: 'ます', te: 'て', ta: 'た', nai: 'ない', pot: 'られる', pas: 'られる', imp: 'ろ', ba: 'れば', tara: 'たら', vol: 'よう' }[form];
+    return form === 'dict' ? w : form === 'pro' ? w + 'な' : st + { masu: 'ます', te: 'て', ta: 'た', nai: 'ない', pot: 'られる', pas: 'られる', imp: 'ろ', ba: 'れば', tara: 'たら', vol: 'よう', cau: 'させる', caup: 'させられる' }[form];
   }
   // v1
   const end = w.slice(-1), st = w.slice(0, -1), row = ROW[end];
@@ -224,8 +224,11 @@ function conj(word, group, form) {
     case 'ba': return st + row[3] + 'ば';
     case 'tara': return ta + 'ら';
     case 'vol': return st + row[4] + 'う';
+    case 'cau': return st + row[0] + 'せる';
+    case 'caup': return end === 'す' ? st + 'させられる' : st + row[0] + 'される';
   }
 }
+const row0 = e => (ROW[e] || [''])[0];
 // errores típicos para distractores
 function conjWrong(word, group, form) {
   const out = new Set();
@@ -240,6 +243,8 @@ function conjWrong(word, group, form) {
     if (form === 'imp') out.add(st + ROW[end][3] + 'ろ');
     if (form === 'pas') out.add(st + ROW[end][0] + 'られる');
     if (form === 'nai' && end === 'う') out.add(st + 'あない');
+    if (form === 'cau') { out.add(st + row0(end) + 'させる'); out.add(st + row0(end) + 'れる'); }
+    if (form === 'caup') { out.add(st + row0(end) + 'せる'); out.add(st + row0(end) + 'させられる'); }
   }
   if (group === 'v2') { const st = word.slice(0, -1); if (form === 'imp') { out.add(st + 'れ'); out.add(word + 'ろ'); } if (form === 'nai') out.add(st + 'らない'); if (form === 'pot') out.add(st + 'れる'); }
   if (group === 'v3' && form === 'imp') { out.add(word.replace(/する$/, 'せろ')); out.add(word.replace(/くる$|来る$/, m => m[0] === '来' ? '来ろ' : 'ころ')); }

@@ -17,6 +17,7 @@ function keyLabel(key) {
   if (t === 'c') { const v = VBY.get(+id); return v ? v.w + ' → ' + FORMS[f] : key; }
   if (t === 'pa') return 'partículas';
   if (t === 'cn') return 'contador ' + id;
+  if (t === 'td') { const T = TADOU[+id]; return T ? T[0] + '/' + T[2] : key; }
   if (t === 'rd') { const r = READINGS.find(x => x.id === id); return '読解 ' + (r ? r.title : id); }
   return key;
 }
@@ -102,6 +103,7 @@ function buildQ(sp) {
   if (sp.g === 'pa') return qParticle(sp.id);
   if (sp.g === 'cn') return qCounter();
   if (sp.g === 'rd') return qReadingQ(READINGS.find(r => r.id === sp.id), sp.q);
+  if (sp.g === 'td') return qTadou(sp.id, sp.sub);
 }
 // selección ponderada: cripta + vencidos + caja baja
 function choose(keys, n, opts = {}) {
@@ -127,7 +129,7 @@ function introducedPool(filter = {}) {
   if (filter.theme) keys = keys.filter(k => k[0] !== 'v' || VBY.get(+k.slice(2)).th === filter.theme);
   if (filter.week) keys = keys.filter(k => k[0] !== 'v' || VBY.get(+k.slice(2)).wk === filter.week);
   if (filter.lv) keys = keys.filter(k => (k[0] === 'v' ? VBY.get(+k.slice(2)).lv : k[0] === 'k' ? KBY.get(k.slice(2)).lv : filter.lv) === filter.lv);
-  if (filter.crypt) keys = keys.filter(k => S.crypt[k]).concat(Object.keys(S.crypt).filter(k => /^(c|pa|cn):/.test(k)));
+  if (filter.crypt) keys = keys.filter(k => S.crypt[k]).concat(Object.keys(S.crypt).filter(k => /^(c|pa|cn|td):/.test(k)));
   return keys;
 }
 
@@ -207,11 +209,12 @@ function renderPracticar() {
     ['kwords', 'Palabras del kanji', 'Cada kanji con todas las palabras que lo usan. Sin furigana.', ni(KW.size + ' kanji')],
     ['vocab', 'Vocabulario', 'Por tema, semana o nivel. JP→ES, ES→JP, kana escrita.', ni(cnt('v') + ' vistas')],
     ['cards', 'Tarjetas', 'Desliza: derecha lo sé, izquierda no.', ''],
-    ['gram', 'Gramática S2', `${G.length} preguntas de examen, ★ y trampas.`, ni(cnt('g') + ' disponibles')],
-    ['conj', 'Conjugador', 'て, た, ない, potencial, pasiva, imperativo… por grupo.', ''],
+    ['gram', 'Gramática', `Semanas 1-4 del libro: ${G.length} preguntas, ★ y trampas.`, ni(cnt('g') + ' disponibles')],
+    ['conj', 'Conjugador', 'て, た, ない, potencial, pasiva, causativa, させられる… por grupo.', ''],
+    ['tadou', '他動詞 / 自動詞', `${TADOU.length} pares: ドアを開ける / ドアが開く.`, ''],
     ['part', 'Partículas', 'に/が/を/で… las que deciden la frase.', ''],
     ['cont', 'Contadores', '本, 匹, 杯, 人, 日… con sus lecturas raras.', ''],
-    ['read', 'Lectura 読解', 'Textos cortos con la gramática de la semana.', ''],
+    ['read', 'Lectura 読解', `${READINGS.length} textos: los de la Semana 2 y los del libro (Semana 5).`, ''],
     ['audio', 'Escucha 聴解', 'Voz ja-JP: oye y elige.', ''],
     ['crypt', 'La Cripta', 'Tus errores. Salen con 3 aciertos rápidos seguidos.', ni(Object.keys(S.crypt).length)],
     ['warm', 'Calentamiento', '3 minutos de repaso mixto.', '']
@@ -242,18 +245,24 @@ function openMode(p) {
   if (p === 'cont') return startSimple('cont', 'Contadores', () => ({ g: 'cn' }), 15, introOnce('cont', countersTable));
   if (p === 'part') return startSimple('part', 'Partículas', () => ({ g: 'pa', id: rnd(PARTICLES.length) }), 15, introOnce('part', particlesTable));
   if (p === 'read') return openReading();
+  if (p === 'tadou') return startSimple('tadou', '他動詞 / 自動詞', () => ({ g: 'td', id: rnd(TADOU.length), sub: Math.random() < .4 ? 'part' : 'pair' }), 15, introOnce('tadou', tadouTable));
   if (p === 'audio') {
     const pool = introducedPool({ only: 'v' }); if (pool.length < 4) return needIntro('Primero presenta al menos 4 palabras.');
     return startSimple('audio', 'Escucha', () => ({ g: 'v', id: +pick(pool).slice(2), sub: 'audio' }), 12);
   }
-  const st = { sub: ['mix'], dir: ['mix'], lv: ['all'], th: ['all'], wk: ['all'], pt: [], trap: ['no'], n: ['15'], forms: ['te', 'ta', 'nai'], grp: ['v1', 'v2', 'v3'], typing: ['no'] };
+  const st = { sub: ['mix'], dir: ['mix'], lv: ['all'], th: ['all'], wk: ['all'], gw: ['all'], pt: [], trap: ['no'], n: ['15'], forms: ['te', 'ta', 'nai'], grp: ['v1', 'v2', 'v3'], typing: ['no'] };
   let body = '';
   if (p === 'kanji') body = `<div class="lbl">Tipo</div>${chips('sub', [['mix', 'Mixto'], ['read', 'Kanji → lectura'], ['toR', 'Lectura → kanji'], ['meaning', 'Kanji → significado'], ['toM', 'Significado → kanji'], ['pair', 'Pares confusos']], st.sub)}<div class="lbl">Nivel</div>${chips('lv', [['all', 'N5+N4'], ['N5', 'N5'], ['N4', 'N4']], st.lv)}`;
   if (p === 'vocab') body = `<div class="lbl">Dirección</div>${chips('dir', [['mix', 'Mixto'], ['f', 'JP → ES'], ['b', 'ES → JP'], ['read', 'Lectura (漢字読み)'], ['hyoki', 'Kana → kanji (表記)']], st.dir)}<div class="lbl">ES→JP escribiendo kana</div>${chips('typing', [['no', 'No'], ['yes', 'Sí']], st.typing)}<div class="lbl">Semana / nivel</div>${chips('wk', [['all', 'Todo'], ['2', 'Semana 2']], st.wk)}${chips('lv', [['all', 'N5+N4'], ['N5', 'N5'], ['N4', 'N4']], st.lv)}<div class="lbl">Tema</div>${chips('th', [['all', 'Todos'], ...Object.entries(THEMES)], st.th)}`;
-  if (p === 'gram') { st.pt = GPTS.slice(); body = `<div class="lbl">Puntos (Semana 2)</div>${chips('pt', GPTS.map(k => [k, PTS[k].name]), st.pt)}<div class="lbl">Solo trampas</div>${chips('trap', [['no', 'No'], ['yes', 'Sí, solo trampas']], st.trap)}`; }
+  if (p === 'gram') { st.pt = GPTS.slice(); body = `<div class="lbl">Semana del libro</div>${chips('gw', [['all', 'Todas'], ...GWEEKS.map(w => [String(w), 'Semana ' + w])], st.gw)}<div class="lbl">Puntos</div><div id="ptbox">${chips('pt', GPTS.map(k => [k, PTS[k].name]), st.pt)}</div><div class="lbl">Solo trampas</div>${chips('trap', [['no', 'No'], ['yes', 'Sí, solo trampas']], st.trap)}`; }
   if (p === 'conj') body = `<div class="lbl">Formas</div>${chips('forms', Object.entries(FORMS), st.forms)}<div class="lbl">Grupos</div>${chips('grp', [['v1', 'G1 五段'], ['v2', 'G2 一段'], ['v3', 'G3 する/来る']], st.grp)}`;
-  stage().innerHTML = `<div class="col">${back}<h1 class="h-title">${esc({ kanji: 'Kanji', vocab: 'Vocabulario', gram: 'Gramática S2', conj: 'Conjugador' }[p])}</h1><div class="panel col">${body}<div class="lbl">Preguntas</div>${chips('n', [['10', '10'], ['15', '15'], ['25', '25'], ['40', '40']], st.n)}<button class="btn pri block" id="go">Empezar</button></div></div>`;
+  stage().innerHTML = `<div class="col">${back}<h1 class="h-title">${esc({ kanji: 'Kanji', vocab: 'Vocabulario', gram: 'Gramática', conj: 'Conjugador' }[p])}</h1><div class="panel col">${body}<div class="lbl">Preguntas</div>${chips('n', [['10', '10'], ['15', '15'], ['25', '25'], ['40', '40']], st.n)}<button class="btn pri block" id="go">Empezar</button></div></div>`;
   bindChips(st, { pt: 1, forms: 1, grp: 1 });
+  if (p === 'gram') $$('.chip[data-g="gw"]').forEach(c => c.addEventListener('click', () => {
+    const w = st.gw[0], ks = w === 'all' ? GPTS : GPTS.filter(k => PT_WEEK[k] === +w); st.pt = ks.slice();
+    $('#ptbox').innerHTML = chips('pt', ks.map(k => [k, PTS[k].name]), st.pt);
+    $$('#ptbox .chip').forEach(c2 => c2.onclick = () => { const a = st.pt, i = a.indexOf(c2.dataset.v); i >= 0 ? a.splice(i, 1) : a.push(c2.dataset.v); c2.setAttribute('aria-pressed', a.includes(c2.dataset.v)); });
+  }));
   $('#mb').onclick = render;
   $('#go').onclick = () => {
     const n = +st.n[0];
@@ -277,7 +286,7 @@ function openMode(p) {
       if (!sel.length) return needIntro('Presenta primero los puntos de gramática (aparecen en Iniciación).');
       const pool = introducedPool({ only: 'g', pt: sel, trap: st.trap[0] === 'yes' });
       if (!pool.length) return needIntro('No hay preguntas con ese filtro todavía.');
-      return runSession({ mode: 'gram', title: 'Gramática S2', specs: choose(pool, Math.min(n, pool.length * 2)) });
+      return runSession({ mode: 'gram', title: 'Gramática', specs: choose(pool, Math.min(n, pool.length * 2)) });
     }
     if (p === 'conj') {
       const vs = VERBS.filter(v => isIntro('v:' + v.id) && st.grp.includes(v.t));
@@ -289,6 +298,7 @@ function openMode(p) {
 }
 function introOnce(id, fn) { return S['seen_' + id] ? null : () => { S['seen_' + id] = 1; save(); return fn(); }; }
 function countersTable() { return `<div class="tblwrap"><table class="tbl"><tr><th>×</th>${COUNTERS.slice(0, 6).map(c => `<th>${c.c}</th>`).join('')}</tr>${[0, 1, 2, 3, 5, 7, 9].map(i => `<tr><td>${i + 1}</td>${COUNTERS.slice(0, 6).map(c => `<td class="jp" style="font-family:var(--f-jp)">${c.r[i]}</td>`).join('')}</tr>`).join('')}</table></div><p class="mute">Ojo con 1, 3, 6, 8, 10: ahí cambian los sonidos (いっぽん, さんぼん, ろっぽん, はっぽん, じゅっぽん). 人: ひとり, ふたり, よにん. 日: ついたち, ふつか, みっか…</p>`; }
+function tadouTable() { return `<div class="col" style="font-size:15px"><p><b class="jp">を + 他動詞</b>: alguien lo hace (人がドアを開ける). <b class="jp">が + 自動詞</b>: ocurre solo (ドアが開く).</p><p>Pistas: muchos 他動詞 acaban en <b class="jp">-す / -える</b> (消す, 開ける) y sus 自動詞 en <b class="jp">-る / -く</b> (消える, 開く). No es regla fija: apréndelos en pareja.</p><p class="acid mono" style="font-size:13px">${TADOU.slice(0, 6).map(t => t[0] + ' ⇄ ' + t[2]).join(' · ')}</p></div>`; }
 function particlesTable() { return `<div class="col" style="font-size:15px"><p><b class="jp">は</b> tema · <b class="jp">が</b> sujeto / con 好き・わかる・できる・ほしい · <b class="jp">を</b> objeto, recorrer, salir de · <b class="jp">に</b> hora, destino, existencia, de quién recibes / pasiva · <b class="jp">で</b> lugar de acción, medio · <b class="jp">へ</b> dirección · <b class="jp">と</b> con, cita · <b class="jp">から/まで/までに</b> desde / hasta / antes de.</p><p class="acid mono" style="font-size:13px">が → くれる · に → もらう</p></div>`; }
 
 // ================= PALABRAS DEL KANJI =================
@@ -377,7 +387,7 @@ function checkIntro(batch) {
 // ================= SESIONES =================
 function startReview() { const d = dueKeys(); if (!d.length) { toast('Nada vencido. El SRS está al día.'); return startWarm(); } runSession({ mode: 'review', title: 'Vencidos', specs: shuffle(d).slice(0, 30).map(k => specFor(k)) }); }
 function startWarm() { const pool = introducedPool(); if (pool.length < 4) return needIntro('El calentamiento necesita material presentado.'); runSession({ mode: 'warm', title: 'Calentamiento', clock: 180000, gen: () => choose(pool, 1)[0], gentle: 1 }); }
-function startCrypt() { const pool = introducedPool({ crypt: 1 }); if (!pool.length) { toast('La cripta está vacía.'); return; } runSession({ mode: 'crypt', title: 'La Cripta', specs: shuffle(pool.concat(pool, pool)).slice(0, Math.min(30, pool.length * 3)).map(k => k[0] === 'c' ? { g: 'c', id: +k.split(':')[1], f: k.split(':')[2] } : k[0] === 'p' && k.startsWith('pa:') ? { g: 'pa', id: +k.split(':')[1] } : k.startsWith('cn:') ? { g: 'cn' } : specFor(k)) }); }
+function startCrypt() { const pool = introducedPool({ crypt: 1 }); if (!pool.length) { toast('La cripta está vacía.'); return; } runSession({ mode: 'crypt', title: 'La Cripta', specs: shuffle(pool.concat(pool, pool)).slice(0, Math.min(30, pool.length * 3)).map(k => k[0] === 'c' ? { g: 'c', id: +k.split(':')[1], f: k.split(':')[2] } : k[0] === 'p' && k.startsWith('pa:') ? { g: 'pa', id: +k.split(':')[1] } : k.startsWith('cn:') ? { g: 'cn' } : k.startsWith('td:') ? { g: 'td', id: +k.split(':')[1], sub: 'pair' } : specFor(k)) }); }
 function startRecord(sec) {
   const pool = introducedPool(); if (pool.length < 8) return needIntro('Las rondas de récord necesitan al menos 8 ítems presentados.');
   if (sec === 60) return runSession({ mode: 'r60', title: 'Récord 60 s', clock: 60000, gen: () => choose(pool, 1)[0], record: 1 });
@@ -394,7 +404,9 @@ function startSimple(mode, title, gen, n, introFn) {
   runSession({ mode, title, specs: Array.from({ length: n }, gen) });
 }
 function openReading() {
-  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">Lectura 読解</h1>${READINGS.map((r, i) => `<button class="mode" data-r="${i}"><span class="mn jp" style="font-family:var(--f-jp)">${esc(r.title)}</span><span class="md">Día ${r.day} · ${r.qs.length} preguntas · ${esc(PTS[WEEKS[2].days[r.day - 1].pts[0]].name)}…</span></button>`).join('')}</div>`;
+  const item = (r, i) => `<button class="mode" data-r="${i}"><span class="mn jp" style="font-family:var(--f-jp)">${esc(r.title)}</span><span class="md">${r.wk === 5 ? `Semana 5 · día ${r.day} · ${esc(r.src || '')}` : `Semana 2 · día ${r.day} · ${esc((PTS[(WEEKS[2].days[r.day - 1] || { pts: [] }).pts[0]] || { name: '' }).name)}…`} · ${r.qs.length} pregunta${r.qs.length > 1 ? 's' : ''}</span></button>`;
+  const grp = w => READINGS.map((r, i) => [r, i]).filter(([r]) => (r.wk || 2) === w).map(([r, i]) => item(r, i)).join('');
+  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">Lectura 読解</h1><div class="lbl">Semana 5 · textos del libro</div><p class="mute" style="margin:0;font-size:14px">Truco del libro: lee primero la pregunta y busca solo esa parte. Ojo con 〜ないもの (la que NO es).</p>${grp(5)}<div class="lbl">Semana 2 · textos originales</div>${grp(2)}</div>`;
   $('#mb').onclick = render;
   $$('[data-r]').forEach(b => b.onclick = () => { const r = READINGS[+b.dataset.r]; runSession({ mode: 'read', title: r.title, specs: r.qs.map((_, qi) => ({ g: 'rd', id: r.id, q: qi })), perQ: 60000 }); });
 }
@@ -639,13 +651,11 @@ function renderCrypt() {
 }
 
 // ================= EXAMEN =================
-function weekReady() {
-  const keys = G.map(g => 'g:' + g.id).concat(V.filter(v => v.wk === 2).map(v => 'v:' + v.id));
-  return keys.filter(mastered).length / keys.length * 100;
-}
+function weekKeys(w) { return G.filter(g => g.w === w).map(g => 'g:' + g.id).concat(w === 2 ? V.filter(v => v.wk === 2).map(v => 'v:' + v.id) : []); }
+function weekReady(w = 2) { const keys = weekKeys(w); return keys.length ? keys.filter(mastered).length / keys.length * 100 : 0; }
 function renderExamen() {
   header();
-  const wr = weekReady(), gu = S.guard[CUR_WEEK] || {};
+  const wrs = GWEEKS.map(w => [w, weekReady(w), S.guard[w] || {}]), open = wrs.filter(x => x[1] >= 95), doms = wrs.filter(x => x[2].dom).map(x => x[0]);
   const lf = S.finals[S.finals.length - 1];
   const items = [
     ['r60', 'Récord 60 s', 'Contrarreloj. Cada error −3 s. Combo ×3.5.', () => startRecord(60)],
@@ -653,17 +663,22 @@ function renderExamen() {
     ['r20', 'Récord 20', '20 preguntas, reloj compartido.', () => startRecord(20)],
     ['ghost', 'Tu reflejo', S.ghost ? `Repite tu mejor ronda (${S.ghost.s}, ${fmtTime(S.ghost.ms)}) contra tu fantasma.` : 'Aparece tras tu primer Récord 10.', startGhost],
     ['roto', 'Espejo roto', '20 preguntas. Un error y se rompe.', startRoto],
-    ['guard', 'El Guardián', gu.dom ? 'Semana 2 DOMINADA.' : wr >= 95 ? 'Desbloqueado. Dominado solo con 100%.' : `Se desbloquea con 95% de la Semana 2 dominada (ahora ${wr.toFixed(1)}%).`, startGuard, wr < 95],
+    ['guard', 'El Guardián', (doms.length ? `Dominadas: S${doms.join(', S')}. ` : '') + `Uno por semana; se abre con el 95% dominado. ${wrs.map(x => `S${x[0]} ${x[1].toFixed(0)}%`).join(' · ')}.`, openGuard, !open.length],
     ['final', 'La Prueba Final · JLPT N4', lf ? `Último simulacro: ${lf.tot}/180 · ${lf.pass ? '合格' : '不合格'} · ${lf.pct}%.` : 'Formato oficial: 文字・語彙 25 min · 文法・読解 55 min · 聴解 35 min.', openFinal],
     ['diag', 'Diagnóstico', S.diag ? `Hecho: ${Math.round(S.diag.acc * 100)}%. Repetir recalibra.` : 'Calibra tu punto de partida.', startDiag]
   ];
   stage().innerHTML = `<div class="col"><h1 class="h-title">Examen</h1><div class="grid2">${items.map((m, i) => `<button class="mode ${m[4] ? 'locked' : ''}" data-x="${i}" ${m[4] ? 'aria-disabled="true"' : ''}><span class="mn">${m[1]}</span><span class="md">${esc(m[2])}</span>${S.rec[m[0]] && S.rec[m[0]][0] ? `<span class="tag mk">${m[0] === 'r60' ? S.rec[m[0]][0].pts + ' pts' : S.rec[m[0]][0].s}</span>` : ''}${m[4] ? '<span class="tag mk">bloqueado</span>' : ''}</button>`).join('')}</div>${logHTML()}</div>`;
-  $$('[data-x]').forEach(b => b.onclick = () => { const m = items[+b.dataset.x]; if (m[4]) return toast('Bloqueado: domina el 95% de la Semana 2.'); m[3](); });
+  $$('[data-x]').forEach(b => b.onclick = () => { const m = items[+b.dataset.x]; if (m[4]) return toast('Bloqueado: domina el 95% de una semana (1-4).'); m[3](); });
 }
-function startGuard() {
-  const keys = G.map(g => 'g:' + g.id).concat(V.filter(v => v.wk === 2).map(v => 'v:' + v.id)).filter(isIntro);
+function openGuard() {
+  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">El Guardián</h1><p class="mute" style="margin:0">30 preguntas de la semana. Solo cuenta como dominada con 100%.</p><div class="grid2">${GWEEKS.map(w => { const r = weekReady(w), g = S.guard[w] || {}; return `<button class="mode ${r < 95 ? 'locked' : ''}" data-w="${w}"><span class="mn">Semana ${w}</span><span class="md">${g.dom ? 'DOMINADA' : r >= 95 ? 'Abierto' : 'Bloqueado'} · ${r.toFixed(1)}% dominado${g.best ? ' · mejor ' + g.best + '%' : ''}</span></button>`; }).join('')}</div></div>`;
+  $('#mb').onclick = render;
+  $$('[data-w]').forEach(b => b.onclick = () => { const w = +b.dataset.w; if (weekReady(w) < 95) return toast(`Semana ${w}: necesitas 95% dominado.`); startGuard(w); });
+}
+function startGuard(w = 2) {
+  const keys = weekKeys(w).filter(isIntro);
   const specs = shuffle(keys).slice(0, 30).map(k => specFor(k));
-  runSession({ mode: 'guard', title: 'El Guardián', specs, clock: 30 * limitMs(), record: 1, after: () => { const L = SES; const g = S.guard[CUR_WEEK] || (S.guard[CUR_WEEK] = {}); const pct = Math.round(L.ok / (L.ok + L.bad) * 100); g.best = Math.max(g.best || 0, pct); if (pct === 100) { g.dom = 1; toast('Semana 2 DOMINADA.'); } save(); } });
+  runSession({ mode: 'guard', title: 'El Guardián', specs, clock: 30 * limitMs(), record: 1, after: () => { const L = SES; const g = S.guard[w] || (S.guard[w] = {}); const pct = Math.round(L.ok / (L.ok + L.bad) * 100); g.best = Math.max(g.best || 0, pct); if (pct === 100) { g.dom = 1; toast(`Semana ${w} DOMINADA.`); } save(); } });
 }
 function startDiag() {
   const specs = [
@@ -744,10 +759,13 @@ function coverageHTML() {
 }
 
 // ================= BIBLIOTECA / AJUSTES =================
+let LIBW = 2;
 function renderLibrary() {
   document.body.classList.remove('inq');
-  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">Biblioteca</h1><div class="lbl">Tu guía de la Semana 2 · con tus anotaciones</div>${libraryHTML()}</div>`;
+  stage().innerHTML = `<div class="col"><button class="btn ghost" id="mb">← Volver</button><h1 class="h-title">Biblioteca</h1><div class="row" role="group" aria-label="semana">${[1, 2, 3, 4, 5, 6].map(w => `<button class="chip" data-lw="${w}" aria-pressed="${w === LIBW}">S${w}</button>`).join('')}<button class="chip" data-lw="0" aria-pressed="${LIBW === 0}">Tablas</button></div><div id="libbox">${libraryHTML(LIBW)}</div></div>`;
   $('#mb').onclick = render; stage().scrollTop = 0;
+  $$('[data-lw]').forEach(b => b.onclick = () => { LIBW = +b.dataset.lw; renderLibrary(); });
+  $$('[data-lx]').forEach(b => b.onclick = () => b.dataset.lx === 'read' ? openReading() : startExam([2]));
 }
 function renderSettings() {
   const c = S.cfg;

@@ -1,0 +1,41 @@
+# Refuerzo (originales) para los puntos del libro con pocas preguntas. Mismo formato que grammar.txt.
+F|w1_toka|休みの日は、映画（　）買い物とかに行きます。|とか;しか;ばかり;まで|1|N1とかN2とか = cosas como N1 o N2 (lista abierta, casual).|とか…とか = "y cosas así".
+F|w1_toka|パーティーには、ジュース（　）お菓子とかを持っていきましょう。|とか;だけ;しか;ほど|1|とか enumera ejemplos sin cerrar la lista.|Ejemplos sueltos → とか.
+F|w1_toka|「何か飲みたいね。」「コーヒー（　）どう？」|とか;しか;ばかり;まで|1|とか también sugiere un ejemplo: コーヒーとかどう？ = ¿qué tal algo como un café?|Sugerir un ejemplo casual → とか.
+F|w1_wamo|この町には大きい公園がありますが、となりの町（　）ありません。|には;にも;でも;へも|1|には = contraste: aquí sí, en el otro pueblo NO.|Partícula + は = contraste.|T
+F|w1_wamo|田中さんにメールを送りました。山田さん（　）送りました。|にも;には;では;とも|1|にも = también a Yamada.|Partícula + も = también.
+F|w1_wamo|図書館（　）勉強できますが、うるさい喫茶店ではできません。|では;にも;へは;とは|1|では = contraste con 喫茶店では.|Dos lugares que se oponen → では.|T
+F|w1_bakari|弟はゲーム（　）していて、ぜんぜん勉強しません。|ばかり;しか;ほど;まで|1|ばかり = no hace más que (queja, exceso).|Queja + mucho → ばかり.
+F|w1_bakari|このクラスは女の人（　）で、男の人は一人もいません。|ばかり;しか;ほど;まで|1|Nばかり = lleno de N (solo hay mujeres).|ばかり = montones de lo mismo.
+F|w1_bakari|毎日、パン（　）食べていると、体によくないですよ。|ばかり;しか;ほど;までに|1|ばかり食べる = comer solo/siempre pan (demasiado).|しか exigiría negativo.|T
+F|w1_aida|夏休みの（　）、おばあちゃんの家にいました。|間;間に;中;うちで|1|間 (sin に) = durante todo el periodo.|間 = todo el tiempo · 間に = en algún momento dentro.|T
+F|w1_aida|母が買い物に行っている（　）、部屋をそうじしました。|間に;間;ながら;ところ|1|間に = en algún momento mientras… pasó otra cosa (acción puntual).|Acción que se hace y se termina dentro → 間に.
+F|w1_aida|赤ちゃんが寝ている（　）、ずっと本を読んでいました。|間;間に;中に;うちに|1|ずっと = todo el periodo → 間 (sin に).|ずっと + 間.|T
+F|w1_chuu|すみません、山田は今、会議（　）です。|中;中じゅう;間;ところ|1|会議中 (ちゅう) = en plena reunión.|Acción en curso → 中(ちゅう).
+F|w1_chuu|きのうは一日（　）雨が降っていました。|中;間に;ばかり;までに|1|一日中 (じゅう) = todo el día.|Periodo entero → 中(じゅう).
+F|w1_chuu|この仕事は今週（　）に終わらせてください。|中;間;ほど;ばかり|1|今週中に (じゅう) = dentro de esta semana.|今週中に = antes de que acabe la semana.
+F|w3_kata|この漢字の読み（　）を教えてください。|方;かた方;ところ;こと|1|Vます + 方: 読み方 = forma de leer.|ます-stem + 方.
+F|w3_kata|この機械の（　）がわかりません。|使い方;使う方;使った方;使い|1|使い方 = manera de usar. No 使う方.|Raíz ます, nunca diccionario + 方.|T
+F|w3_kata|日本の料理の（　）を習いたいです。|作り方;作る方;作りかたち;作って方|1|作り方 = cómo se hace.|作ります → 作り + 方.
+F|w3_ga|すみません、駅へ行きたいんです（　）、どう行けばいいですか。|が;から;ので;のに|1|が introduce el tema antes de preguntar (no es "pero").|Preámbulo + pregunta → が.
+F|w3_ga|来週の会議のことです（　）、時間を変えてもいいですか。|けど;から;ので;のに|1|けど = preámbulo casual.|けど/が antes de pedir algo.
+F|w3_ga|もしもし、田中です（　）、山田さんはいらっしゃいますか。|が;から;ので;ても|1|Presentarse + が + pregunta.|Al teléfono: 〜ですが、…
+F|w3_you|もう遅いから、そろそろ（　）よ。|帰ろう;帰れ;帰るな;帰り|1|Volitiva casual de 帰りましょう.|G1: u → oう.
+F|w3_you|あしたは早く（　）と思います。|起きよう;起きろう;起きろ;起きりょう|1|G2: る → よう. 起きようと思う = pienso levantarme.|G2 + よう.|T
+F|w3_you|今度の日曜日、一緒に映画を（　）。|見よう;見ろう;見ろ;見りよう|1|見る (G2) → 見よう.|る → よう.
+F|w3_toomou|あしたは雨が（　）と思います。|降る;降ります;降って;降ろう|1|Forma normal + と思う.|と思う va con forma de diccionario/た/ない.|T
+F|w3_toomou|この問題はちょっと（　）と思います。|むずかしい;むずかしいだ;むずかしくて;むずかしいです|1|い-adj + と思う, sin だ ni です.|い-adj tal cual + と思う.|T
+F|w3_toomou|田中さんはまだ学生（　）と思います。|だ;です;の;な|1|N + だ + と思う.|Sustantivo/na-adj necesitan だ.|T
+F|w4_deshou|あしたはたぶん晴れる（　）。|でしょう;ことです;ところです;ばかりです|1|たぶん + でしょう = conjetura.|たぶん…でしょう van juntos.
+F|w4_deshou|あの人は、たぶん先生（　）。|だろう;だろうだ;なだろう;のだろう|1|N + だろう (sin だ antes).|N + だろう / でしょう.|T
+F|w4_deshou|この時間なら、道は（　）でしょう。|すいている;すいているだ;すいてい;すいて|1|Forma normal + でしょう.|Verbo normal + でしょう.
+F|w4_kamo|空が暗いから、雨が降る（　）。|かもしれません;はずです;ことにします;ところです|1|かもしれない = puede que (posibilidad).|かも = tal vez.
+F|w4_kamo|その話は本当（　）。|かもしれない;だかもしれない;なかもしれない;のかもしれ|1|N + かもしれない, sin だ.|N/na-adj + かもしれない directo.|T
+F|w4_kana|田中さん、来ない（　）。もう3時なのに。|かな;から;ので;ても|1|かな = me pregunto (duda en voz alta).|かな = ¿será que…?
+F|w4_kana|早く夏休みが来ない（　）。|かなあ;かもしれない;でしょう;そうだ|1|ないかなあ = ojalá (deseo).|Negativo + かなあ = ojalá.
+F|w4_shuujo|「この料理、おいしいです（　）。」「ええ、本当においしいですね。」|ね;よ;を;な|1|ね busca acuerdo: el otro responde "sí, ¿verdad?".|Acuerdo → ね.
+F|w4_shuujo|「あ、そのいす、こわれています（　）。」「えっ、ありがとう。」|よ;を;かな;に|1|よ = aviso: le das información que el otro no sabe.|Aviso → よ.
+F|w4_sasete|すみません、気分が悪いので、早く（　）ください。|帰らせて;帰られて;帰って;帰らせられて|1|させてください = déjeme hacer (permiso).|Causativa + てください = déjame.
+F|w4_sasete|その仕事、ぜひわたしに（　）ください。|やらせて;やられて;やって;やらされて|1|やらせてください = déjeme hacerlo.|Ofrecerte → させてください.
+F|w4_teiru|あ、窓が（　）。だれが開けたのかな。|開いている;開けている;開いてある;開けた|1|自動詞 + ている = estado resultante (la ventana está abierta).|Estado: 自動詞 + ている.|T
+F|w4_teiru|宿題はもう終わった？ ― いいえ、まだ（　）。|終わっていません;終わりません;終わりませんでした;終わりました|1|まだ + ていない = todavía no.|まだ…ていない.|T
